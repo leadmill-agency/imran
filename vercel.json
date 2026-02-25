@@ -1,0 +1,16 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/low-back-pain.html",
+      "destination": "/low-back-pain",
+      "permanent": true
+    },
+    {
+      "source": "/imaging.html",
+      "destination": "/imaging",
+      "permanent": true
+    }
+  ]
+}
