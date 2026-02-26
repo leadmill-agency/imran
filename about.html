@@ -538,6 +538,88 @@
     body { padding-bottom: 76px; }
     .footer-bottom { flex-direction: column; gap: 6px; }
   }
+
+  /* ===== MOBILE HAMBURGER MENU ===== */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 6px;
+    background: none;
+    border: none;
+    z-index: 300;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px; height: 2px;
+    background: var(--dark);
+    border-radius: 2px;
+    transition: all 0.25s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+
+  .mobile-nav-close {
+    position: absolute; top: 20px; right: 24px;
+    background: none; border: none; cursor: pointer;
+    font-size: 22px; color: var(--text-light); padding: 8px;
+  }
+  .mobile-nav { position: fixed; top: 0; left: 0; right: 0; bottom: 0; }
+  .mobile-nav {
+    display: none;
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--white);
+    z-index: 250;
+    flex-direction: column;
+    padding: 80px 32px 32px;
+    overflow-y: auto;
+  }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav a {
+    font-size: 22px; font-weight: 500;
+    color: var(--dark); text-decoration: none;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border-light);
+    font-family: 'Playfair Display', serif;
+    transition: color 0.15s;
+  }
+  .mobile-nav a:hover { color: var(--teal); }
+  .mobile-nav a:last-of-type { border-bottom: none; }
+  .mobile-nav-ctas {
+    margin-top: 36px;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .mobile-nav-ctas .btn-hero-primary,
+  .mobile-nav-ctas .btn-hero-gold,
+  .mobile-nav-ctas .btn-gold,
+  .mobile-nav-ctas a {
+    display: block; text-align: center;
+    padding: 16px; border-radius: 100px;
+    font-weight: 700; font-size: 16px;
+    text-decoration: none;
+  }
+  .mobile-nav-ctas .mn-call {
+    background: var(--teal); color: var(--white);
+  }
+  .mobile-nav-ctas .mn-book {
+    background: var(--gold); color: var(--dark);
+  }
+
+  @media (max-width: 1024px) {
+    .hamburger { display: flex; }
+  }
+
+  @media (max-width: 480px) {
+    .page-hero h1 { font-size: 26px; }
+    .bio-stats { gap: 12px; }
+    .stat-num { font-size: 26px; }
+    .verify-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-badges { gap: 6px; }
+    .badge { font-size: 11.5px; padding: 6px 12px; }
+  }
 </style>
 </head>
 <body>
@@ -577,8 +659,26 @@
       <a href="tel:2819822144" class="btn-outline-teal">📞 (281) 982-2144</a>
       <a href="https://patient.lumahealth.io/survey?patientFormTemplate=688117ef1bfb149b853d6fae&user=62a7afe5a85ec700134faf16" class="btn-gold" target="_blank">Book Online</a>
     </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
+
+<!-- MOBILE NAV OVERLAY -->
+<nav class="mobile-nav" id="mobile-nav">
+  <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">✕</button>
+  <a href="/">Home</a>
+  <a href="/#conditions">Conditions</a>
+  <a href="/#treatments">Treatments</a>
+  <a href="/about">About</a>
+  <a href="/#reviews">Reviews</a>
+  <a href="/contact">Contact</a>
+  <div class="mobile-nav-ctas">
+    <a href="tel:2819822144" class="mn-call">📞 Call (281) 982-2144</a>
+    <a href="https://patient.lumahealth.io/survey?patientFormTemplate=688117ef1bfb149b853d6fae&user=62a7afe5a85ec700134faf16" class="mn-book" target="_blank">📅 Book Online</a>
+  </div>
+</nav>
 
 <!-- PAGE HERO -->
 <section class="page-hero">
@@ -840,5 +940,24 @@
   </div>
 </div>
 
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  const closeBtn = document.getElementById('mobile-nav-close');
+  function closeMobileNav() {
+    hamburger.classList.remove('open');
+    mobileNav.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    });
+    if (closeBtn) closeBtn.addEventListener('click', closeMobileNav);
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileNav));
+  }
+</script>
 </body>
 </html>
