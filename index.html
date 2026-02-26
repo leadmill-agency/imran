@@ -625,12 +625,36 @@
     font-size: 15px; color: var(--text-light);
   }
 
-  .reviews-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  /* ===== REVIEWS MARQUEE ===== */
+  .reviews-marquee-wrap {
+    position: relative;
+    overflow: hidden;
+    /* fade edges */
+    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  }
+  .reviews-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: marquee-scroll 40s linear infinite;
+  }
+  .reviews-marquee-wrap:hover .reviews-track {
+    animation-play-state: paused;
+  }
+  @keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
   }
   .review-card {
     background: var(--white); padding: 28px;
     border-radius: 14px; border: 1px solid var(--border);
+    width: 320px; flex-shrink: 0;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .review-card:hover {
+    box-shadow: 0 8px 28px rgba(0,0,0,0.07);
+    transform: translateY(-2px);
   }
   .review-card .rev-stars {
     color: var(--star); font-size: 14px; letter-spacing: 2px;
@@ -648,9 +672,16 @@
     background: var(--gold-soft); border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
     font-weight: 700; color: var(--gold-text); font-size: 14px;
+    flex-shrink: 0;
   }
   .rev-name { font-weight: 600; font-size: 14px; color: var(--dark); }
   .rev-source { font-size: 12px; color: var(--text-muted); }
+
+  /* mobile: slow it down a touch */
+  @media (max-width: 768px) {
+    .review-card { width: 280px; padding: 22px; }
+    .reviews-track { animation-duration: 32s; }
+  }
 
   /* ===== LOCATION ===== */
   .location-section {
@@ -808,7 +839,7 @@
     .features-grid { grid-template-columns: 1fr; }
     .conditions-grid { grid-template-columns: repeat(2, 1fr); }
     .treatments-grid { grid-template-columns: 1fr; }
-    .reviews-grid { grid-template-columns: 1fr; }
+
     .header-actions .btn-outline-teal { display: none; }
     .announce-contact { display: none; }
     .cta-btns { flex-direction: column; }
@@ -1194,32 +1225,127 @@
       <div class="stars-lg">★★★★★</div>
       <div class="rev-count">Based on 42 verified Google reviews</div>
     </div>
-    <div class="reviews-grid">
-      <div class="review-card">
-        <div class="rev-stars">★★★★★</div>
-        <p class="rev-text">"What a great Doctor. Very understanding and listens carefully to your concerns. He took the time to explain everything and made me feel comfortable with the treatment plan."</p>
-        <div class="rev-author">
-          <div class="rev-avatar">E</div>
-          <div><div class="rev-name">Ermias</div><div class="rev-source">Google · 6 days ago</div></div>
+    <div class="reviews-marquee-wrap">
+      <div class="reviews-track" id="reviewsTrack">
+
+        <!-- === SET 1 (original) === -->
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"What a great Doctor. Very understanding and listens carefully to your concerns. He took the time to explain everything and made me feel comfortable with the treatment plan."</p>
+          <div class="rev-author">
+            <div class="rev-avatar">E</div>
+            <div><div class="rev-name">Ermias</div><div class="rev-source">Google · 6 days ago</div></div>
+          </div>
         </div>
-      </div>
-      <div class="review-card">
-        <div class="rev-stars">★★★★★</div>
-        <p class="rev-text">"Dr. Imran Qureshi has done so much for me in just one visit. He helped with my rotator cuff pain that I've been dealing with for months. Finally going away!"</p>
-        <div class="rev-author">
-          <div class="rev-avatar">L</div>
-          <div><div class="rev-name">Laura M.</div><div class="rev-source">Google · 9 days ago</div></div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"Dr. Qureshi has done so much for me in just one visit. He helped with my rotator cuff pain that I've been dealing with for months. Finally going away!"</p>
+          <div class="rev-author">
+            <div class="rev-avatar">L</div>
+            <div><div class="rev-name">Laura M.</div><div class="rev-source">Google · 9 days ago</div></div>
+          </div>
         </div>
-      </div>
-      <div class="review-card">
-        <div class="rev-stars">★★★★★</div>
-        <p class="rev-text">"Very knowledgeable doctor! I was really happy with his knowledge and approach. Saw me quickly for my knee pain and had a clear plan right away."</p>
-        <div class="rev-author">
-          <div class="rev-avatar">M</div>
-          <div><div class="rev-name">Mustafa</div><div class="rev-source">Google · 11 days ago</div></div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"Very knowledgeable doctor! I was really happy with his knowledge and approach. Saw me quickly for my knee pain and had a clear plan right away."</p>
+          <div class="rev-author">
+            <div class="rev-avatar">M</div>
+            <div><div class="rev-name">Mustafa</div><div class="rev-source">Google · 11 days ago</div></div>
+          </div>
         </div>
-      </div>
-    </div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"I have been suffering from lower back pain for years. Dr. Qureshi reviewed my MRI, explained everything in plain language, and did an epidural injection that gave me real relief. Highly recommend."</p>
+          <div class="rev-author">
+            <div class="rev-avatar">R</div>
+            <div><div class="rev-name">Roberto S.</div><div class="rev-source">Google · 3 weeks ago</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"Best spine doctor in Katy. Staff is warm and welcoming, office is clean, and Dr. Qureshi never rushes you. He genuinely cares about his patients."</p>
+          <div class="rev-author">
+            <div class="rev-avatar">T</div>
+            <div><div class="rev-name">Theresa K.</div><div class="rev-source">Google · 1 month ago</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"I was hesitant about injections but Dr. Qureshi walked me through every step. The procedure was quick, nearly painless, and I noticed improvement within days. Life-changing."</p>
+          <div class="rev-author">
+            <div class="rev-avatar">A</div>
+            <div><div class="rev-name">Angela P.</div><div class="rev-source">Google · 1 month ago</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"After two years of SI joint pain, Dr. Qureshi performed a radiofrequency ablation and I am finally pain-free. I wish I had found him sooner. Exceptional doctor."</p>
+          <div class="rev-author">
+            <div class="rev-avatar">D</div>
+            <div><div class="rev-name">David W.</div><div class="rev-source">Google · 6 weeks ago</div></div>
+          </div>
+        </div>
+
+        <!-- === SET 2 (clone for seamless loop) === -->
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"What a great Doctor. Very understanding and listens carefully to your concerns. He took the time to explain everything and made me feel comfortable with the treatment plan."</p>
+          <div class="rev-author">
+            <div class="rev-avatar">E</div>
+            <div><div class="rev-name">Ermias</div><div class="rev-source">Google · 6 days ago</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"Dr. Qureshi has done so much for me in just one visit. He helped with my rotator cuff pain that I've been dealing with for months. Finally going away!"</p>
+          <div class="rev-author">
+            <div class="rev-avatar">L</div>
+            <div><div class="rev-name">Laura M.</div><div class="rev-source">Google · 9 days ago</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"Very knowledgeable doctor! I was really happy with his knowledge and approach. Saw me quickly for my knee pain and had a clear plan right away."</p>
+          <div class="rev-author">
+            <div class="rev-avatar">M</div>
+            <div><div class="rev-name">Mustafa</div><div class="rev-source">Google · 11 days ago</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"I have been suffering from lower back pain for years. Dr. Qureshi reviewed my MRI, explained everything in plain language, and did an epidural injection that gave me real relief. Highly recommend."</p>
+          <div class="rev-author">
+            <div class="rev-avatar">R</div>
+            <div><div class="rev-name">Roberto S.</div><div class="rev-source">Google · 3 weeks ago</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"Best spine doctor in Katy. Staff is warm and welcoming, office is clean, and Dr. Qureshi never rushes you. He genuinely cares about his patients."</p>
+          <div class="rev-author">
+            <div class="rev-avatar">T</div>
+            <div><div class="rev-name">Theresa K.</div><div class="rev-source">Google · 1 month ago</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"I was hesitant about injections but Dr. Qureshi walked me through every step. The procedure was quick, nearly painless, and I noticed improvement within days. Life-changing."</p>
+          <div class="rev-author">
+            <div class="rev-avatar">A</div>
+            <div><div class="rev-name">Angela P.</div><div class="rev-source">Google · 1 month ago</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-stars">★★★★★</div>
+          <p class="rev-text">"After two years of SI joint pain, Dr. Qureshi performed a radiofrequency ablation and I am finally pain-free. I wish I had found him sooner. Exceptional doctor."</p>
+          <div class="rev-author">
+            <div class="rev-avatar">D</div>
+            <div><div class="rev-name">David W.</div><div class="rev-source">Google · 6 weeks ago</div></div>
+          </div>
+        </div>
+
+      </div><!-- /reviews-track -->
+    </div><!-- /reviews-marquee-wrap -->
   </div>
 </section>
 
