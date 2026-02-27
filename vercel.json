@@ -9,9 +9,5 @@
     { "source": "/pain-management-fulshear", "destination": "/pain-management-fulshear-tx", "permanent": true },
     { "source": "/pain-management-richmond", "destination": "/pain-management-richmond-tx", "permanent": true },
     { "source": "/pain-management-sugar-land", "destination": "/pain-management-sugar-land-tx", "permanent": true }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/404.html", "status": 404 }
   ]
 }
