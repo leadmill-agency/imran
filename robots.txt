@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://drimranqureshi.com/sitemap.xml
+Sitemap: https://www.drimranqureshi.com/sitemap.xml
