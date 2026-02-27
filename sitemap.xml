@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://drimranqureshi.com/</loc><lastmod>2026-02-25</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://drimranqureshi.com/</loc><lastmod>2026-02-27</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://drimranqureshi.com/about</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://drimranqureshi.com/contact</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://drimranqureshi.com/insurance</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://drimranqureshi.com/treatments/epidural-steroid-injections</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://drimranqureshi.com/treatments/radiofrequency-ablation</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://drimranqureshi.com/treatments/nerve-blocks</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -18,4 +21,15 @@
   <url><loc>https://drimranqureshi.com/sports-injuries</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://drimranqureshi.com/regenerative-medicine</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://drimranqureshi.com/imaging</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://drimranqureshi.com/pain-management-cinco-ranch-tx</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://drimranqureshi.com/pain-management-fulshear-tx</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://drimranqureshi.com/pain-management-richmond-tx</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://drimranqureshi.com/pain-management-sugar-land-tx</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://drimranqureshi.com/pain-management-cypress-tx</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://drimranqureshi.com/blog</loc><lastmod>2026-02-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://drimranqureshi.com/blog/when-to-see-a-pain-specialist</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://drimranqureshi.com/blog/is-my-back-pain-serious</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://drimranqureshi.com/blog/radiofrequency-ablation-guide</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://drimranqureshi.com/blog/back-pain-surgery-vs-injection</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://drimranqureshi.com/blog/epidural-steroid-injection-what-to-expect</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
