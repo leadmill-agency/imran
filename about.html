@@ -407,32 +407,6 @@
     display: block;
   }
 
-  /* VERIFICATION SECTION */
-  .verify-section {
-    padding: 64px 0;
-    background: var(--white);
-  }
-  .verify-grid {
-    display: grid; grid-template-columns: repeat(4, 1fr);
-    gap: 20px; align-items: center;
-  }
-  .verify-card {
-    text-align: center; padding: 28px 20px;
-    border: 1.5px solid var(--border);
-    border-radius: 14px;
-    transition: border-color 0.15s;
-  }
-  .verify-card:hover { border-color: var(--teal); }
-  .verify-card .v-icon { font-size: 30px; margin-bottom: 10px; display: block; }
-  .verify-card .v-name { font-size: 13px; font-weight: 600; color: var(--dark); margin-bottom: 4px; }
-  .verify-card .v-desc { font-size: 12px; color: var(--text-muted); }
-  .verify-card a {
-    display: inline-block; margin-top: 10px;
-    font-size: 12.5px; font-weight: 600; color: var(--teal);
-    text-decoration: none;
-  }
-  .verify-card a:hover { text-decoration: underline; }
-
   /* CTA SECTION */
   .cta-section {
     padding: 72px 0;
@@ -522,7 +496,6 @@
     .bio-grid { grid-template-columns: 1fr; }
     .creds-grid { grid-template-columns: repeat(2, 1fr); }
     .philosophy-pillars { grid-template-columns: 1fr; }
-    .verify-grid { grid-template-columns: repeat(2, 1fr); }
     .footer-grid { grid-template-columns: 1fr; }
     .nav { display: none; }
   }
@@ -616,7 +589,6 @@
     .page-hero h1 { font-size: 26px; }
     .bio-stats { gap: 12px; }
     .stat-num { font-size: 26px; }
-    .verify-grid { grid-template-columns: repeat(2, 1fr); }
     .hero-badges { gap: 6px; }
     .badge { font-size: 11.5px; padding: 6px 12px; }
   }
@@ -846,30 +818,6 @@
         <span class="pillar-num">03</span>
         <h4>Long-Term Partnership</h4>
         <p>Pain management is rarely a one-visit fix. Dr. Qureshi works with patients over time — adjusting plans, monitoring progress, and always keeping the patient's long-term function and quality of life at the center.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- VERIFICATION SECTION -->
-<section class="verify-section">
-  <div class="container">
-    <div class="section-head">
-      <span class="label-caps">Independently Verified</span>
-      <h2 class="section-title">Find Dr. Qureshi on leading physician directories</h2>
-    </div>
-    <div class="verify-grid">
-      <div class="verify-card">
-        <span class="v-icon">🔬</span>
-        <div class="v-name">Doximity</div>
-        <div class="v-desc">Physician peer network</div>
-        <a href="https://www.doximity.com/pub/imran-qureshi-do" target="_blank" rel="noopener">View Profile →</a>
-      </div>
-      <div class="verify-card">
-        <span class="v-icon">⭐</span>
-        <div class="v-name">Google Reviews</div>
-        <div class="v-desc">5.0 · 42 patient reviews</div>
-        <a href="https://www.google.com/maps/search/Dr+Imran+Qureshi+Katy+TX" target="_blank" rel="noopener">Read Reviews →</a>
       </div>
     </div>
   </div>
