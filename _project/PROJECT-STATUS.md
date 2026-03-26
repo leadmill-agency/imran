@@ -102,7 +102,7 @@
 ### Month 2 (Mar 2026) — Content Expansion
 **Status: Complete**
 
-Deliverables from content pack (files in `3:24 files/` folder):
+Deliverables from content pack (files in `_project/content-packs/month-2/`):
 
 - [x] **3 new procedure pages** — trigger point injections, kyphoplasty, discography
   - Full body copy (~1,500 words each), MedicalProcedure + Physician + FAQPage schema, 5-6 FAQs each, CTAs, internal link maps
@@ -136,8 +136,20 @@ Commit: `86f5b1d` — 42 files changed, 6,465 insertions
 
 ---
 
-## Keyword Research Reference
-Keyword research files are in `imran_keyword_research_1/`:
+## Project Files Structure
+All non-website working files live in `_project/`:
+```
+_project/
+  PROJECT-STATUS.md          ← this file
+  content-packs/
+    month-2/                 ← Mar 2026 content pack (markdowns, specs)
+  keyword-research/          ← CSVs: page build plan, keyword matrix, competitor analysis
+  reference/
+    doctor-photos/           ← Dr. Qureshi headshots and office photos
+    old-site-snapshot/       ← saved copy of original Squarespace site (gitignored)
+```
+
+Keyword research files in `_project/keyword-research/`:
 - `Page Build Plan-Table 1.csv` — full page-level keyword targeting plan
 - `Keyword Priority Matrix-Table 1.csv`
 - `Competitor Analysis-Table 1.csv`

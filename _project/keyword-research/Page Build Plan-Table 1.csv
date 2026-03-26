@@ -1,0 +1,28 @@
+Page Title,Target URL,Status,Primary Keyword,Secondary Keywords,Priority,Notes
+Epidural Steroid Injection,/epidural-steroid-injection,NEW - BUILD,epidural steroid injection katy,"epidural injection katy tx, steroid injection back pain",P1,Highest revenue procedure. Include lumbar + cervical sections
+Lumbar Epidural Injection,/lumbar-epidural-injection,NEW - BUILD,lumbar epidural steroid injection katy,"lower back injection, L4-L5 injection",P1,Sub-page of epidural. Target specific anatomy terms
+Cervical Epidural Injection,/cervical-epidural-injection,NEW - BUILD,cervical epidural steroid injection katy,"neck injection, cervical spine injection",P1,Sub-page of epidural. Neck pain + arm numbness angle
+Joint Injections,/joint-injections,NEW - BUILD,joint injection katy tx,"knee injection, hip injection, shoulder injection",P1,Overview page linking to specific joint pages
+Knee Injection,/knee-injection,NEW - BUILD,knee injection katy,"knee steroid injection, knee pain injection",P1,High volume. Imran said easiest procedure to sell
+Shoulder Injection,/shoulder-injection,NEW - BUILD,shoulder injection katy,"shoulder steroid injection, rotator cuff injection",P1,Link from existing shoulder injuries page
+Nerve Blocks,/nerve-blocks,NEW - BUILD,nerve block injection katy,"medial branch block, nerve pain treatment",P1,Include medial branch blocks content
+Radiofrequency Ablation,/radiofrequency-ablation,NEW - BUILD,radiofrequency ablation katy tx,"RFA procedure, nerve ablation back pain",P1,Technical procedure page. High-value repeat patients
+Trigger Point Injection,/trigger-point-injection,NEW - BUILD,trigger point injection katy,"muscle knot injection, myofascial pain treatment",P2,Lower volume but easy to rank
+Spinal Cord Stimulation,/spinal-cord-stimulation,NEW - BUILD,spinal cord stimulation katy,"SCS implant, chronic pain stimulator",P2,High-value procedure. Link from failed back surgery page
+Kyphoplasty,/kyphoplasty,NEW - BUILD,kyphoplasty katy tx,"vertebroplasty, compression fracture treatment",P2,Link from existing spine compression fractures page
+Sacroiliac Joint Injection,/sacroiliac-joint-injection,NEW - BUILD,sacroiliac joint injection katy,"SI joint injection, SI joint pain treatment",P2,Complement existing SI joint pain page
+,,,,,,
+Low Back Pain,/low-back-pain,OPTIMIZE,back pain doctor katy tx,"lower back pain treatment, chronic back pain katy",P1,Add geo keywords to title tag + H1. Add internal links to procedure pages
+Herniated/Bulging Discs,/bulging/herniated-discs,OPTIMIZE,herniated disc treatment katy,"bulging disc katy, disc herniation treatment",P1,Add Katy/geo to meta. Link to epidural injection page
+Nerve Pain/Neuropathy,/nerve-pain/neuropathy,OPTIMIZE,sciatica treatment katy,"nerve pain doctor katy, neuropathy treatment",P1,Sciatica is a huge search term. Optimize heavily
+Neck Pain,/neck-pain-and-arm-numbness,OPTIMIZE,neck pain doctor katy,"neck pain treatment katy, arm numbness doctor",P1,Link to cervical epidural injection page
+Knee Pain/Arthritis,/knee-pain/arthritis,OPTIMIZE,knee pain doctor katy tx,"knee arthritis treatment katy, knee specialist",P1,Link to knee injection page. High volume term
+Hip Pain/Arthritis,/hip-pain/arthritis,OPTIMIZE,hip pain doctor katy,"hip arthritis treatment, hip injection katy",P2,Link to joint injection page
+Shoulder Injuries,/shoulder-injuries/pain,OPTIMIZE,shoulder pain doctor katy,"shoulder injury treatment, rotator cuff katy",P2,Link to shoulder injection page
+Regenerative Medicine/PRP,/regenerative-medicine,OPTIMIZE,prp injection katy tx,"prp therapy katy, regenerative medicine katy, platelet rich plasma",P1,Cash pay service. Differentiate from cosmetic PRP
+Sports Injuries,/sports-injuries,OPTIMIZE,sports medicine katy tx,"sports injury doctor katy, sports medicine physician",P2,Key differentiator from generic pain management
+SI Joint Pain,/sacroiliac-si-joint-pain,OPTIMIZE,si joint pain treatment katy,sacroiliac joint dysfunction,P2,Link to SI joint injection page
+Carpal Tunnel,/carpal-tunnel/hand-numbness,OPTIMIZE,carpal tunnel doctor katy,hand numbness treatment katy,P3,Lower priority. Optimize meta tags only
+Spine Compression Fractures,/spine-compression-fractures,OPTIMIZE,compression fracture treatment katy,vertebral fracture doctor katy,P2,Link to kyphoplasty page
+Failed Back Surgery/SCS,/failed-back-surgery/spinal-cord-stimulator,OPTIMIZE,failed back surgery syndrome katy,spinal cord stimulator doctor katy,P2,Link to SCS procedure page
+Homepage,/,OPTIMIZE,pain management katy tx,"spine doctor katy, interventional pain katy",P1,Add geo-rich H1. Schema markup. Insurance list. Same-week appts CTA
