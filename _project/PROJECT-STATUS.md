@@ -13,7 +13,7 @@
 
 ---
 
-## Current Site Inventory (42 pages)
+## Current Site Inventory (44 pages)
 
 ### Core Pages (5)
 | Page | URL |
@@ -58,7 +58,7 @@
 | Treatments Hub | /treatments |
 | Conditions Hub | /conditions |
 
-### Blog Posts (8)
+### Blog Posts (10)
 | Post | URL |
 |------|-----|
 | Blog Hub | /blog |
@@ -118,6 +118,20 @@ Deliverables from content pack (files in `_project/content-packs/month-2/`):
 - [x] **GSC indexing requested** for all 7 new URLs (Mar 24, 2026)
 
 Commit: `86f5b1d` — 42 files changed, 6,465 insertions
+
+**Client feedback round (Apr 2, 2026):**
+
+- [x] **ESI treatment page updated** — Dr. Qureshi revised fluoroscopy description ("in office fluoroscopic guidance... proper needle placement... accurately delivers medication to your problem area") and injection frequency (limited to 3-4/year, every 3 months if needed)
+- [x] **Imaging/MRI claims corrected** — Removed "MRI on-site" from homepage feature card (now "X-Ray & Ultrasound Guided Procedures"), updated imaging.html title/meta/H1/hero, clarified MRI is coordinated with local centers not performed on-site, updated insurance page
+- [x] **Years of experience corrected** — Changed "10+ years" to "6+ years" on about page (meta, OG, badge, body)
+- [x] **4 new Google reviews added** — Vivian S., Gene M., Nancy B., Paula B. Review count updated to 52 site-wide
+- [x] **Repo organized** — Non-website files moved to `_project/` folder
+
+Commits: `048337c` (repo org), `df5843e` (reviews), `ee0bb33` (client feedback)
+
+**Remaining (non-code):**
+- [ ] Monitor GSC indexing for 7 new URLs (check ~Apr 5-7)
+- [ ] Track keyword rankings: "epidural steroid injection side effects" (800/mo) and "non surgical treatment for herniated disc" (200/mo)
 
 ### Month 3 (Apr 2026) — Planned
 *Pending — content pack not yet delivered*
