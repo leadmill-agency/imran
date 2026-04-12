@@ -133,8 +133,38 @@ Commits: `048337c` (repo org), `df5843e` (reviews), `ee0bb33` (client feedback)
 - [ ] Monitor GSC indexing for 7 new URLs (check ~Apr 5-7)
 - [ ] Track keyword rankings: "epidural steroid injection side effects" (800/mo) and "non surgical treatment for herniated disc" (200/mo)
 
-### Month 3 (Apr 2026) — Planned
-*Pending — content pack not yet delivered*
+### Month 3 (Apr 2026) — Local SEO & Technical Fixes
+**Status: In Progress**
+
+**SEO audit fixes (Apr 11, 2026):**
+- [x] Fixed og:url www mismatch on 22 pages
+- [x] Added missing og:url, og:description, geo.placename to blog posts
+- [x] Added missing 6th FAQ to insurance page schema
+- [x] Added FAQPage schema to 4 blog posts (back-pain-surgery-vs-injection, radiofrequency-ablation-guide, epidural-steroid-injection-what-to-expect, is-my-back-pain-serious)
+- [x] Added Physician schema to ESI treatment page + 5 city pages
+- [x] Removed duplicate areaServed entries on 5 city pages
+
+Commit: `481f49a` — 40 files changed
+
+**Local SEO schema expansion (Apr 11, 2026):**
+- [x] Added MedicalBusiness + LocalBusiness schema to 21 pages (9 treatment + 11 condition + insurance) that previously had no location schema
+
+**Local SEO action plan created:**
+- [x] GBP optimization checklist with business description, categories, services, Q&A, photos
+- [x] Citation building checklist (25+ directories with exact NAP)
+- [x] Review acceleration strategy (target: 100+ reviews by month 6)
+- [x] 8 weeks of GBP post content
+- [x] Local backlink opportunity list
+- See `_project/local-seo-action-plan.md` for full details
+
+**Remaining:**
+- [ ] Client to complete GBP optimization (categories, services, photos, Q&A)
+- [ ] Build citations on 25+ directories
+- [ ] Begin weekly GBP posting
+- [ ] Differentiate city page content (need client input for local testimonials)
+- [ ] Update sameAs schema as directory listings are created
+- [ ] Re-run LocalRank scan in 4-6 weeks to measure Maps movement
+- [ ] Month 3 content pack (not yet delivered)
 
 ---
 
@@ -155,6 +185,7 @@ All non-website working files live in `_project/`:
 ```
 _project/
   PROJECT-STATUS.md          ← this file
+  local-seo-action-plan.md   ← GBP, citations, reviews, backlinks strategy
   content-packs/
     month-2/                 ← Mar 2026 content pack (markdowns, specs)
   keyword-research/          ← CSVs: page build plan, keyword matrix, competitor analysis
