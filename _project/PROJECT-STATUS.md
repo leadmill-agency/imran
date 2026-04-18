@@ -157,10 +157,83 @@ Commit: `481f49a` — 40 files changed
 - [x] Local backlink opportunity list
 - See `_project/local-seo-action-plan.md` for full details
 
+**Client call prep (Apr 16, 2026):**
+- [x] GBP side-by-side comparison: Dr. Qureshi vs Silky Patel, MD
+- [x] Month 3 scope proposal (adds GLP-1 weight loss, PRP emphasis, 5 new priority pages)
+- [x] SEO progress report for client call
+- [x] Call agenda with talking points and timing
+- See `_project/call-prep/` for all 4 docs
+
+**Month 3 scope revision (incorporating client feedback from Apr 14 email):**
+- New P1 pages to build: GLP-1 Weight Loss, Lumbar ESI, Cervical ESI, Knee Injection, Shoulder Injection
+- PRP therapy page rewrite + site-wide emphasis
+- 2 new blog posts (GLP-1 education, PRP vs Cortisone)
+- Citation building + review acceleration execution
+
+**GSC / GA4 analysis (Apr 17, 2026):**
+
+Reviewed GSC indexing + GA4 organic query data. Key findings:
+
+**Indexing crisis discovered:**
+- Only 18 of 55 pages indexed (44 site pages + old URLs). 37 not indexed.
+- 24 pages "Discovered — currently not indexed" (Google found them but chose not to index yet)
+- 9 pages returning 404 errors (old Squarespace URLs + pages from keyword plan that were never built)
+- 3 pages with redirect issues
+- 1 page excluded by noindex (this is 404.html — correct/expected)
+
+**Traffic trending up (slowly):**
+- Mar 1-17: 9 clicks / 352 impressions / 2.56% CTR / position 10.98
+- Apr 1-17: 11 clicks / 361 impressions / 3.05% CTR / position 13.46
+- Clicks +22% MoM, CTR +19% MoM
+- New non-brand queries surfacing ("pain specialist near me", "pmr doctor", "dr qureshi pain management")
+- Brand queries ranking positions 2-4
+- 68 total web search clicks since launch
+- FAQ rich results valid on 12 pages
+- HTTPS: 14 valid, 0 issues
+
+**Fixes applied (Apr 17, 2026):**
+- [x] Added 9 redirects to vercel.json for 404 URLs
+  - `/carpal-tunnel/hand-numbness` → `/nerve-pain/neuropathy`
+  - `/failed-back-surgery/spinal-cord-stimulator` → `/treatments/spinal-cord-stimulation`
+  - `/spine-compression-fractures` → `/treatments/kyphoplasty`
+  - `/faq` → `/`
+  - `/elbowpain` → `/sports-injuries`
+  - `/physical-therapy` → `/treatments`
+  - `/home` → `/`
+  - `/new-dropdown` → `/`
+  - `/appointments` → `/contact`
+- [x] Verified noindex tag only on 404.html (correct behavior)
+
+**GBP dashboard audit (Apr 17, 2026):**
+
+Client shared GBP dashboard screenshots. Findings:
+
+**What's been done on GBP:**
+- 4 categories set: Pain management physician (primary), Medical clinic, Pain control clinic, Sports medicine physician
+- Full business description with keyword coverage (procedures, weight loss meds, parking instructions)
+- Accessibility attributes completed
+- Payment attributes completed (NFC, credit, debit, not cash-only)
+- Service options (Hindi, English)
+- Planning: Appointment required
+- 3 named services under primary category: Sports Medicine, Interventional Spine Medicine, Physical Medicine and Rehabilitation
+- CLS Health affiliation visible (cls.health linked)
+- Posting weekly (most recent 4 days ago)
+
+**GBP issues still open:**
+- 🚨 **Website URL points to `cls.health/locations/pain-management-cinco-ranch`, NOT `drimranqureshi.com`** — highest-impact fix, traffic from GBP is going to CLS Health's site
+- No services listed under 3 of 4 categories (Medical clinic, Pain control clinic, Sports medicine physician)
+- Products section is empty
+- All social profiles link to CLS Health's socials, not Dr. Qureshi's own
+- Opening date not set
+- "From the business" section empty (separate from description)
+
 **Remaining:**
-- [ ] Client to complete GBP optimization (categories, services, photos, Q&A)
+- [ ] Client to switch GBP website URL to drimranqureshi.com (highest-impact GBP fix)
+- [ ] Client to add services under remaining 3 categories
+- [ ] Client to add Products section (5-8 treatments with images)
 - [ ] Build citations on 25+ directories
-- [ ] Begin weekly GBP posting
+- [ ] Investigate 24 "Discovered not indexed" pages + request indexing via GSC
+- [ ] Resubmit sitemap to GSC after redirect fixes
 - [ ] Differentiate city page content (need client input for local testimonials)
 - [ ] Update sameAs schema as directory listings are created
 - [ ] Re-run LocalRank scan in 4-6 weeks to measure Maps movement

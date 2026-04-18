@@ -8,6 +8,15 @@
     { "source": "/pain-management-cypress", "destination": "/pain-management-cypress-tx", "permanent": true },
     { "source": "/pain-management-fulshear", "destination": "/pain-management-fulshear-tx", "permanent": true },
     { "source": "/pain-management-richmond", "destination": "/pain-management-richmond-tx", "permanent": true },
-    { "source": "/pain-management-sugar-land", "destination": "/pain-management-sugar-land-tx", "permanent": true }
+    { "source": "/pain-management-sugar-land", "destination": "/pain-management-sugar-land-tx", "permanent": true },
+    { "source": "/carpal-tunnel/hand-numbness", "destination": "/nerve-pain/neuropathy", "permanent": true },
+    { "source": "/failed-back-surgery/spinal-cord-stimulator", "destination": "/treatments/spinal-cord-stimulation", "permanent": true },
+    { "source": "/spine-compression-fractures", "destination": "/treatments/kyphoplasty", "permanent": true },
+    { "source": "/faq", "destination": "/", "permanent": true },
+    { "source": "/elbowpain", "destination": "/sports-injuries", "permanent": true },
+    { "source": "/physical-therapy", "destination": "/treatments", "permanent": true },
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/new-dropdown", "destination": "/", "permanent": true },
+    { "source": "/appointments", "destination": "/contact", "permanent": true }
   ]
 }
