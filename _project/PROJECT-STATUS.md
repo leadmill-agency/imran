@@ -227,17 +227,51 @@ Client shared GBP dashboard screenshots. Findings:
 - Opening date not set
 - "From the business" section empty (separate from description)
 
+**Client call outcomes (Apr 21, 2026):**
+
+Call went well. Client engaged with all recommendations. Key outcomes:
+- ✅ Client updated all pages to be indexed (requested indexing via GSC)
+- ✅ Client switched GBP website URL from cls.health to drimranqureshi.com (biggest single fix)
+- ✅ Month 3 scope confirmed: new pages, review velocity, GBP posting cadence, citations, GBP products
+- ✅ We now have direct GBP access
+- ✅ Client pointed us to https://silkypatelmd.com as reference for homepage FAQ section
+- ✅ Approved us writing + publishing page content; he will review after it's live (faster iteration)
+
+**Directory / citation audit (Apr 21, 2026):**
+
+Researched current citation coverage via Google search. Findings:
+
+**Already listed (confirmed):**
+- Healthgrades ✅
+- Vitals ✅ — but our schema had WRONG URL pointing to a different doctor. Fixed.
+- Doximity ✅
+- CLS Health ✅
+- WebMD ✅ (was not in our schema — added)
+- Healthline FindCare ✅ (was not in our schema — added)
+- Medical News Today Connect ✅ (was not in our schema — added)
+- NPI Database ✅ (automatic via NPI #1467080622)
+- Zocdoc ✅ (per client)
+
+**Not listed yet (priority to claim):**
+- Yelp, RateMDs, CareDash, Sharecare, U.S. News Health, Yellow Pages, Manta, BBB, Angi, Katy Area Chamber of Commerce
+
+**Fixes applied (Apr 21, 2026):**
+- [x] Fixed Vitals sameAs URL across all 41 pages — was pointing to a different doctor (Imran Qureshi, MD, Vascular & Interventional Radiology, Chicago, IL). Now correctly points to DoctorsOfOsteopathy_Imran_Mohammed_Qureshi.html
+- [x] Added WebMD, Healthline FindCare, and Medical News Today Connect URLs to sameAs schema across all 41 pages
+- [x] Built homepage FAQ section with 8 FAQs (patterned after Silky Patel's structure) + FAQPage JSON-LD schema
+- [x] FAQs cover: what pain management doctors do, when to see one, conditions treated, treatments offered, pain management vs surgery, choosing the right doctor, chronic pain help, referrals
+
 **Remaining:**
-- [ ] Client to switch GBP website URL to drimranqureshi.com (highest-impact GBP fix)
-- [ ] Client to add services under remaining 3 categories
-- [ ] Client to add Products section (5-8 treatments with images)
-- [ ] Build citations on 25+ directories
-- [ ] Investigate 24 "Discovered not indexed" pages + request indexing via GSC
+- [ ] Client to add services under remaining 3 categories (Medical clinic, Pain control clinic, Sports medicine physician) — we have GBP access now, can do this ourselves
+- [ ] Client to add Products section (5-8 treatments with images) — we can do this with GBP access
+- [ ] Build citations on remaining 10 directories (Yelp, RateMDs, CareDash, Sharecare, US News, Yellow Pages, Manta, BBB, Angi, Katy Chamber)
 - [ ] Resubmit sitemap to GSC after redirect fixes
 - [ ] Differentiate city page content (need client input for local testimonials)
-- [ ] Update sameAs schema as directory listings are created
+- [ ] Update sameAs schema as new directory listings are created
 - [ ] Re-run LocalRank scan in 4-6 weeks to measure Maps movement
-- [ ] Month 3 content pack (not yet delivered)
+- [ ] Month 3 priority pages: GLP-1 weight loss, Lumbar ESI, Cervical ESI, Knee Injection, Shoulder Injection
+- [ ] Month 3 blog posts: "GLP-1 Medications" + "PRP vs Cortisone"
+- [ ] PRP therapy page rewrite + site-wide emphasis
 
 ---
 
