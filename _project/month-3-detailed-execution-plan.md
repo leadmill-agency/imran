@@ -4,6 +4,48 @@
 
 **Your role:** Agency owner executing solo. This plan assumes ~6-8 hours/day of focused Dr. Qureshi work across 4 weeks.
 
+---
+
+## STATUS UPDATE (last updated Apr 22, 2026)
+
+**🎉 Baseline is encouraging.** April GBP data shows 118 interactions, 42 calls, 45 direction requests, 31 website clicks. GA4 shows organic +52%, direct +175%. Full baseline saved to `_project/baselines-apr-22.md`.
+
+### ✅ Completed Apr 21
+- GBP services updated across all 4 categories
+- 8 GBP Products added with photos + treatment page links
+- GBP Post #1 published
+- Photo gaps identified — client texted with list of missing photos
+
+### ✅ Completed Apr 22
+- GSC sitemap resubmitted
+- "Validate Fix" clicked on 404 report
+- All "Discovered — currently not indexed" pages submitted for indexing
+
+### ⚠️ Removed from scope
+- **Q&A seeding** — client opted out (decision made, no further action)
+
+### ⏸️ Blocked / waiting on Dr. Qureshi
+- **Yelp claim** — needs verification call to office; coordinate with Dr. Qureshi
+- **Manta listing** — same
+- **Yellow Pages** — same
+- **Photos** — texted client list of missing GBP photos, awaiting send
+
+### ▶️ Next up — see updated daily breakdowns below
+
+---
+
+## 🟡 Open Asks of Dr. Qureshi (track these)
+
+| Ask | Why it matters | Status |
+|-----|----------------|--------|
+| Send missing GBP photos | Blocking GBP photo count from reaching 15-20 | Texted Apr 22, awaiting |
+| 30-min clinical briefing for GLP-1 + PRP | Blocking page builds with accurate clinical content | Need to confirm date |
+| Alert front desk to expect verification calls (Yelp/Manta/YP) | Blocking 3+ citation claims | Need to send heads-up |
+| Review GLP-1 + Knee Injection pages within 48 hrs of going live | Required for our agreement (post-publish review) | Will request when pages live |
+| Complete review request system rollout at front desk | Drives review velocity → Maps rank | Will request after handoff package delivered |
+
+**Action: send a single consolidated message to Dr. Qureshi covering all open asks**, rather than fragmenting requests across days.
+
 **Standard NAP for every citation:**
 ```
 Business Name: Dr. Imran Qureshi, D.O.
@@ -53,9 +95,9 @@ Secondary Categories: Sports Medicine Physician, Medical Clinic, Pain Control Cl
 
 **Week 1 Goal:** GBP fully optimized, first 2 new pages live, 5+ citations claimed, review system ready to hand off.
 
-## Monday, Apr 21 — GBP Deep Optimization Day
+## Monday, Apr 21 — GBP Deep Optimization Day ✅ DONE
 
-**Time estimate: 4-5 hours**
+**Time estimate: 4-5 hours** | **Actual completion: ~done with all listed tasks except Q&A (out of scope)**
 
 ### Morning block (2 hours) — GBP Services across all 4 categories
 
@@ -195,9 +237,9 @@ Example — Epidural Steroid Injections:
 
 ---
 
-## Tuesday, Apr 22 — Technical SEO + Citations Kickoff
+## Tuesday, Apr 22 — Technical SEO + Citations Kickoff ✅ PARTIAL
 
-**Time estimate: 4 hours**
+**Time estimate: 4 hours** | **Status: GSC work complete. Citation work blocked on phone verification — Dr. Qureshi must be available to receive Yelp/Manta/YP verification calls.**
 
 ### Morning block (1.5 hours) — GSC cleanup + indexing
 
@@ -252,9 +294,19 @@ Example — Epidural Steroid Injections:
 
 ---
 
-## Wednesday, Apr 23 — Clinical Briefing + First Page Outline
+## Wednesday, Apr 23 — Clinical Briefing + First Page Outline (REVISED)
 
-**Time estimate: 3-4 hours (depends on briefing timing)**
+**Time estimate: 3-4 hours**
+
+### Top of day — coordinate with Dr. Qureshi (15 min)
+
+- [ ] Text/email Dr. Qureshi:
+  > "Two quick things: (1) Can we still do 30 min today or tomorrow for the GLP-1 + PRP clinical briefing? (2) I'm starting Yelp/Manta/Yellow Pages claims this week — they verify by phone call to your office. Can you let your front desk know to expect/pass through verification calls in the next few days? They'll usually say "Yelp is calling for a 4-digit code"."
+- [ ] Confirm date/time for clinical briefing
+- [ ] Add to calendar
+- [ ] Once Dr. Qureshi confirms front desk is alerted → unblock Yelp/Manta/YP for any day this week
+
+### If briefing happens today (preferred)
 
 ### Morning — Clinical briefing (if confirmed)
 
@@ -306,18 +358,27 @@ Example — Epidural Steroid Injections:
   - Link to /regenerative-medicine (related)
   - Link to /treatments (hub)
 
-### Afternoon block (1 hour) — Citations #4-5
+### Afternoon — Citations that DON'T need phone verification
 
-- [ ] **1:30pm** — RateMDs: https://www.ratemds.com/add-listing — create/claim profile
-- [ ] **1:50pm** — Save URL
-- [ ] **1:55pm** — CareDash: https://www.caredash.com/ — create/claim profile
-- [ ] **2:15pm** — Save URL
-- [ ] **2:25pm** — Update `_project/citations-tracker.md` with all 5 claimed profiles
+(While we wait for Dr. Qureshi to alert front desk for Yelp/Manta/YP)
+
+- [ ] **1:30pm** — **NPI Registry** — already auto-listed via NPI #1467080622, just verify the listing is current at https://npiregistry.cms.hhs.gov/
+- [ ] **1:45pm** — **Doctor.com** — claim/update profile (typically email verification, not phone)
+- [ ] **2:00pm** — **Castle Connolly** — submit nomination/listing
+- [ ] **2:15pm** — **Wellness.com** — create profile
+- [ ] **2:30pm** — Update `_project/citations-tracker.md`
+
+### Once Dr. Qureshi confirms front desk is ready
+
+- [ ] Yelp: https://biz.yelp.com (phone verification)
+- [ ] Manta: https://www.manta.com/ (phone verification)
+- [ ] Yellow Pages: https://www.yellowpages.com/ (phone verification)
 
 **End-of-day Wednesday checkpoint:**
-- Clinical briefing completed ✓
+- Clinical briefing completed (or rescheduled) ✓
 - GLP-1 page first draft complete ✓
-- 5 citations in progress ✓
+- 4 phone-verification-free citations claimed ✓
+- Yelp/Manta/YP unblocked once front desk alerted ✓
 
 ---
 
@@ -432,13 +493,24 @@ Example — Epidural Steroid Injections:
   - Goal: 10+ new reviews/month
 - [ ] **10:55am** — Email the handoff package to Dr. Qureshi with a short instruction note
 
-### Midday (1 hour) — GBP Post #2 + Citation #6
+### Midday (1 hour) — GBP Post #2 + Conversion Tracking Setup
 
 - [ ] **11:30am** — Write + publish GBP Post #2:
   > "Did you know that 80-90% of herniated discs can be treated without surgery? Dr. Qureshi offers nonsurgical options including epidural injections, nerve blocks, and PRP therapy. Learn more at drimranqureshi.com or call (281) 982-2144."
   - Link to /blog/nonsurgical-treatment-herniated-disc
-- [ ] **11:45am** — Claim BBB (Better Business Bureau) listing at https://www.bbb.org/get-accredited
-  - Note: BBB may require verification and possibly a paid membership for full listing
+
+- [ ] **11:45am** — **Set up GA4 conversion tracking** (currently 0 key events configured)
+  - Open GA4 → Admin → Events
+  - Mark these as Key Events:
+    - `click` events on `tel:2819822144` (phone calls)
+    - `click` events on lumahealth booking links (book online clicks)
+  - Optionally add a custom event for FAQ clicks if relevant
+  - Without this, we can't measure conversion impact for Month 3 results
+
+- [ ] **12:15pm** — BBB Better Business Bureau (after Yelp/Manta/YP unblocked)
+  - https://www.bbb.org/get-accredited
+  - May require verification + paid accreditation for full listing
+  - If paid required, note in citations tracker, ask client
 
 ### Afternoon (1 hour) — Week 1 wrap + measurement
 
