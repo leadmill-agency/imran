@@ -21,16 +21,74 @@
 - "Validate Fix" clicked on 404 report
 - All "Discovered — currently not indexed" pages submitted for indexing
 
+### ✅ Completed Apr 23
+- **Yelp profile claimed/added**
+- **Manta listing claimed/added**
+- **RateMDs profile claimed/added**
+- **GLP-1 + PRP clinical questions sent to Dr. Qureshi (async)** — awaiting response
+
 ### ⚠️ Removed from scope
-- **Q&A seeding** — client opted out (decision made, no further action)
+- **Q&A seeding** — client opted out
+- **Review acceleration system** — client uses CLS Health's existing review system (good, well-functioning). No need to build a parallel system.
+- **CareDash** — directory has been defunct since 2024, no profile to claim. Removed from citation list.
 
-### ⏸️ Blocked / waiting on Dr. Qureshi
-- **Yelp claim** — needs verification call to office; coordinate with Dr. Qureshi
-- **Manta listing** — same
-- **Yellow Pages** — same
-- **Photos** — texted client list of missing GBP photos, awaiting send
+### ⏸️ Blocked / pending
+- **Yellow Pages** — couldn't add (likely duplicate, claim conflict, or category mismatch). Deferred — try again later or skip if persistent.
+- **Clinical briefing answers** — Dr. Qureshi handling async. Page builds will start once answers are in.
+- **Photos** — still awaiting client send
 
-### ▶️ Next up — see updated daily breakdowns below
+### ▶️ NEXT UP — Productive work while waiting on client async input
+
+While Dr. Qureshi answers GLP-1/PRP questions and sends photos, **don't be blocked** — these tasks don't need him:
+
+**This week (Apr 23-25):**
+- [ ] Set up GA4 conversion tracking (phone clicks, booking link clicks) — critical for Month 3 measurement
+- [ ] Try Yellow Pages claim again (investigate why it failed)
+- [ ] Claim Sharecare profile
+- [ ] Claim Doctor.com profile (email verification)
+- [ ] Submit U.S. News Health (auto-populates if NPI exists)
+- [ ] Claim Wellness.com profile
+- [ ] Update sameAs schema across all 42 pages with the 3 newly claimed profile URLs (Yelp, Manta, RateMDs) — once Rameel saves the actual URLs to citations-tracker.md
+- [ ] Start drafting GLP-1 page (generic sections you don't need client input for)
+- [ ] Start drafting Knee Injection page (less client-input-dependent)
+- [ ] Publish GBP Post #2 (PRP-focused)
+
+**When Dr. Qureshi responds to async questions:**
+- [ ] Fill in placeholder sections of GLP-1 page → publish
+- [ ] Fill in placeholder sections of Knee Injection page → publish
+- [ ] Begin PRP page rewrite with practice-specific outcomes/protocols
+
+---
+
+## 📊 Citations Progress (as of Apr 23)
+
+**Live / claimed (12):**
+1. Healthgrades ✅
+2. Vitals ✅
+3. Doximity ✅
+4. CLS Health ✅
+5. WebMD ✅
+6. Healthline FindCare ✅
+7. Medical News Today Connect ✅
+8. NPI Database ✅ (auto)
+9. Zocdoc ✅
+10. Yelp ✅ NEW
+11. Manta ✅ NEW
+12. RateMDs ✅ NEW
+
+**Removed from list:**
+- CareDash (defunct)
+
+**Still to claim (priority order):**
+1. Sharecare
+2. U.S. News Health
+3. Yellow Pages (retry / investigate blocker)
+4. BBB
+5. Angi
+6. Doctor.com
+7. Castle Connolly
+8. Wellness.com
+9. Katy Area Chamber of Commerce
 
 ---
 
@@ -39,12 +97,13 @@
 | Ask | Why it matters | Status |
 |-----|----------------|--------|
 | Send missing GBP photos | Blocking GBP photo count from reaching 15-20 | Texted Apr 22, awaiting |
-| 30-min clinical briefing for GLP-1 + PRP | Blocking page builds with accurate clinical content | Need to confirm date |
-| Alert front desk to expect verification calls (Yelp/Manta/YP) | Blocking 3+ citation claims | Need to send heads-up |
-| Review GLP-1 + Knee Injection pages within 48 hrs of going live | Required for our agreement (post-publish review) | Will request when pages live |
-| Complete review request system rollout at front desk | Drives review velocity → Maps rank | Will request after handoff package delivered |
+| GLP-1 + PRP clinical answers (async questions) | Blocking page builds with accurate clinical content | Sent Apr 23, awaiting response |
+| Review GLP-1 + Knee Injection pages within 48 hrs of going live | Per our agreement (post-publish review) | Will request when pages live |
 
-**Action: send a single consolidated message to Dr. Qureshi covering all open asks**, rather than fragmenting requests across days.
+**Resolved:**
+- ~~Front desk verification heads-up~~ (Yelp/Manta/RateMDs added successfully)
+- ~~Review request system rollout~~ (using CLS Health's existing system)
+- ~~30-min synchronous briefing~~ (handled async per client preference)
 
 **Standard NAP for every citation:**
 ```
@@ -458,59 +517,57 @@ Example — Epidural Steroid Injections:
 
 ---
 
-## Friday, Apr 25 — Review System + Week Wrap-up
+## Friday, Apr 25 — Page Drafts + Conversion Tracking + Week Wrap-up
 
-**Time estimate: 3-4 hours**
+**Time estimate: 4-5 hours**
 
-### Morning block (2 hours) — Review Acceleration System
+*Review Acceleration System REMOVED — client uses CLS Health's existing review system. Time freed up for content + tracking.*
 
-- [ ] **9:00am** — Generate Google review short link for the practice:
-  - Go to GBP dashboard → "Get more reviews"
-  - Copy the short link (format: g.page/r/xxxxx)
-- [ ] **9:10am** — Generate QR code from the short link:
-  - Use qrcode-monkey.com or canva.com
-  - Create a print-ready 300dpi version
-- [ ] **9:25am** — Design 3 physical pieces for the front desk:
-  - Small table tent card (4x6") — "Loved your visit? Scan to review us on Google!"
-  - Poster (8.5x11") for wall — same message with larger QR
-  - Business card-size version for receptionists to hand to patients
-  - Save all 3 as PDFs in `_project/review-system/`
-- [ ] **10:00am** — Draft text/SMS template:
-  > "Hi [Patient Name], thank you for visiting Dr. Qureshi today! If you had a good experience, we'd really appreciate a quick Google review. It helps other patients in Katy find us: [short-link]. Thanks! — Dr. Qureshi's team"
-- [ ] **10:10am** — Draft email template (longer version):
-  > Subject: How was your visit with Dr. Qureshi?
-  > Hi [Patient Name], Thank you for visiting us today. We hope you felt heard, well-cared-for, and left with a clear plan for your pain management. If you had a positive experience, we'd be grateful if you'd take 30 seconds to leave us a Google review. Your honest feedback helps other patients in Katy find care when they need it most. [review button link] We also welcome any direct feedback — just reply to this email. Thank you, The Team at Dr. Imran Qureshi, D.O.
-- [ ] **10:25am** — Draft front-desk verbal script (for in-person):
-  > "Thank you for coming in today! If you had a good experience with Dr. Qureshi, would you be willing to leave a quick Google review? I can text you the link if it's easier — it takes about 30 seconds and really helps other patients in Katy find us."
-- [ ] **10:40am** — Create a single handoff document: `_project/review-system/handoff-package.md` with:
-  - The short link
-  - The QR code (PNG embedded or attached)
-  - Print-ready PDFs for table tent + poster + business card
-  - Text/SMS template
-  - Email template
-  - Front-desk script
-  - Response protocol (thank positive, acknowledge negative within 24hrs)
-  - Goal: 10+ new reviews/month
-- [ ] **10:55am** — Email the handoff package to Dr. Qureshi with a short instruction note
+### Morning block (2 hours) — Start GLP-1 page draft (even without all client answers)
 
-### Midday (1 hour) — GBP Post #2 + Conversion Tracking Setup
+You can begin drafting based on what you already know about GLP-1 medications. Once Dr. Qureshi sends his async answers, you'll refine the practice-specific sections (pricing, protocol, intake).
+
+- [ ] **9:00am** — Open `/treatments/trigger-point-injections.html` as template, save as `/treatments/glp-1-weight-loss.html`
+- [ ] **9:15am** — Update head section (placeholder for now):
+  - Title: "Medical Weight Loss with GLP-1 Medications in Katy, TX | Dr. Imran Qureshi"
+  - Meta description, canonical, OG tags
+  - MedicalProcedure schema
+  - FAQPage schema (placeholder Qs, will fill once client answers)
+- [ ] **9:45am** — Write generic-but-accurate sections (no client-specific info needed):
+  - What are GLP-1 medications? (mechanism, history, FDA approval)
+  - Conditions GLP-1 treats (obesity, type 2 diabetes adjacent)
+  - How GLP-1 works in the body (biology)
+  - Side effects to know (general)
+- [ ] **10:30am** — Leave placeholders marked `[CLIENT ANSWER NEEDED]` for:
+  - Specific medications offered (Semaglutide vs Tirzepatide brand names)
+  - Pricing
+  - Intake protocol
+  - Eligibility criteria
+  - Lifestyle/nutrition support included
+- [ ] **10:45am** — Save to draft, do NOT publish yet
+
+### Midday (1.5 hours) — GBP Post #2 + Conversion Tracking + More Citations
 
 - [ ] **11:30am** — Write + publish GBP Post #2:
   > "Did you know that 80-90% of herniated discs can be treated without surgery? Dr. Qureshi offers nonsurgical options including epidural injections, nerve blocks, and PRP therapy. Learn more at drimranqureshi.com or call (281) 982-2144."
   - Link to /blog/nonsurgical-treatment-herniated-disc
 
-- [ ] **11:45am** — **Set up GA4 conversion tracking** (currently 0 key events configured)
+- [ ] **11:45am** — **Set up GA4 conversion tracking** (currently 0 key events — critical for Month 3 measurement)
   - Open GA4 → Admin → Events
   - Mark these as Key Events:
-    - `click` events on `tel:2819822144` (phone calls)
+    - `click` events on `tel:2819822144` (phone calls — biggest conversion signal)
     - `click` events on lumahealth booking links (book online clicks)
-  - Optionally add a custom event for FAQ clicks if relevant
-  - Without this, we can't measure conversion impact for Month 3 results
+  - Optionally: scroll depth events on key treatment pages
+  - Without this, we can't tie traffic back to appointment-driving actions
 
-- [ ] **12:15pm** — BBB Better Business Bureau (after Yelp/Manta/YP unblocked)
-  - https://www.bbb.org/get-accredited
-  - May require verification + paid accreditation for full listing
-  - If paid required, note in citations tracker, ask client
+- [ ] **12:30pm** — Try **Yellow Pages** again
+  - https://www.yellowpages.com/claim
+  - If still blocked, document the specific error in citations-tracker
+  - If conflict with existing listing → submit a "claim ownership" request
+  - If category mismatch → try generic "Physicians & Surgeons"
+
+- [ ] **12:50pm** — **Sharecare** profile claim/create
+  - https://www.sharecare.com/doctor-add
 
 ### Afternoon (1 hour) — Week 1 wrap + measurement
 
@@ -877,18 +934,28 @@ Example — Epidural Steroid Injections:
 # SUCCESS METRICS (measure at end of month)
 
 **Must-hit:**
-- [ ] 5 new treatment pages live and indexed
-- [ ] 2 new blog posts live and indexed
+- [x] GBP: 4 categories ✅, services across all ✅, 8 products ✅
+- [ ] 5 new treatment pages live and indexed (GLP-1, Lumbar ESI, Cervical ESI, Knee Injection, Shoulder Injection)
+- [ ] 2 new blog posts live and indexed (GLP-1 educational, PRP vs Cortisone)
 - [ ] PRP page significantly expanded
-- [ ] 10+ new citations live
-- [ ] GBP: all 4 categories with services, 8 products, 5+ posts, Q&A seeded
+- [ ] 8+ new citations claimed (12 already live + 6-8 to go = 18+ total)
+- [ ] GBP: 5+ posts in May
+- [ ] GA4 conversion tracking configured
 
-**Nice-to-hit (stretch):**
-- [ ] Review count 80+ (from 58)
-- [ ] #1 ranking for at least 2 branded queries
-- [ ] Top 3 for "trigger point injections katy" and "kyphoplasty katy"
-- [ ] Maps ranking improvement on 3+ keywords
-- [ ] Measurable increase in GBP-sourced calls
+**Stretch — the appointment-volume goals (compare to April baseline):**
+- [ ] **GBP calls May vs April baseline of 42:** target 60+
+- [ ] **GBP direction requests vs 45 baseline:** target 65+
+- [ ] **GBP website clicks vs 31 baseline:** target 50+
+- [ ] **GBP profile interactions vs 118 baseline:** target 175+
+- [ ] **GA4 weekly sessions vs 45 baseline:** target 80+
+- [ ] **#1 ranking for branded queries** ("dr imran qureshi", "imran qureshi do katy")
+- [ ] **Top 3 for low-competition procedures** (trigger point injections katy, kyphoplasty katy, discography katy)
+- [ ] **Maps improvement on 3+ keywords** vs Apr 9 LocalRank baseline
+
+**Removed from scope:**
+- ~~Review count 80+~~ (client uses CLS Health's existing review system; we don't need to drive additional reviews — but the existing system likely will still grow the count organically)
+
+**The headline number for the client:** GBP calls + direction requests in May vs April. This is the most direct measurement of "did SEO work drive appointments." Strong April baseline (42 calls, 45 directions). 30-50% growth would be a clear win.
 
 **Month 4 readiness:**
 - [ ] Results report delivered to client
