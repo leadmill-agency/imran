@@ -261,17 +261,41 @@ Researched current citation coverage via Google search. Findings:
 - [x] Built homepage FAQ section with 8 FAQs (patterned after Silky Patel's structure) + FAQPage JSON-LD schema
 - [x] FAQs cover: what pain management doctors do, when to see one, conditions treated, treatments offered, pain management vs surgery, choosing the right doctor, chronic pain help, referrals
 
-**Remaining:**
-- [ ] Client to add services under remaining 3 categories (Medical clinic, Pain control clinic, Sports medicine physician) — we have GBP access now, can do this ourselves
-- [ ] Client to add Products section (5-8 treatments with images) — we can do this with GBP access
-- [ ] Build citations on remaining 10 directories (Yelp, RateMDs, CareDash, Sharecare, US News, Yellow Pages, Manta, BBB, Angi, Katy Chamber)
-- [ ] Resubmit sitemap to GSC after redirect fixes
+**Apr 23 progress:**
+- [x] GBP services across all 4 categories ✅
+- [x] 8 GBP Products live ✅
+- [x] GSC sitemap resubmitted, all "Discovered – not indexed" pages submitted for indexing ✅
+- [x] Yelp, Manta, RateMDs claimed ✅ (12 citations now live)
+- [x] GLP-1 + PRP clinical questions sent to Dr. Qureshi (async)
+
+**Apr 23 — NEW WORKSTREAM ADDED: AI Overview / E-E-A-T retrofit**
+
+Client provided ChatGPT deep research report (`_project/medical_ai_overview_seo_playbook.md`) on Google AI Overview ranking for medical sites. We did a content audit (`_project/eeat-content-audit-apr-23.md`) — current site scores 5.2/10 on E-E-A-T, below AI Overview eligibility threshold.
+
+New tasks added to Month 3 plan (~20 hours total):
+- [ ] Build `/medical-disclaimer` and `/editorial-policy` standalone trust pages
+- [ ] Add "Medically reviewed by Dr. Imran Qureshi, D.O. | Last reviewed: [date]" byline to 18 condition + treatment pages
+- [ ] Add 3-5 external authority citations (Mayo Clinic, NIH, MedlinePlus, Cleveland Clinic) per page
+- [ ] Enhance `/about` with full credentials, board cert, fellowship details
+- [ ] Restructure condition page openings with 75-125 word answer-first blocks
+- [ ] Apply playbook template to all new Month 3 content from start
+
+**Removed from scope:**
+- ~~Review acceleration system~~ (CLS Health has one)
+- ~~Q&A seeding on GBP~~ (client opted out)
+- ~~CareDash citation~~ (defunct directory)
+
+**Remaining content + technical:**
+- [ ] Client to send missing GBP photos
+- [ ] Build citations on remaining 6-8 directories (Sharecare, US News, Doctor.com, Castle Connolly, Wellness.com, BBB, Angi, Katy Chamber)
+- [ ] Yellow Pages retry (couldn't claim Apr 23)
 - [ ] Differentiate city page content (need client input for local testimonials)
-- [ ] Update sameAs schema as new directory listings are created
-- [ ] Re-run LocalRank scan in 4-6 weeks to measure Maps movement
-- [ ] Month 3 priority pages: GLP-1 weight loss, Lumbar ESI, Cervical ESI, Knee Injection, Shoulder Injection
+- [ ] Update sameAs schema with new directory listings
+- [ ] Re-run LocalRank scan in 4-6 weeks
+- [ ] Month 3 priority pages: GLP-1, Lumbar ESI, Cervical ESI, Knee Injection, Shoulder Injection
 - [ ] Month 3 blog posts: "GLP-1 Medications" + "PRP vs Cortisone"
-- [ ] PRP therapy page rewrite + site-wide emphasis
+- [ ] PRP page rewrite + site-wide emphasis
+- [ ] GA4 conversion tracking setup (currently 0 key events)
 
 ---
 

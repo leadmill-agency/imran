@@ -37,6 +37,26 @@
 - **Clinical briefing answers** — Dr. Qureshi handling async. Page builds will start once answers are in.
 - **Photos** — still awaiting client send
 
+### 🆕 NEW WORKSTREAM ADDED Apr 23 — AI Overview / E-E-A-T Retrofit
+
+We received a deep research report on Google AI Overview ranking for medical sites. Key insight: **medical content needs visible physician authorship + external authority citations to be eligible for AI Overview citation.** Our content audit (`_project/eeat-content-audit-apr-23.md`) shows current site scores 5.2/10 — below the eligibility threshold.
+
+**Top 5 changes that move us to 8+/10 in 4-5 days of work:**
+
+1. Add "Medically reviewed by Dr. Imran Qureshi, D.O. | Last reviewed: [date]" byline to all 18 condition + treatment pages (effort: 2/10, impact: HIGH)
+2. Add 3-5 external authority citations per page (Mayo, NIH, MedlinePlus, Cleveland Clinic) (effort: 3/10, impact: HIGH)
+3. Create standalone `/medical-disclaimer` page (effort: 2/10, impact: MEDIUM)
+4. Create standalone `/editorial-policy` page (effort: 2/10, impact: MEDIUM)
+5. Enhance `/about` page with detailed credentials, board certs, fellowships (effort: 2/10, impact: MEDIUM)
+
+**Plus a structural shift:** Rewrite condition page openings with 75-125 word answer-first block (effort: 4/10).
+
+**Apply to new Month 3 content from the start** — GLP-1, Lumbar ESI, Cervical ESI, Knee Injection, Shoulder Injection should all use the new template so they don't need retrofitting later.
+
+Full details in section labeled "WEEK X — AI OVERVIEW RETROFIT" below.
+
+---
+
 ### ▶️ NEXT UP — Productive work while waiting on client async input
 
 While Dr. Qureshi answers GLP-1/PRP questions and sends photos, **don't be blocked** — these tasks don't need him:
@@ -942,6 +962,14 @@ You can begin drafting based on what you already know about GLP-1 medications. O
 - [ ] GBP: 5+ posts in May
 - [ ] GA4 conversion tracking configured
 
+**AI Overview / E-E-A-T (added Apr 23):**
+- [ ] Site E-E-A-T score 8+/10 (from baseline 5.2 — see `_project/eeat-content-audit-apr-23.md`)
+- [ ] All 18 main pages have visible "Medically reviewed by" byline
+- [ ] All 18 main pages have 3+ external authority citations
+- [ ] `/medical-disclaimer` and `/editorial-policy` pages live
+- [ ] Enhanced `/about` page with full credentials
+- [ ] Establish baseline for AI Overview citations (manual check on 10-15 target queries)
+
 **Stretch — the appointment-volume goals (compare to April baseline):**
 - [ ] **GBP calls May vs April baseline of 42:** target 60+
 - [ ] **GBP direction requests vs 45 baseline:** target 65+
@@ -964,4 +992,262 @@ You can begin drafting based on what you already know about GLP-1 medications. O
 
 ---
 
-**Total time estimate for entire plan:** ~80-100 hours across 4 weeks = ~20-25 hours/week. Doable as a focused engagement.
+# AI OVERVIEW / E-E-A-T RETROFIT WORKSTREAM (NEW — Apr 23)
+
+**Goal:** Move site E-E-A-T score from 5.2/10 → 8+/10 to qualify for AI Overview citation in medical queries. ~4-5 days of focused work, no client clinical input required.
+
+Full audit findings: `_project/eeat-content-audit-apr-23.md`
+Reference playbook: `_project/medical_ai_overview_seo_playbook.md`
+
+## Sub-workstream 1: Trust Pages (Day 1, ~3 hours)
+
+### Build `/medical-disclaimer.html`
+
+- [ ] Use `/insurance.html` as structural template (similar single-purpose page)
+- [ ] Sections to include:
+  - Purpose of the disclaimer (educational content, not medical advice)
+  - Author credentials (Dr. Imran Qureshi, D.O. — Board-Certified)
+  - Editorial review process
+  - "When to seek emergency care" (red-flag list)
+  - Last updated date
+  - Contact information
+- [ ] Schema: `WebPage` + `Physician` (Dr. Qureshi as author)
+- [ ] Add to sitemap.xml with priority 0.5
+- [ ] Add link to footer Disclaimers/Legal area on all 42 pages
+
+### Build `/editorial-policy.html`
+
+- [ ] Sections:
+  - Editorial review process — every medical page reviewed by Dr. Qureshi
+  - Source standards — list approved sources (Mayo, NIH, MedlinePlus, Cleveland Clinic, Johns Hopkins, peer-reviewed studies)
+  - Update cadence — pages reviewed at minimum annually
+  - Fact-checking process
+  - How we handle medical uncertainty
+  - Contact for medical concerns
+- [ ] Schema: `WebPage` + `Physician`
+- [ ] Add to sitemap.xml with priority 0.5
+- [ ] Add link to footer alongside disclaimer
+
+### Enhance `/about.html`
+
+- [ ] Add "Education & Credentials" section with:
+  - Medical school + year
+  - Residency program + year (PM&R)
+  - Fellowship program + year (Interventional Spine & Sports Medicine)
+- [ ] Add "Board Certifications" prominent block:
+  - Board-Certified, Physical Medicine & Rehabilitation
+  - Any subspecialty boards
+- [ ] Add "Professional Memberships" list (need from client, but research likely ones: NASS, ACOFP, AAPM&R, etc.)
+- [ ] Add "Areas of Expertise" detailed list
+- [ ] Update Physician schema with `hasCredential` array
+
+## Sub-workstream 2: Site-wide Byline + Reviewer Block (Day 2, ~4 hours)
+
+### Standard byline component
+
+Add this HTML block near the top of every condition + treatment page (right after H1 / breadcrumb):
+
+```html
+<div class="medical-review-block">
+  <div class="reviewer">
+    <strong>Medically reviewed by:</strong>
+    <a href="/about">Dr. Imran Qureshi, D.O.</a>
+  </div>
+  <div class="credentials">Board-Certified Interventional Spine &amp; Sports Medicine Physician</div>
+  <div class="last-reviewed">Last reviewed: April 2026</div>
+</div>
+```
+
+Plus matching CSS in each page's inline `<style>` block.
+
+### Schema update
+
+Update Article / MedicalProcedure schema on each page to include:
+```json
+"reviewedBy": {
+  "@type": "Physician",
+  "@id": "https://drimranqureshi.com/#physician",
+  "name": "Imran Qureshi, D.O."
+},
+"dateModified": "2026-04-30"
+```
+
+### Pages to update (18 total)
+
+**Condition pages (11):**
+- [ ] /low-back-pain
+- [ ] /bulging/herniated-discs
+- [ ] /nerve-pain/neuropathy
+- [ ] /neck-pain-and-arm-numbness
+- [ ] /knee-pain/arthritis
+- [ ] /hip-pain/arthritis
+- [ ] /shoulder-injuries/pain
+- [ ] /sacroiliac-si-joint-pain
+- [ ] /sports-injuries
+- [ ] /regenerative-medicine
+- [ ] /imaging
+
+**Treatment pages (9):**
+- [ ] /treatments/epidural-steroid-injections
+- [ ] /treatments/radiofrequency-ablation
+- [ ] /treatments/nerve-blocks
+- [ ] /treatments/prp-therapy
+- [ ] /treatments/spinal-cord-stimulation
+- [ ] /treatments/joint-injections
+- [ ] /treatments/trigger-point-injections
+- [ ] /treatments/kyphoplasty
+- [ ] /treatments/discography
+
+**Already done (recent blogs have author bylines):**
+- ✅ /blog/nonsurgical-treatment-herniated-disc
+- ✅ /blog/epidural-steroid-injection-side-effects
+
+**Apply consistently to other blog posts during retrofit:**
+- [ ] /blog/back-pain-surgery-vs-injection
+- [ ] /blog/epidural-steroid-injection-what-to-expect
+- [ ] /blog/is-my-back-pain-serious
+- [ ] /blog/prp-therapy-for-joint-pain
+- [ ] /blog/radiofrequency-ablation-guide
+- [ ] /blog/what-is-radiofrequency-ablation
+- [ ] /blog/when-to-see-a-pain-specialist
+
+## Sub-workstream 3: External Authority Citations (Day 3, ~5 hours)
+
+### Approach
+
+For each of 18 main pages, identify 3-5 medical claims that would benefit from citation, then add inline links to authoritative sources.
+
+### Priority sources by topic
+
+| Topic | Best Source |
+|-------|-------------|
+| Sciatica / nerve pain | Mayo Clinic, MedlinePlus, Cleveland Clinic |
+| Herniated disc | Mayo Clinic, Johns Hopkins, NIH |
+| Spinal stenosis | Cleveland Clinic, AAOS |
+| Arthritis | Arthritis Foundation, NIH NIAMS |
+| Epidural injections | NASS guidelines, Cochrane reviews |
+| RFA | NASS, Cochrane |
+| PRP | NIH studies, peer-reviewed sports medicine journals |
+| Kyphoplasty | Mayo Clinic, AANS |
+
+### Source URLs to bookmark (for re-use)
+
+```
+Mayo Clinic — Sciatica:        https://www.mayoclinic.org/diseases-conditions/sciatica/symptoms-causes/syc-20377435
+Mayo Clinic — Herniated Disk:  https://www.mayoclinic.org/diseases-conditions/herniated-disk/diagnosis-treatment/drc-20354101
+Cleveland Clinic — Sciatica:   https://my.clevelandclinic.org/health/diseases/12792-sciatica
+Cleveland Clinic — Low Back:   https://my.clevelandclinic.org/health/diseases/7936-lower-back-pain
+MedlinePlus — Sciatica:        https://medlineplus.gov/sciatica.html
+Johns Hopkins — Low Back:      https://www.hopkinsmedicine.org/health/conditions-and-diseases/back-pain/low-back-pain
+```
+
+### Process per page
+
+1. Read the page's body content
+2. Identify 3-5 statistical or clinical claims (e.g., "85-90% improve without surgery")
+3. Find a matching source from the bookmarked list above (or research)
+4. Wrap the claim with `<a href="...">claim text</a>` linking to the source
+5. Add `rel="nofollow noopener"` to external links if SEO best practice prefers
+6. Move on
+
+### Time estimate
+
+- 18 pages × ~15 min each = ~4.5 hours
+- Plus 30 min initial source research
+
+## Sub-workstream 4: Answer-First Block Restructure (Day 4, ~6 hours)
+
+For each condition + treatment page, replace the first paragraph with a 75-125 word direct answer block that targets the implied patient query.
+
+### Template
+
+```html
+<div class="answer-block">
+  <p>[75-125 word direct answer that:
+    - Answers the implied patient question in plain language
+    - Sets honest expectations (avoids overpromising)
+    - Notes urgency thresholds where relevant
+    - Mentions Dr. Qureshi / Katy office naturally
+    - Does NOT lead with marketing language
+  ]</p>
+</div>
+```
+
+### Examples
+
+**`/low-back-pain` — current opening:**
+> "Low back pain affects up to 80% of adults at some point in their lives..."
+
+**`/low-back-pain` — new answer-first block:**
+> "Most low back pain improves with non-surgical treatment, especially when caused by muscle strain, mild disc bulges, or facet joint inflammation. Pain that includes leg weakness, loss of bladder or bowel control, or worsening numbness should be evaluated immediately. At Dr. Imran Qureshi's Katy, TX office, the goal is to find the specific cause of your pain — through physical exam, imaging, and sometimes diagnostic injections — then match treatment to the cause. Common options include epidural steroid injections, nerve blocks, radiofrequency ablation, and physical therapy."
+
+### Pages to update (in priority order)
+
+1. /low-back-pain (highest traffic)
+2. /bulging/herniated-discs
+3. /nerve-pain/neuropathy
+4. /neck-pain-and-arm-numbness
+5. /knee-pain/arthritis
+6. /sacroiliac-si-joint-pain
+7. /hip-pain/arthritis
+8. /shoulder-injuries/pain
+9. /sports-injuries
+10. /regenerative-medicine
+11. /imaging
+12-20. All 9 treatment pages
+
+### Time estimate
+
+- 20 pages × ~15-20 min each = ~5-6 hours
+
+## Sub-workstream 5: H2 Heading Refactor (Day 5, ~4 hours, OPTIONAL/STRETCH)
+
+Convert clinical-label H2s to question-based patient H2s on the highest-traffic pages.
+
+### Examples
+
+| Current (clinical label) | New (patient question) |
+|--------------------------|-----------------------|
+| "Conditions Treated" | "What conditions does this treat?" |
+| "Treatment Options" | "What treatments help?" |
+| "Procedure Overview" | "How does the procedure work?" |
+| "Recovery" | "What does recovery look like?" |
+| "Risks and Side Effects" | "What are the risks?" |
+
+### Priority pages (top 5 by traffic)
+
+1. /low-back-pain
+2. /bulging/herniated-discs
+3. /treatments/epidural-steroid-injections
+4. /nerve-pain/neuropathy
+5. /treatments/radiofrequency-ablation
+
+(This sub-workstream is optional. The first 4 sub-workstreams provide most of the impact. H2 refactor adds polish but not strict eligibility lift.)
+
+## Apply to NEW Month 3 Content From Day 1
+
+The 5 new pages we're building this month should use the upgraded template:
+
+- [ ] **GLP-1 weight loss page** — answer-first block, byline, citations to FDA / Mayo / NIH for GLP-1 efficacy
+- [ ] **Knee Injection page** — answer-first, byline, citations to AAOS / Arthritis Foundation
+- [ ] **Lumbar ESI page** — answer-first, byline, citations to NASS guidelines
+- [ ] **Cervical ESI page** — same
+- [ ] **Shoulder Injection page** — answer-first, byline, AAOS citations
+
+Plus the 2 new blog posts use the playbook's blog template (Quick answer → Key takeaways → Q-based H2s → FAQ → Sources → Disclaimer).
+
+---
+
+## Updated Week-by-Week Plan (Incorporating AI Overview Workstream)
+
+| Week | Original Focus | Added AI Overview Tasks |
+|------|---------------|------------------------|
+| W1 (Apr 21-25) | GBP push, indexing, citations, GLP-1 + Knee outlines | Build `/medical-disclaimer` + `/editorial-policy` (Friday afternoon) |
+| W2 (Apr 28 – May 2) | 3 ESI/Shoulder pages, PRP rewrite, 2 blog posts | Add bylines + citations to all new pages from start; retrofit `/about` |
+| W3 (May 5-9) | sameAs schema batch, city differentiation, GBP posts | Site-wide byline retrofit on 18 main pages; external citation pass |
+| W4 (May 12-16) | Measurement + results report | Answer-first block restructure on top 11 pages |
+| W5 (May 17-20) | Wrap-up + Month 4 prep | Optional H2 refactor on top 5 pages |
+
+---
+
+**Total time estimate for entire plan:** ~80-100 hours across 4 weeks = ~20-25 hours/week. With the AI Overview workstream added (~20 hours), bumps to ~100-120 total = ~25-30 hrs/week. Removed review system saves ~5 hours, so net adds ~15 hours.
