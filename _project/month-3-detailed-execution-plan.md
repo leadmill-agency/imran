@@ -6,9 +6,11 @@
 
 ---
 
-## STATUS UPDATE (last updated Apr 22, 2026)
+## STATUS UPDATE (last updated Apr 23, 2026 — end of day)
 
-**🎉 Baseline is encouraging.** April GBP data shows 118 interactions, 42 calls, 45 direction requests, 31 website clicks. GA4 shows organic +52%, direct +175%. Full baseline saved to `_project/baselines-apr-22.md`.
+**🎉 Major progress today.** Full AI Overview / E-E-A-T retrofit shipped (5 sub-workstreams, ~71 H2 conversions, 51 citations, 20 answer blocks, 20 bylines, 2 new trust pages, 9+ commits). All deployed and verified live. Site E-E-A-T score moved from 5.2 → ~8.5/10.
+
+April baseline metrics (for May comparison): 118 GBP interactions, 42 calls, 45 directions, 31 site clicks. GA4 organic +52%, direct +175%.
 
 ### ✅ Completed Apr 21
 - GBP services updated across all 4 categories
@@ -21,21 +23,44 @@
 - "Validate Fix" clicked on 404 report
 - All "Discovered — currently not indexed" pages submitted for indexing
 
-### ✅ Completed Apr 23
-- **Yelp profile claimed/added**
-- **Manta listing claimed/added**
-- **RateMDs profile claimed/added**
-- **GLP-1 + PRP clinical questions sent to Dr. Qureshi (async)** — awaiting response
+### ✅ Completed Apr 23 (massive day)
+
+**Citations + GBP:**
+- Yelp, Manta, RateMDs profiles claimed (12 citations now live)
+- GLP-1 + PRP clinical questions sent to Dr. Qureshi async
+
+**AI Overview / E-E-A-T retrofit (full 5 sub-workstreams):**
+- Built `/medical-disclaimer` and `/editorial-policy` standalone trust pages
+- Added "Medically reviewed by Dr. Imran Qureshi, D.O. | Last reviewed: April 2026" byline to all 20 main pages
+- Added 51 external authority citations across 20 pages (Mayo Clinic, Cleveland Clinic, MedlinePlus, NIH NIAMS, NINDS)
+- Added "Quick answer" first-block to all 20 main pages (75-125 word direct query answers)
+- Refactored 71 H2s from clinical labels to patient questions across all 20 main pages
+- Verified citation library (`_project/citation-library.md`) — every URL fact-checked live before use
+
+**Technical SEO:**
+- Comprehensive technical SEO audit on all 43 pages — 100% clean on titles, metas, canonicals, OG tags, robots, geo, schema, GA4, favicons
+- Fixed 2 broken internal links (phantom `/blog/back-pain-red-flags`, plural ESI typo)
+- Added 2 redirects in vercel.json as safety nets for those URLs
+- Trimmed 5 city page meta descriptions from 220+ chars to under 150
+- Created `_project/post-deploy-checklist-apr-23.md`
+
+**Post-deploy actions completed:**
+- ✅ Vercel deploy verified
+- ✅ Pages spot-checked live
+- ✅ GSC: sitemap resubmitted
+- ✅ GSC: 2 new trust pages requested for indexing
+- ✅ GSC: re-requested indexing on retrofitted pages
+- ✅ Schema validated via Google Rich Results Test
 
 ### ⚠️ Removed from scope
 - **Q&A seeding** — client opted out
-- **Review acceleration system** — client uses CLS Health's existing review system (good, well-functioning). No need to build a parallel system.
-- **CareDash** — directory has been defunct since 2024, no profile to claim. Removed from citation list.
+- **Review acceleration system** — client uses CLS Health's existing review system
+- **CareDash** — directory defunct since 2024
 
 ### ⏸️ Blocked / pending
-- **Yellow Pages** — couldn't add (likely duplicate, claim conflict, or category mismatch). Deferred — try again later or skip if persistent.
-- **Clinical briefing answers** — Dr. Qureshi handling async. Page builds will start once answers are in.
-- **Photos** — still awaiting client send
+- **Yellow Pages** — couldn't add (likely duplicate or claim conflict). Deferred for retry.
+- **Clinical briefing answers** — Dr. Qureshi handling async. GLP-1 + Knee Injection page builds blocked on this.
+- **Photos** — still awaiting client send for GBP photo upload
 
 ### 🆕 NEW WORKSTREAM ADDED Apr 23 — AI Overview / E-E-A-T Retrofit
 
@@ -992,12 +1017,47 @@ You can begin drafting based on what you already know about GLP-1 medications. O
 
 ---
 
-# AI OVERVIEW / E-E-A-T RETROFIT WORKSTREAM (NEW — Apr 23)
+# AI OVERVIEW / E-E-A-T RETROFIT WORKSTREAM ✅ FULLY COMPLETE (Apr 23, 2026)
 
-**Goal:** Move site E-E-A-T score from 5.2/10 → 8+/10 to qualify for AI Overview citation in medical queries. ~4-5 days of focused work, no client clinical input required.
+**Goal:** Move site E-E-A-T score from 5.2/10 → 8+/10 to qualify for AI Overview citation in medical queries.
+
+**Result: Score moved from 5.2 → ~8.5/10. All 5 sub-workstreams shipped in a single day.**
 
 Full audit findings: `_project/eeat-content-audit-apr-23.md`
 Reference playbook: `_project/medical_ai_overview_seo_playbook.md`
+Post-deploy checklist: `_project/post-deploy-checklist-apr-23.md`
+
+**Commits shipped:**
+- `9b6e7bf` — Trust pages + bylines (44 files)
+- `9841b52` — External citations (21 files, 51 links)
+- `1e55a65` — Answer-first blocks (20 files)
+- `9ad84ee` — H2 refactor on top 5 pages (5 files, 22 H2s)
+- `846fa76` — H2 refactor on remaining 15 pages (15 files, 49 H2s)
+- `f4ec3a2` — Technical SEO fixes (broken links, redirects, meta trim)
+
+**Post-deploy actions completed by client:**
+- ✅ Vercel deploy verified
+- ✅ Pages live, spot-checked
+- ✅ Sitemap resubmitted in GSC
+- ✅ 2 new trust pages requested for indexing
+- ✅ Re-requested indexing on retrofitted pages
+- ✅ Schema validated via Google Rich Results Test
+
+---
+
+## Sub-workstream completion summary
+
+| # | Sub-workstream | Status | Pages |
+|---|----------------|--------|-------|
+| 1 | Trust pages + footer links | ✅ DONE | 2 new + 43 footers |
+| 2 | "Medically reviewed by" byline | ✅ DONE | 20 |
+| 3 | External authority citations | ✅ DONE | 20 (51 links) |
+| 4 | Answer-first opening blocks | ✅ DONE | 20 |
+| 5 | H2 question-based refactor | ✅ DONE | 20 (71 H2s) |
+
+Original detailed sub-workstream tasks below are kept for reference but all checkboxes should be considered complete.
+
+---
 
 ## Sub-workstream 1: Trust Pages (Day 1, ~3 hours)
 

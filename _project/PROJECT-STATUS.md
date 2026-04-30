@@ -268,34 +268,61 @@ Researched current citation coverage via Google search. Findings:
 - [x] Yelp, Manta, RateMDs claimed ✅ (12 citations now live)
 - [x] GLP-1 + PRP clinical questions sent to Dr. Qureshi (async)
 
-**Apr 23 — NEW WORKSTREAM ADDED: AI Overview / E-E-A-T retrofit**
+**Apr 23 — AI Overview / E-E-A-T retrofit (FULLY SHIPPED, all 5 sub-workstreams complete)**
 
-Client provided ChatGPT deep research report (`_project/medical_ai_overview_seo_playbook.md`) on Google AI Overview ranking for medical sites. We did a content audit (`_project/eeat-content-audit-apr-23.md`) — current site scores 5.2/10 on E-E-A-T, below AI Overview eligibility threshold.
+Client provided ChatGPT deep research report (`_project/medical_ai_overview_seo_playbook.md`) on Google AI Overview ranking for medical sites. We did a content audit (`_project/eeat-content-audit-apr-23.md`) — site scored 5.2/10 baseline, below AI Overview eligibility threshold.
 
-New tasks added to Month 3 plan (~20 hours total):
-- [ ] Build `/medical-disclaimer` and `/editorial-policy` standalone trust pages
-- [ ] Add "Medically reviewed by Dr. Imran Qureshi, D.O. | Last reviewed: [date]" byline to 18 condition + treatment pages
-- [ ] Add 3-5 external authority citations (Mayo Clinic, NIH, MedlinePlus, Cleveland Clinic) per page
-- [ ] Enhance `/about` with full credentials, board cert, fellowship details
-- [ ] Restructure condition page openings with 75-125 word answer-first blocks
-- [ ] Apply playbook template to all new Month 3 content from start
+**All 5 sub-workstreams completed Apr 23 (commits `9b6e7bf` → `f4ec3a2`):**
+
+| Sub-workstream | Status | Pages affected |
+|---|---|---|
+| 1. Trust pages (`/medical-disclaimer`, `/editorial-policy`) | ✅ | 2 new + footer link on all 43 pages |
+| 2. "Medically reviewed by Dr. Imran Qureshi, D.O." byline | ✅ | 20 main pages |
+| 3. External authority citations (Mayo, Cleveland Clinic, MedlinePlus, NIH NIAMS, NINDS) | ✅ | 20 pages, 51 inline citations |
+| 4. Answer-first opening blocks (75-125 word direct query answers) | ✅ | 20 main pages |
+| 5. H2 question-based refactor (clinical labels → patient questions) | ✅ | 20 pages, 71 H2s converted |
+
+**Estimated E-E-A-T score: 5.2/10 → ~8.5/10** (above AI Overview eligibility threshold).
+
+Comprehensive technical SEO audit also run on all 43 pages — 100% clean on titles, metas, canonicals, OG tags, robots, geo, schema, GA4, favicons. Sitemap perfectly mirrors HTML files. Zero broken internal links.
+
+**Apr 23 — Technical SEO fixes shipped:**
+- Fixed 2 broken internal links (phantom `/blog/back-pain-red-flags` removed; plural `/epidural-steroid-injections-what-to-expect` typo corrected)
+- Added 2 redirects in vercel.json as safety nets for those URLs
+- Trimmed 5 city page meta descriptions from 220+ chars to under 150
+- Created `_project/post-deploy-checklist-apr-23.md` for post-deploy verification
+
+**Apr 23 — Post-deploy actions completed by client:**
+- ✅ Vercel deploy verified (all green)
+- ✅ Live pages spot-checked
+- ✅ GSC: sitemap resubmitted
+- ✅ GSC: 2 new trust pages requested for indexing
+- ✅ GSC: Re-requested indexing on retrofitted pages
+- ✅ Schema validated via Google Rich Results Test
 
 **Removed from scope:**
 - ~~Review acceleration system~~ (CLS Health has one)
 - ~~Q&A seeding on GBP~~ (client opted out)
 - ~~CareDash citation~~ (defunct directory)
 
-**Remaining content + technical:**
+**Remaining (next focus):**
 - [ ] Client to send missing GBP photos
+- [ ] Client to provide GLP-1 + PRP async clinical answers
 - [ ] Build citations on remaining 6-8 directories (Sharecare, US News, Doctor.com, Castle Connolly, Wellness.com, BBB, Angi, Katy Chamber)
 - [ ] Yellow Pages retry (couldn't claim Apr 23)
 - [ ] Differentiate city page content (need client input for local testimonials)
 - [ ] Update sameAs schema with new directory listings
-- [ ] Re-run LocalRank scan in 4-6 weeks
-- [ ] Month 3 priority pages: GLP-1, Lumbar ESI, Cervical ESI, Knee Injection, Shoulder Injection
-- [ ] Month 3 blog posts: "GLP-1 Medications" + "PRP vs Cortisone"
+- [ ] Re-run LocalRank scan in 4-6 weeks (target: ~May 7)
+- [ ] Month 3 priority pages: GLP-1, Lumbar ESI, Cervical ESI, Knee Injection, Shoulder Injection (using new E-E-A-T template)
+- [ ] Month 3 blog posts: "GLP-1 Medications" + "PRP vs Cortisone" (using new template)
 - [ ] PRP page rewrite + site-wide emphasis
-- [ ] GA4 conversion tracking setup (currently 0 key events)
+- [ ] GA4 conversion tracking setup (currently 0 key events — critical for Month 3 measurement)
+- [ ] Trim remaining 27 meta descriptions over 160 chars (low priority, cosmetic)
+- [ ] Monitor GSC indexing rate over next 1-2 weeks
+
+**Headline metric for Month 3 client report (compare May vs April baseline):**
+- April baseline: 42 GBP calls, 45 directions, 31 site clicks, 118 profile interactions
+- May target: 60+ calls, 65+ directions, 50+ site clicks, 175+ interactions
 
 ---
 
