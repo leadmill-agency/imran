@@ -17,6 +17,8 @@
     { "source": "/physical-therapy", "destination": "/treatments", "permanent": true },
     { "source": "/home", "destination": "/", "permanent": true },
     { "source": "/new-dropdown", "destination": "/", "permanent": true },
-    { "source": "/appointments", "destination": "/contact", "permanent": true }
+    { "source": "/appointments", "destination": "/contact", "permanent": true },
+    { "source": "/blog/back-pain-red-flags", "destination": "/blog/is-my-back-pain-serious", "permanent": true },
+    { "source": "/blog/epidural-steroid-injections-what-to-expect", "destination": "/blog/epidural-steroid-injection-what-to-expect", "permanent": true }
   ]
 }
