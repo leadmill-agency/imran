@@ -89,7 +89,7 @@ Priority directories still to be claimed:
 - **General**: Yelp, Yellow Pages, BBB, Angi, Manta
 - **Data aggregators**: Data Axle, Neustar Localeze, Foursquare
 
-Full list in `_project/local-seo-action-plan.md` under section 3.
+Full list in `_project/reference/local-seo-action-plan.md` under section 3.
 
 **Exact NAP to use everywhere:**
 ```

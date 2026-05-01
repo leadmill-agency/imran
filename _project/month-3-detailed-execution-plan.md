@@ -35,14 +35,14 @@ April baseline metrics (for May comparison): 118 GBP interactions, 42 calls, 45 
 - Added 51 external authority citations across 20 pages (Mayo Clinic, Cleveland Clinic, MedlinePlus, NIH NIAMS, NINDS)
 - Added "Quick answer" first-block to all 20 main pages (75-125 word direct query answers)
 - Refactored 71 H2s from clinical labels to patient questions across all 20 main pages
-- Verified citation library (`_project/citation-library.md`) — every URL fact-checked live before use
+- Verified citation library (`_project/reference/citation-library.md`) — every URL fact-checked live before use
 
 **Technical SEO:**
 - Comprehensive technical SEO audit on all 43 pages — 100% clean on titles, metas, canonicals, OG tags, robots, geo, schema, GA4, favicons
 - Fixed 2 broken internal links (phantom `/blog/back-pain-red-flags`, plural ESI typo)
 - Added 2 redirects in vercel.json as safety nets for those URLs
 - Trimmed 5 city page meta descriptions from 220+ chars to under 150
-- Created `_project/post-deploy-checklist-apr-23.md`
+- Created `_project/snapshots/post-deploy-checklist-apr-23.md`
 
 **Post-deploy actions completed:**
 - ✅ Vercel deploy verified
@@ -64,7 +64,7 @@ April baseline metrics (for May comparison): 118 GBP interactions, 42 calls, 45 
 
 ### 🆕 NEW WORKSTREAM ADDED Apr 23 — AI Overview / E-E-A-T Retrofit
 
-We received a deep research report on Google AI Overview ranking for medical sites. Key insight: **medical content needs visible physician authorship + external authority citations to be eligible for AI Overview citation.** Our content audit (`_project/eeat-content-audit-apr-23.md`) shows current site scores 5.2/10 — below the eligibility threshold.
+We received a deep research report on Google AI Overview ranking for medical sites. Key insight: **medical content needs visible physician authorship + external authority citations to be eligible for AI Overview citation.** Our content audit (`_project/snapshots/eeat-content-audit-apr-23.md`) shows current site scores 5.2/10 — below the eligibility threshold.
 
 **Top 5 changes that move us to 8+/10 in 4-5 days of work:**
 
@@ -302,7 +302,7 @@ Example — Epidural Steroid Injections:
 
 ### Afternoon block (1.5 hours) — GBP Post + FAQs + Photos audit
 
-- [ ] **1:30pm** — Write GBP Post #1 (use content already drafted in `_project/local-seo-action-plan.md`). Copy:
+- [ ] **1:30pm** — Write GBP Post #1 (use content already drafted in `_project/reference/local-seo-action-plan.md`). Copy:
   > "Dealing with chronic back pain? Epidural steroid injections can provide targeted relief by delivering anti-inflammatory medication directly to inflamed nerve roots. Dr. Qureshi performs all injections under fluoroscopic guidance at our Katy, TX office. Call (281) 982-2144 to schedule."
   - Attach a photo (office or treatment room)
   - Add CTA button: "Learn more" → /treatments/epidural-steroid-injections
@@ -318,7 +318,7 @@ Example — Epidural Steroid Injections:
   8. "Do you treat sports injuries?"
   9. "Is PRP covered by insurance?"
   10. "Do you offer weight loss medication?"
-  - Answer copy for each is in `_project/local-seo-action-plan.md`
+  - Answer copy for each is in `_project/reference/local-seo-action-plan.md`
 - [ ] **2:45pm** — Photos audit. Current count should be 10-15+. If under 10, note which ones are missing:
   - Office exterior (with signage)
   - Waiting room
@@ -988,7 +988,7 @@ You can begin drafting based on what you already know about GLP-1 medications. O
 - [ ] GA4 conversion tracking configured
 
 **AI Overview / E-E-A-T (added Apr 23):**
-- [ ] Site E-E-A-T score 8+/10 (from baseline 5.2 — see `_project/eeat-content-audit-apr-23.md`)
+- [ ] Site E-E-A-T score 8+/10 (from baseline 5.2 — see `_project/snapshots/eeat-content-audit-apr-23.md`)
 - [ ] All 18 main pages have visible "Medically reviewed by" byline
 - [ ] All 18 main pages have 3+ external authority citations
 - [ ] `/medical-disclaimer` and `/editorial-policy` pages live
@@ -1023,9 +1023,9 @@ You can begin drafting based on what you already know about GLP-1 medications. O
 
 **Result: Score moved from 5.2 → ~8.5/10. All 5 sub-workstreams shipped in a single day.**
 
-Full audit findings: `_project/eeat-content-audit-apr-23.md`
-Reference playbook: `_project/medical_ai_overview_seo_playbook.md`
-Post-deploy checklist: `_project/post-deploy-checklist-apr-23.md`
+Full audit findings: `_project/snapshots/eeat-content-audit-apr-23.md`
+Reference playbook: `_project/reference/medical_ai_overview_seo_playbook.md`
+Post-deploy checklist: `_project/snapshots/post-deploy-checklist-apr-23.md`
 
 **Commits shipped:**
 - `9b6e7bf` — Trust pages + bylines (44 files)

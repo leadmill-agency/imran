@@ -60,7 +60,7 @@ https://www.drimranqureshi.com
 ## Process for Each New Citation
 
 1. Use exact NAP listed at top of this file
-2. Use full business description from `_project/local-seo-action-plan.md`
+2. Use full business description from `_project/reference/local-seo-action-plan.md`
 3. Categories: Pain Management Physician (primary), Sports Medicine, Orthopedics
 4. Hours: Mon–Fri 8am–5pm, Sat–Sun closed
 5. Photos: at minimum upload Dr. Qureshi headshot + office exterior

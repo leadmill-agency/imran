@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /_project/
 
 Sitemap: https://www.drimranqureshi.com/sitemap.xml
