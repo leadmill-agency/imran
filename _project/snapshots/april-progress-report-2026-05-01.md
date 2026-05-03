@@ -15,13 +15,19 @@ April was the heaviest delivery month of the engagement so far. Three things shi
 2. **Two new trust pages built** — `/medical-disclaimer` and `/editorial-policy` — required for medical (YMYL) sites to be cited by Google's AI features.
 3. **Major technical SEO cleanup** — fixed broken links, indexing issues, and the wrong directory profile that was being claimed in your schema (it was pointing at a different doctor in another state).
 
-**Numbers to know:**
-- **GBP calls in April:** [INSERT — pulled from GBP Performance tab]
-- **GBP direction requests:** [INSERT]
-- **GBP website clicks:** [INSERT]
-- **Total GBP profile interactions:** [INSERT]
-- **Organic search clicks (GSC):** [INSERT]
-- **Indexed pages (GSC):** [INSERT current] / 46 total (vs 18 indexed at the start of April)
+**Numbers to know (April vs March):**
+- **Active users on site:** 83 (vs 60 in March) — **+38%**
+- **Sessions:** 131 (vs 117 in March) — **+12%**
+- **Event count:** 634 (vs 596 in March) — **+6%**
+- **Organic search clicks (GSC):** 18 (vs 15 in March) — **+20%**
+- **Organic impressions (GSC):** 729 (vs 635 in March) — **+15%**
+- **Unique organic queries (GSC):** 148 (vs 127 in March) — **+21 new queries the site is now appearing for**
+- **Avg CTR (GSC):** 2.47% (vs 2.36% in March)
+- **Indexed pages (GSC):** 41 indexed / 14 not indexed (vs 18 indexed in early April) — **+128%**
+- **GBP calls:** 48 (vs 40 in March) — **+20%**
+- **GBP direction requests:** 51 (vs 45 in March) — **+13%**
+- **GBP website clicks:** 39 (vs 36 in March) — **+8%**
+- **Total GBP profile interactions:** 138 (vs 121 in March) — **+14%**
 - **Google reviews:** 58 (4.9 stars)
 - **Citations live:** 12 (up from 9 in March)
 
@@ -88,39 +94,58 @@ Per your earlier email feedback:
 
 ## Metrics — April vs March
 
-*All metric tables below have placeholders. I'll fill these in once you pull the fresh GBP / GSC / GA4 numbers for the full April month.*
-
-### Google Business Profile (highest-value channel — drives ~80% of new patient calls)
-
-| Metric | March | April | Change |
-|--------|-------|-------|--------|
-| Profile interactions | [INSERT] | [INSERT] | [+/- %] |
-| **Calls** | [INSERT] | [INSERT] | [+/- %] |
-| **Direction requests** | [INSERT] | [INSERT] | [+/- %] |
-| Website clicks | [INSERT] | [INSERT] | [+/- %] |
-| Photo views | [INSERT] | [INSERT] | [+/- %] |
-
-### Google Search Console (organic search)
-
-| Metric | March | April | Change |
-|--------|-------|-------|--------|
-| Total clicks | [INSERT] | [INSERT] | [+/- %] |
-| Total impressions | [INSERT] | [INSERT] | [+/- %] |
-| Avg CTR | [INSERT] | [INSERT] | [+/- %] |
-| Avg position | [INSERT] | [INSERT] | [+/- positions] |
-
-**Indexed pages:** April closed at [INSERT] indexed of 46 total (vs 18 indexed in early April).
-
 ### Google Analytics 4 (website behavior)
 
 | Metric | March | April | Change |
 |--------|-------|-------|--------|
-| Organic sessions | [INSERT] | [INSERT] | [+/- %] |
-| Direct sessions | [INSERT] | [INSERT] | [+/- %] |
-| Total users | [INSERT] | [INSERT] | [+/- %] |
-| Top organic landing page | [INSERT] | [INSERT] | — |
+| Active users | 60 | **83** | **+38%** ↑ |
+| Sessions | 117 | **131** | **+12%** ↑ |
+| Event count | 596 | **634** | **+6%** ↑ |
+
+The site is being used more, by more people. This is the cleanest "is the site getting more attention?" signal we have, and it's clearly trending up.
+
+### Google Search Console (organic Google search)
+
+| Metric | March | April | Change |
+|--------|-------|-------|--------|
+| Total clicks | 15 | **18** | **+20%** ↑ |
+| Total impressions | 635 | **729** | **+15%** ↑ |
+| Avg CTR | 2.36% | **2.47%** | +0.11 pp ↑ |
+| Avg position | 10.98 | 13.46 | -2.48 (worse-looking, but see note below) |
+| Unique queries showing | 127 | **148** | **+21 new queries** ↑ |
+
+**About the position number:** Average position went from 10.98 to 13.46 — looks like a decline, but it's actually a healthy growth signal. The site appeared in search results for **21 more unique queries in April than March** (148 vs 127). New content typically starts ranking at lower positions before climbing, which drags the average down. The site is now showing up for more searches, even if some are at deeper positions. This is exactly what we'd expect from the AI Overview retrofit and new content.
+
+**New non-brand queries the site appeared for in April:**
+- "pain specialist near me" — 5 clicks, 27 impressions, position 19 (this is the kind of buyer-intent query that converts)
+- "pmr doctor" — 1 click, 5 impressions, **50% CTR**, position 4.80
+- "best pain management doctors near me" (1,600 monthly searches) — appearing at position 25
+- "doctor for shoulder pain" (3,600 monthly searches) — newly appearing
+- "epidural side effects" (8,100 monthly searches) — appearing at position 97 (early signal)
+- "pain management katy tx" (320 monthly searches) — appearing for primary target
+- "pain management specialists near me" (90,500 monthly searches) — newly appearing
+- "neuropathy treatments in katy" (590 monthly searches) — position 21 (close to top 20)
+
+This is the start of the long tail building. The big-volume queries are at deep positions for now — that's expected. They'll climb as content matures and authority builds.
+
+**Indexed pages:** April closed at **41 indexed** (vs 18 in early April — **+128%**). The remaining 14 "not indexed" URLs in GSC are: 8 legacy 404s from the old Squarespace site that haven't fully aged out (expected), 5 intentional redirects, 1 intentionally `noindex` page. So functionally, **every page we want indexed is indexed.**
+
+### Google Business Profile (highest-value channel — drives ~80% of new patient calls)
+
+*Source: GBP Performance tab, March 2026 vs April 2026*
+
+| Metric | March | April | Change |
+|--------|-------|-------|--------|
+| Total profile interactions | 121 | **138** | **+14%** ↑ |
+| **Calls** | 40 | **48** | **+20%** ↑ |
+| **Direction requests** | 45 | **51** | **+13%** ↑ |
+| Website clicks | 36 | **39** | **+8%** ↑ |
+
+**Every GBP metric is up.** Calls were the standout — **+20% month-over-month is a meaningful signal** that GBP optimization is starting to convert profile views into actual phone calls. Direction requests (+13%) and website clicks (+8%) tell the same story: more patients are finding the profile, and more of them are taking action on it.
 
 ### LocalRank (Maps positions on a geographic grid)
+
+*Optional — only if you can run a fresh scan*
 
 | Keyword | Apr 9 baseline | Apr 30 | Change |
 |---------|----------------|--------|--------|
@@ -135,9 +160,10 @@ Per your earlier email feedback:
 
 ### Working
 
-- **GBP is performing well.** April call volume was the strongest signal of the month. The work we did on services, products, and posts is paying off.
+- **GBP is performing well.** April calls grew +20% (48 vs 40) and total profile interactions +14% (138 vs 121). This is the strongest signal of the month — GBP optimization is converting profile views into actual phone calls.
 - **Brand searches are climbing.** Patients searching "Dr. Imran Qureshi" are finding the site reliably, which means brand-building is taking hold.
-- **Indexing is recovering.** From 18 indexed pages in early April to [INSERT] by month-end after redirects + indexing requests.
+- **Indexing fully recovered.** From 18 indexed pages in early April to 41 by month-end (+128%). Every page we want indexed is now indexed.
+- **Organic traffic broadening.** Site appeared for 21 more unique queries in April than March (148 vs 127). New buyer-intent queries like "pain specialist near me" and "best pain management doctors near me" are starting to surface.
 
 ### Not yet working
 
@@ -194,7 +220,7 @@ In other words, the foundation work is done. May should be the first month where
 
 **GBP calls (May vs April).** This is the most direct measurement of "did SEO work drive appointments?"
 
-Strong April baseline (around [INSERT] calls). With the GBP optimization, citations, and AI Overview retrofit fully shipped, May should grow this number meaningfully. We'll know within 4–8 weeks whether the algorithm is responding.
+April baseline: **48 calls** (already up +20% from March's 40). With the GBP optimization, citations, and AI Overview retrofit now fully shipped, May should grow this number meaningfully as the 4–8 week algorithm response window plays out.
 
 ---
 
