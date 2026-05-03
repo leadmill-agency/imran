@@ -143,16 +143,37 @@ This is the start of the long tail building. The big-volume queries are at deep 
 
 **Every GBP metric is up.** Calls were the standout — **+20% month-over-month is a meaningful signal** that GBP optimization is starting to convert profile views into actual phone calls. Direction requests (+13%) and website clicks (+8%) tell the same story: more patients are finding the profile, and more of them are taking action on it.
 
-### LocalRank (Maps positions on a geographic grid)
+### Maps Pack — geographic grid baseline (May 2, 2026)
 
-*Optional — only if you can run a fresh scan*
+We ran a fresh 81-point grid scan across an 18-keyword target list using a custom-built tool (replaces our previous LocalRank scanner). Full results in `_project/snapshots/maps-baseline-may-02.md` with HTML heatmaps for every keyword.
 
-| Keyword | Apr 9 baseline | Apr 30 | Change |
-|---------|----------------|--------|--------|
-| epidural steroid injection katy | #11.4 | [INSERT] | [INSERT] |
-| pain management katy tx | #13.0 | [INSERT] | [INSERT] |
-| back pain doctor katy tx | #9.0 | [INSERT] | [INSERT] |
-| cervical epidural steroid injection katy | #10.2 | [INSERT] | [INSERT] |
+**Top-line findings:**
+
+| Keyword | Coverage | Avg rank | In top 10 |
+|---|---|---|---|
+| **epidural steroid injection katy** | **81/81 (100%)** | **5.9** 🏆 | 79/81 points |
+| pain management doctor katy | 81/81 (100%) | 9.2 | 60/81 points |
+| pain management katy | 81/81 (100%) | 9.5 | 56/81 points |
+| pain management katy tx | 81/81 (100%) | 11.9 | 23/81 points |
+| pain management doctor near me | 46/81 (56%) | 8.4 | 35/81 points |
+| back pain doctor katy | 8/81 (9%) | 19.0 | 0 |
+| interventional pain management katy | 0/81 (0%) | — | 0 |
+| back doctor katy | 0/81 (0%) | — | 0 |
+
+**The story:** Dr. Qureshi has **strong, consistent visibility** for most "pain management katy" variations (81/81 grid coverage), but is **just outside the 3-pack** at avg rank 9–12. Closing that 6–9 rank gap is the highest-leverage local SEO unlock available — and it's exactly what the May plan is structured to do (more reviews + citations + entity-language fixes).
+
+**Notable wins:**
+- `epidural steroid injection katy` is dominant — avg rank 5.9 with 97% top-10 coverage. The dedicated treatment page + AI Overview retrofit + 51 verified citations are paying off here.
+
+**Notable gaps (5 keywords with 0% coverage):**
+- `interventional pain management katy` — Dr. Qureshi *is* interventional, but Google doesn't currently link the entity to this phrase
+- `back doctor katy` — common patient phrasing not picked up despite the low-back-pain condition page existing
+- `knee doctor near me`, `sports injury doctor near me`
+- `muscle pain` (too generic — skip)
+
+These map directly to May action items: add the missing entity language to the homepage + about page, and build new condition pages for knee pain and sports injuries.
+
+**Methodology:** Scan uses Google Places API Nearby Search via a custom tool we built this month. Same underlying data as LocalRank/Local Falcon, run on demand at ~$7 per scan. Bi-weekly scans (May 16, May 30) will track movement against this baseline.
 
 ---
 
@@ -199,7 +220,7 @@ In other words, the foundation work is done. May should be the first month where
    - Shoulder Injection
 2. **Continue citation building:** Sharecare, U.S. News Health, Doctor.com, Castle Connolly, Wellness.com, BBB, Angi, Yellow Pages retry, Katy Area Chamber of Commerce
 3. **Set up GA4 conversion tracking** for phone clicks and "Book Online" clicks (currently no key events configured — this is critical for measuring May results)
-4. **Mid-May LocalRank scan** to check Maps movement
+4. **Bi-weekly Maps grid scans** (May 16, May 30) to track movement vs. May 2 baseline. Particular focus on whether `interventional pain management katy` and `back doctor katy` (currently at 0% coverage) move after homepage + about-page entity language is added.
 5. **End-of-May results report** with full April-to-May comparison
 
 ---
