@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.drimranqureshi.com/</loc><lastmod>2026-02-27</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.drimranqureshi.com/about</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.drimranqureshi.com/</loc><lastmod>2026-05-06</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.drimranqureshi.com/about</loc><lastmod>2026-05-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.drimranqureshi.com/contact</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.drimranqureshi.com/insurance</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.drimranqureshi.com/treatments/epidural-steroid-injections</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.drimranqureshi.com/treatments/epidural-steroid-injections</loc><lastmod>2026-05-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.drimranqureshi.com/treatments/radiofrequency-ablation</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.drimranqureshi.com/treatments/nerve-blocks</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.drimranqureshi.com/treatments/prp-therapy</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -46,4 +46,7 @@
   <url><loc>https://www.drimranqureshi.com/treatments/glp-1-weight-loss</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.drimranqureshi.com/blog/glp-1-medications-for-weight-loss</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.drimranqureshi.com/blog/prp-vs-cortisone-injections</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.drimranqureshi.com/treatments/lumbar-epidural-injection</loc><lastmod>2026-05-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.drimranqureshi.com/treatments/cervical-epidural-injection</loc><lastmod>2026-05-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.drimranqureshi.com/treatments/shoulder-injection</loc><lastmod>2026-05-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>
