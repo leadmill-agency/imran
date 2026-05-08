@@ -1280,6 +1280,53 @@
     if (closeBtn) closeBtn.addEventListener('click', closeMobileNav);
     mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileNav));
   }
+
+
+// --- GA4 conversion tracking (added 2026-05-06) ---
+(function() {
+  if (typeof gtag !== 'function') return;
+
+  // Phone calls (tel: links)
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      gtag('event', 'phone_call_click', {
+        'phone_number': link.getAttribute('href').replace('tel:', ''),
+        'link_text': (link.textContent || '').trim().substring(0, 100),
+        'page_path': window.location.pathname
+      });
+    });
+  });
+
+  // Book online (Luma Health booking links)
+  document.querySelectorAll('a[href*="lumahealth.io"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      gtag('event', 'book_appointment_click', {
+        'link_text': (link.textContent || '').trim().substring(0, 100),
+        'page_path': window.location.pathname
+      });
+    });
+  });
+
+  // Directions (Google Maps directions links)
+  document.querySelectorAll('a[href*="maps.google.com"], a[href*="goo.gl/maps"], a[href*="google.com/maps"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      gtag('event', 'directions_click', {
+        'page_path': window.location.pathname
+      });
+    });
+  });
+
+  // Form submissions (Luma Health forms or contact forms)
+  document.querySelectorAll('form').forEach(function(form) {
+    form.addEventListener('submit', function() {
+      gtag('event', 'form_submit', {
+        'form_id': form.id || 'unnamed',
+        'page_path': window.location.pathname
+      });
+    });
+  });
+})();
+// --- end GA4 conversion tracking ---
 </script>
 </body>
 </html>

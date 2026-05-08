@@ -247,5 +247,52 @@
 </div>
 </div><div class="footer-bottom"><span>&copy; 2026 Dr. Imran Qureshi, D.O. All rights reserved. &middot; <a href="/medical-disclaimer">Medical Disclaimer</a> &middot; <a href="/editorial-policy">Editorial Policy</a></span><span>Serving Katy, Cypress, Cinco Ranch, Fulshear, Richmond, Sugar Land &amp; Greater Houston</span></div></div></footer>
 <div class="mobile-sticky"><div class="mobile-sticky-inner"><a href="tel:2819822144" class="ms-call">&#128222; Call Now</a><a href="https://patient.lumahealth.io/survey?patientFormTemplate=688117ef1bfb149b853d6fae&user=62a7afe5a85ec700134faf16" class="ms-book" target="_blank">&#128197; Book Online</a></div></div>
-<script>const hamburger=document.getElementById('hamburger');const mobileNav=document.getElementById('mobile-nav');const closeBtn=document.getElementById('mobile-nav-close');function closeMobileNav(){hamburger.classList.remove('open');mobileNav.classList.remove('open');document.body.style.overflow=''}if(hamburger&&mobileNav){hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileNav.classList.toggle('open');document.body.style.overflow=mobileNav.classList.contains('open')?'hidden':''});if(closeBtn)closeBtn.addEventListener('click',closeMobileNav);mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMobileNav))}</script>
+<script>const hamburger=document.getElementById('hamburger');const mobileNav=document.getElementById('mobile-nav');const closeBtn=document.getElementById('mobile-nav-close');function closeMobileNav(){hamburger.classList.remove('open');mobileNav.classList.remove('open');document.body.style.overflow=''}if(hamburger&&mobileNav){hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileNav.classList.toggle('open');document.body.style.overflow=mobileNav.classList.contains('open')?'hidden':''});if(closeBtn)closeBtn.addEventListener('click',closeMobileNav);mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMobileNav))}
+
+// --- GA4 conversion tracking (added 2026-05-06) ---
+(function() {
+  if (typeof gtag !== 'function') return;
+
+  // Phone calls (tel: links)
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      gtag('event', 'phone_call_click', {
+        'phone_number': link.getAttribute('href').replace('tel:', ''),
+        'link_text': (link.textContent || '').trim().substring(0, 100),
+        'page_path': window.location.pathname
+      });
+    });
+  });
+
+  // Book online (Luma Health booking links)
+  document.querySelectorAll('a[href*="lumahealth.io"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      gtag('event', 'book_appointment_click', {
+        'link_text': (link.textContent || '').trim().substring(0, 100),
+        'page_path': window.location.pathname
+      });
+    });
+  });
+
+  // Directions (Google Maps directions links)
+  document.querySelectorAll('a[href*="maps.google.com"], a[href*="goo.gl/maps"], a[href*="google.com/maps"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      gtag('event', 'directions_click', {
+        'page_path': window.location.pathname
+      });
+    });
+  });
+
+  // Form submissions (Luma Health forms or contact forms)
+  document.querySelectorAll('form').forEach(function(form) {
+    form.addEventListener('submit', function() {
+      gtag('event', 'form_submit', {
+        'form_id': form.id || 'unnamed',
+        'page_path': window.location.pathname
+      });
+    });
+  });
+})();
+// --- end GA4 conversion tracking ---
+</script>
 </body></html>
