@@ -304,25 +304,116 @@ Comprehensive technical SEO audit also run on all 43 pages — 100% clean on tit
 - ~~Review acceleration system~~ (CLS Health has one)
 - ~~Q&A seeding on GBP~~ (client opted out)
 - ~~CareDash citation~~ (defunct directory)
+- ~~LocalRank subscription~~ (May 2 — replaced with in-house DIY tool, saving $297/mo)
+- ~~Katy Chamber of Commerce~~ (May 6 — verified $1,000/yr Bronze tier minimum, no free option; client decision pending; my rec: skip)
 
-**Remaining (next focus):**
-- [ ] Client to send missing GBP photos
-- [ ] Client to provide GLP-1 + PRP async clinical answers
-- [ ] Build citations on remaining 6-8 directories (Sharecare, US News, Doctor.com, Castle Connolly, Wellness.com, BBB, Angi, Katy Chamber)
-- [ ] Yellow Pages retry (couldn't claim Apr 23)
-- [ ] Differentiate city page content (need client input for local testimonials)
-- [ ] Update sameAs schema with new directory listings
-- [ ] Re-run LocalRank scan in 4-6 weeks (target: ~May 7)
-- [ ] Month 3 priority pages: GLP-1, Lumbar ESI, Cervical ESI, Knee Injection, Shoulder Injection (using new E-E-A-T template)
-- [ ] Month 3 blog posts: "GLP-1 Medications" + "PRP vs Cortisone" (using new template)
-- [ ] PRP page rewrite + site-wide emphasis
-- [ ] GA4 conversion tracking setup (currently 0 key events — critical for Month 3 measurement)
+---
+
+## ✅ May 1 Push — Month 3 Content + Internal Linking
+
+- [x] Built `/treatments/glp-1-weight-loss` (GLP-1 weight loss treatment page using clinical answers from Dr. Qureshi)
+- [x] Rewrote `/treatments/prp-therapy` with practice-specific pricing ($750/site, $1,200 two-site), single-injection protocol, exclusion criteria, >90% success rate citation
+- [x] Built blog post: `/blog/glp-1-medications-for-weight-loss` (2,198 words, 8 min read, 5 FAQs, NIDDK + Cleveland Clinic citations)
+- [x] Built blog post: `/blog/prp-vs-cortisone-injections` (2,154 words, 9 min read, 5 FAQs, NIH NIAMS + Cleveland Clinic citations)
+- [x] Internal linking audit + 13 contextual cross-links added (no orphans, no broken links)
+- [x] Built `/treatments/lumbar-epidural-injection`, `/treatments/cervical-epidural-injection`, `/treatments/shoulder-injection`
+- [x] April progress report + email draft for client (`_project/snapshots/april-progress-report-2026-05-01.md`)
+
+---
+
+## ✅ May 2 Push — Maps Baseline + DIY Rank Tracker
+
+- [x] Built in-house Maps grid rank tracker at `/Users/rameel/Desktop/Manual Library/Leadmill/tools/grid-rank-tracker/` — Python tool using Google Places API at $7/scan vs LocalRank's $297/mo
+- [x] First baseline grid scan: 18 keywords × 81 grid points around Katy. Results in `_project/snapshots/maps-baseline-may-02.md`
+- [x] April progress report finalized with real GA4 + GSC + GBP April-vs-March numbers
+  - GBP calls 48 vs 40 (+20%), directions 51 vs 45 (+13%), website clicks 39 vs 36 (+8%)
+  - Organic clicks 18 vs 15 (+20%), 21 new queries appearing
+  - GA4 active users 83 vs 60 (+38%)
+  - Indexed pages 41 vs 18 in early April (+128%)
+- [x] Reports + Maps baseline pushed to imran 2 repo
+
+---
+
+## ✅ May 6-7 Push — Site-Wide Polish + Mid-Month Validation
+
+This was the heaviest single-session day after April 23. **Six commits to `main`** in one block:
+
+### Content & schema
+- [x] **5 city pages differentiated** — each got 2 new H2 sections (~400 unique words/page) covering city-specific geography, demographics, and pain patterns. Eliminates duplicate-content risk (pages were ~95% identical before).
+- [x] **GA4 conversion tracking shipped site-wide** — 4 events firing on 49 HTML pages: `phone_call_click`, `book_appointment_click`, `directions_click`, `form_submit`. Each event includes `page_path` for attribution.
+- [x] **sameAs schema verified + expanded** — audited all 6 existing URLs via WebFetch + WebSearch. Found Healthgrades was a placeholder (`dr-imran-qureshi` returned homepage). Replaced with verified canonical (`dr-imran-qureshi-do-18z251yi70`). Added 4 new verified URLs: LinkedIn, Zocdoc, Memorial Hermann, CLS Health employer page. Schema now has **10 verified URLs** across all 49 pages (was 6 with 1 broken).
+- [x] **Entity language fixes** — added "knee doctor" + "sports injury doctor" phrasing to homepage title/meta/FAQ, about page meta/body, knee-pain/arthritis answer block, and sports-injuries answer block. Targets 2 of 5 zero-coverage keywords from May 2 baseline.
+
+### Measurement
+- [x] **Mid-month grid scan** — May 7. Comparison vs May 2 baseline at `_project/snapshots/maps-mid-month-may-7.md`.
+  - **8 of 13 actively-ranking keywords improved in 5 days**
+  - "pain management katy tx" doubled top-10 coverage (23 → 47 grid points)
+  - "pain management doctor near me" hit map pack for the first time (0 → 2 top-3 points)
+  - "neck doctor katy" jumped 6 rank positions (avg 19.0 → 12.8)
+  - "epidural steroid injection katy" now ranks top-10 on **81/81 grid points** (was 79)
+  - 5 zero-coverage keywords still at 0% — but expected (entity fixes too fresh / authority signals still aging in)
+
+### Status & comms
+- [x] Week-of-May-5 status doc + GBP Post #4 drafts at `_project/snapshots/week-of-may-5-status.md`
+
+**Open items still on Rameel/client:**
+- [ ] Mark GA4 events as Key Events in GA4 admin (24–48 hrs after first events appear)
+- [ ] Publish GBP Post #4 (drafts ready in week-of-may-5-status.md)
+- [ ] Claim Sharecare, Doctor.com, Wellness.com (free directories, ~15 min each)
+- [ ] Yellow Pages re-attempt
+- [ ] Memorial Hermann directory has stale Webster TX address — Dr. Qureshi should request MHMD update
+
+**Open items for end-of-month (May 30):**
+- [ ] End-of-May full Maps grid scan + comparison vs May 2 baseline (will become Month 3 client report data)
+- [ ] Month 3 wrap-up report (start drafting May 12)
+- [ ] Verify the 4 zero-coverage keywords have moved off 0% by May 30
 - [ ] Trim remaining 27 meta descriptions over 160 chars (low priority, cosmetic)
-- [ ] Monitor GSC indexing rate over next 1-2 weeks
 
-**Headline metric for Month 3 client report (compare May vs April baseline):**
-- April baseline: 42 GBP calls, 45 directions, 31 site clicks, 118 profile interactions
-- May target: 60+ calls, 65+ directions, 50+ site clicks, 175+ interactions
+---
+
+## 📚 Lessons Learned (Apr–May 2026)
+
+Durable principles surfaced from the engagement so far. Cross-reference these when planning future client work:
+
+1. **The "GBP optimization takes 4–8 weeks" rule is real, not hopium.** May 2 → May 7 mid-month scan validated it: 5 days after the April retrofit shipped, 8 of 13 actively-ranking keywords moved up. Don't promise faster than 4–8 weeks for Maps movement.
+
+2. **0%-coverage keywords are not all the same problem.** Always diagnose first:
+   - If the phrase IS already on the site (e.g. 5+ mentions), it's an **authority signal** issue → add citations + sameAs + reviews. Wait for aging.
+   - If the phrase is **NOT on the site**, it's an entity-language issue → add the literal phrase to title, meta, H2, and answer block. Wait 7–14 days.
+   - Generic phrases ("muscle pain") → skip, not worth chasing.
+
+3. **Average position is misleading.** Going from avg 10.98 → 13.46 looks like decline, but it's usually "more keywords ranking at deeper positions" dragging the average. Always pair avg position with **unique-queries-appearing** (better) or **top-10-coverage** (best) before reporting movement to client.
+
+4. **Authority lifts the entity broadly.** When pain-management-family keywords moved May 2→7, they ALL moved together (5 different "pain management katy" variations, avg ranks 9–12 → 7–10). Authority signals don't help one query at a time.
+
+5. **Always verify URLs in sameAs before adding to schema.** Healthgrades placeholder URL returned homepage for 2+ weeks before catching it. Pattern-matching slugs (e.g. `dr-imran-qureshi`) are not enough — WebFetch every URL once before adding.
+
+6. **City pages are duplicate-content traps.** ~95% of body copy was identical across our 5 city pages — auditors miss this because each page LOOKS unique (different city in title/H1). Always diff `cinco-ranch.html` against `cypress.html` and require 300+ unique words per page.
+
+7. **Local SEO heatmaps need verification, not the API output as-is.** The Places API gives "directionally correct" rankings but doesn't apply user personalization (search history, time of day, device). Useful for trend tracking; not pixel-perfect to what a patient sees on their phone.
+
+8. **Run long Python scripts with `python -u`.** Default stdout buffering hides progress and can mask hangs. The `scan.py` first attempt hung at 35 minutes; second attempt with `-u` ran fine in 11 min.
+
+9. **Check duplicate-vs-stale data in directories.** Memorial Hermann had Dr. Qureshi listed at his old residency address (Webster TX, 500 N Kobayashi) — NPI was correct, address was 4+ years stale. Always check directory listings against current practice address; flag updates back to client.
+
+10. **GA4 loaded ≠ GA4 measuring.** GA4 was on every page from day 1, but with **zero key events configured**. The tag fired pageviews but couldn't tell us anything about conversions. Whenever you adopt GA4 on a new client, audit the events configured BEFORE assuming you can measure ROI.
+
+11. **Building tools beats subscribing.** LocalRank: $297/mo for one feature (scanner) we used. DIY equivalent: $0/mo (within Google's $200 free credit) + ~6 hrs to build. At Leadmill's scale (4 clients), the math always favors building.
+
+12. **The "right" sameAs count is 8–12, all verified.** Less = weak entity signal. More = noise. Each URL should be a profile that materially mentions the practice — not generic specialty directories with auto-populated stub pages.
+
+13. **Track everything in `_project/` and exclude from indexing.** robots.txt `Disallow: /_project/` means we can keep working notes in the same git repo without worrying about Google indexing them. Standardize this on every client.
+
+14. **Most "broken" or "missing" SEO problems are actually consistency problems.** All 49 pages had the same broken Healthgrades URL. All 5 city pages had the same duplicate copy. Site-wide fixes (one regex script over all files) beats per-page editing every time.
+
+15. **Average position is a vanity metric for the dashboard. Top-10 coverage on the geo grid is the real KPI.** This drove the May 2 baseline doc and the comparison framework — stick with it.
+
+---
+
+## Headline metric for Month 3 client report (compare May vs April baseline):
+- April baseline: 48 GBP calls, 51 directions, 39 site clicks, 138 profile interactions
+- May target: 65+ calls, 65+ directions, 50+ site clicks, 175+ interactions
+- May leading indicator (mid-month): Maps grid coverage on "pain management katy" family — top-10 went from 56-60 grid points (May 2) to 75-77 (May 7), with no top-3 yet. End-of-month target: 5+ top-3 grid points across at least one "pain management" variant.
 
 ---
 
