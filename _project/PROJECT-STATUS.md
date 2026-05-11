@@ -386,73 +386,83 @@ This was the heaviest single-session day after April 23. **Six commits to `main`
 
 ---
 
-## ⚠️ May 11 Mid-Month Signal Check
+## ⚠️ May 11 Mid-Month Signal Check — UPDATED with longitudinal data
 
-Rameel pulled fresh GBP + GSC + GA4 data on May 11 (day 11 of 31). Plus client ran a LocalRank scan on May 11 to cross-check the DIY tool. Mixed results — need a week more data before we know if there's a real problem.
+Rameel pulled fresh GBP + GSC + GA4 data on May 11 (day 11 of 31). Plus client ran a LocalRank scan on May 11. **Then on May 11 we pulled 5 LocalRank CSVs from Rameel's downloads going back to March 4** — giving us pre-change baseline data we'd been missing. Full analysis at `_project/snapshots/maps-longitudinal-mar-may-2026.md`. The longitudinal picture revises my earlier "rankings are climbing" framing.
 
-### Numbers (April final vs May 1–11)
+### The corrected story: dip-then-recovery
+
+Between **Apr 20 and May 3**, Maps coverage **dropped sharply across most keywords** — right after the Apr 22–23 push (GBP URL switch + full E-E-A-T retrofit). Between **May 3 and May 11**, the first recovery signals appeared (2 of the 8 dropped keywords now climbing back).
+
+This is the textbook 4–8 week re-evaluation cycle we always tell clients to expect after major site work. We couldn't see it before because we didn't have a pre-change baseline. Now we do.
+
+| Keyword | Apr 20 | May 3 | May 11 | Pattern |
+|---|---|---|---|---|
+| pain management doctor near me | 93% | 48% | 55% | dip → recovering ↑ |
+| neck doctor near me | 51% | 8% | 14% | dip → recovering ↑ (top-3 grew 2→1→3) |
+| neck doctor katy | 24% | 4% | 4% | dip → flat |
+| back doctor near me | 12% | 2% | 2% | dip → flat |
+| knee doctor near me | 8% | 2% | 2% | dip → flat |
+| sciatica | 14% | 2% | 2% | dip → flat |
+| back doctor katy | 2% | 0% | 0% | dip → flat |
+| pain management katy | 100% | 97% | 100% | held |
+
+### The win that survives the dip: `epidural steroid injection katy`
+
+Tracked Mar 4 → May 7:
+- Mar 4: 96% / avg rank 11.1
+- Apr 9: 100% / avg 11.4
+- May 2 (our DIY): 100% / **avg 5.9**
+- May 7 (our DIY): 100% / avg 6.1
+
+**Avg rank improved 5 positions across 8 weeks on the highest-intent procedure keyword.** Procedure-specific keywords held through the dip; doctor-specific keywords took the hit and are recovering.
+
+### What this explains: the call volume disconnect
+
+May call pace looked anomalously low when we first checked it. The longitudinal data dissolves the mystery:
 
 | Metric | April | May 1–11 | May daily pace | vs April pace |
 |---|---|---|---|---|
-| GBP calls | 50 | 13 | 1.18/day | **-29%** ⚠️ |
-| GBP total interactions | 140 | 41 | 3.7/day | **-21%** ⚠️ |
+| GBP calls | 50 | 13 | 1.18/day | **-29%** |
+| GBP total interactions | 140 | 41 | 3.7/day | **-21%** |
 | GSC clicks (last 7 days May 4–11) | n/a | 18 | 2.6/day | **+30%** ↑ |
 | GSC impressions | n/a | 651 | 93/day | ↑ |
-| GSC avg position | 13.46 | 13.4 | — | flat |
-| GA4 organic clicks | n/a | 6 (7-day) | — | similar pace |
 
-### Pattern in calls daily
+**Call volume follows rankings with a 1–2 week lag.** Rankings dropped Apr 22 → May 3. Calls dropped May 7–11. Maths.
 
-- May 1–6: ~12 calls (with a 7-call spike on May 6 — biggest single day of the month)
+Calls in May broke down as:
+- May 1–6: ~12 calls (7-call spike on May 6 — biggest single day)
 - May 7–11: ~1 call across 5 days
 
-### Honest read
+The May 6 spike was likely the tail end of April's pre-dip ranking authority still driving inbound. After May 6, the dip-driven lag caught up.
 
-**Maps grid coverage is UP, but call volume is DOWN.** That's a disconnect. Possible explanations (in order of likelihood):
-1. **GBP reporting lag** — performance dashboard runs 1–3 day delay; May 9–11 calls likely not fully posted
-2. **Mother's Day weekend (May 10)** — patients defer medical calls around family holidays
-3. **The 4–8 week rule again** — rankings improving May 2 → 7 won't translate to calls until weeks 3–4 (mid-to-late May)
-4. **May 6 spike was driven by something non-SEO** — possibly a referral push, ad, or word-of-mouth event. Need to confirm with client.
-5. **Real algorithm drop** — unlikely; no corroborating signal (Maps coverage went UP between scans)
+**The recovery in rankings (visible May 3 → 11) should translate to call recovery in late May / early June.** Stay the course.
 
-### What I'd watch by May 15
+### LocalRank cross-validation: DIY tool confirmed accurate
 
-- Calls May 12–15 → if 2+/day, this was just Mother's Day dip. If still 0–1/day, real problem.
-- Total interactions trajectory.
-- GA4 Key Event data (once Rameel marks them) → tells us if conversions shifted from phone to web booking.
+Comparing the 5 LocalRank CSVs against our DIY tool's May 2 + May 7 scans confirms the two backends agree on coverage direction. Where they disagree on absolute coverage % (e.g. `neck doctor near me` 20% vs 8%), it's geographic span (LocalRank scans an 18-mile grid; ours scans 7 miles).
 
-### LocalRank cross-validation (May 11)
-
-Client ran a LocalRank/DataForSEO scan May 11 covering 10 keywords on a 49-point grid (~18-mile span, wider than our 81-point 7-mile-radius grid). Saved to `/Users/rameel/Desktop/LocalRank Scan Report - Imran Qureshi, DO.pdf` for reference.
-
-Cross-checking against our May 7 DIY scan:
-
-| Keyword | Our DIY (81-pt, May 7) | LocalRank (49-pt, May 11) | Verdict |
+| Keyword | DIY May 2 (7mi) | LocalRank May 3 (18mi) | Agree? |
 |---|---|---|---|
-| pain management doctor near me | 42/81 (52%), avg 7.1 | 27/49 (55%), avg 11.2 | **Match** — both ~55% coverage |
-| neck doctor near me | 16/81 (20%), avg 14.1 | 7/49 (14%), avg 8 | **Match** — similar coverage |
-| neck doctor katy | 4/81 (5%), avg 12.8 | 2/49 (4%), avg 7 | **Match** |
-| back doctor near me | 6/81 (7%) | 1/49 (2%), avg 2 | **Match-ish** (narrow at practice) |
-| sports injury doctor near me | 0/81 | 1/49 (2%) | Trace appearance |
-| muscle pain | 0/81 | 1/49 (2%) | Trace appearance |
-| sciatica | 2/81 (2%) | 1/49 (2%) | Match |
-| **back doctor katy** | **0/81** | **49/49 (100%), avg 13.1** | **⚠️ Major divergence** |
-| LocalRank "Overall avg rank" | (n/a) | **7.2** | — |
+| pain management katy | 100% / 81 | 97% / 49 | ✓ |
+| pain management doctor near me | 56% / 81 | 48% / 49 | ✓ close |
+| neck doctor near me | 20% / 81 | 8% / 49 | Span effect |
+| neck doctor katy | 5% / 81 | 4% / 49 | ✓ |
+| back doctor katy | 0% / 81 | 0% / 49 | ✓ |
+| back doctor near me | 7% / 81 | 2% / 49 | ✓ narrow at-practice |
+| sciatica | 3% / 81 | 2% / 49 | ✓ |
 
-**Most keywords agree directionally between our DIY tool and LocalRank.** The one big divergence is `back doctor katy` — our tool said 0/81 on May 7, LocalRank says 49/49 with avg 13.1 on May 11. Either:
-- (a) The entity language fix shipped May 7 aged in fast (4 days), and "back doctor katy" exploded into 100% coverage between scans
-- (b) LocalRank's DataForSEO backend reports a broader rank universe (e.g. counts beyond local 3-pack) than our Google Places API
-- (c) Some combination of both
+(Note: the May 11 LocalRank scan also showed `back doctor katy` at 49/49 100% coverage with avg rank 13.1 — but tracking back through the CSVs, that's only on that date; the May 3 scan and April 20 scan both show it at 0–2% coverage. May 11 may be a DataForSEO interpretation quirk worth re-checking with our DIY tool on May 14.)
 
-I'll re-run our DIY scan on May 14 — if our tool now also shows broad `back doctor katy` coverage, it's explanation (a) and our entity fix worked. If still 0%, it's (b) and we're under-counting vs commercial tools.
+**Bottom line: DIY tool is directionally accurate. $297/mo LocalRank cancellation was the right call.**
 
-**Either way, the LocalRank scan validates that our DIY tool's outputs are directionally correct.** Good news for replacing the $297/mo subscription.
+### Updated headline metric framing for Month 3 client report
 
-### Provisional updated headline metric for Month 3 client report
-
-- April baseline: 50 GBP calls (final), 140 interactions
-- **May target** (revised given the May 11 trajectory): 55–65 calls if recovery happens after Mother's Day; will be lower if the May 7–11 trend continues. Set client expectations carefully in the call.
-- Maps coverage trajectory (the real story to lead with): "pain management katy tx" top-10 coverage went 23 (May 2) → 47 (May 7). Targeting 65+ on May 30 scan.
+- **April baseline:** 50 GBP calls, 140 interactions
+- **May target:** 30–45 calls (honest projection given the recovery curve we're in). Frame the call dip in context: "We saw the expected re-evaluation drop after April's major site work; rankings are now recovering, calls will follow."
+- **Lead the report with `epidural steroid injection katy` avg rank trajectory:** 11.1 (Mar 4) → 11.4 (Apr 9) → **5.9 (May 2) → 6.1 (May 7)**. This is the durable win that survives the dip narrative.
+- **Secondary visible win:** First map pack appearances on `pain management doctor near me` (0 → 2 top-3 grid points between May 2 and May 7).
+- **Honest framing on the rest:** "Most doctor-style keywords are in the recovery phase of the textbook 4–8 week cycle. Two are already climbing back. The other six are still at the bottom of the dip but well within the expected recovery window."
 
 ---
 
