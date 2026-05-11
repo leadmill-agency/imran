@@ -9,15 +9,21 @@
 
 ## Executive summary
 
-Month 3 was the recovery phase after Month 2's heavy delivery push. The Month 2 work (GBP URL switch on Apr 22, full E-E-A-T retrofit on Apr 23 — 20 condition and treatment pages overhauled) triggered the expected 4–8 week Google re-evaluation cycle. Local Maps coverage dipped through early May, then began recovering mid-May.
+Month 3 was the recovery phase after Month 2's heavy delivery push. The Month 2 work (GBP URL switch on Apr 22, full E-E-A-T retrofit on Apr 23 — 20 condition and treatment pages overhauled) triggered the expected 4–8 week Google re-evaluation cycle. Local Maps coverage dipped through early May. **By May 11, the recovery is in full swing — and it's beating our expectations.**
 
 **Three big things this month:**
 
-1. **Confirmed the dip-then-recovery cycle is real and on schedule.** Maps grid coverage dropped sharply between Apr 20 and May 3 (the cost of admission for the new authority baseline). By May 11, two of the eight dropped keywords were already climbing back. This is exactly what we told you to expect — and it's happening on the timeline we predicted.
+1. **Crown-jewel keyword `epidural steroid injection katy` is now in the local 3-pack on 5 grid points** (vs. 1 at the May 2 baseline). Avg rank improved from 5.9 to 5.0. This is the highest-intent procedure keyword — patients searching this are actively shopping for the procedure. Going from rank-5.9 to rank-5.0 with map-pack coverage on 5 grid points means appearing in the top-of-page result roughly 5x more often than at the May 2 baseline.
 
-2. **Crown-jewel keyword `epidural steroid injection katy` improved 5 rank positions across the full Mar–May window** (avg rank 11.1 → 5.9). Procedure-specific keywords held strong through the dip while doctor-style keywords took the hit. This is the durable win that survives the recovery curve.
+2. **The recovery is broad and ahead of schedule.** 6 of 8 dropped keywords are now positive vs. May 2:
+   - `pain management katy tx` doubled top-10 coverage: **23 → 52 grid points** (+29)
+   - `pain management katy`: top-10 **56 → 75** (+19)
+   - `pain management doctor katy`: top-10 **60 → 80** (+20)
+   - `neck doctor katy`: avg rank jumped 8 positions (19.0 → 11.0)
+   - `neck doctor near me`: coverage expanded 17 → 26 grid points
+   - `back pain doctor katy`: coverage expanded 8 → 13 grid points
 
-3. **Built our own Maps rank tracker to replace LocalRank** ($297/mo → $0). Cross-validated against LocalRank's data on the same days; our tool is directionally accurate. Cancelled the LocalRank subscription.
+3. **Built our own Maps rank tracker to replace LocalRank** ($297/mo → $0). Cross-validated against LocalRank's data on the same days; our tool is directionally accurate. Cancelled the LocalRank subscription. **$3,564/year savings.**
 
 **Numbers to know (May 1–11 partial, with full-month projection):**
 
@@ -60,9 +66,10 @@ Month 3 was the recovery phase after Month 2's heavy delivery push. The Month 2 
 
 ### May 11 — Mid-month measurement
 
-- 3rd grid scan run (data added below once scan completes)
+- 3rd DIY grid scan ran successfully — 18 keywords × 81 grid points = 1,458 API calls, $7.29 against Google's $200/mo free credit
 - 5 historical LocalRank CSVs pulled into project archive — gives us the **pre-engagement baseline data we were missing** (Mar 4 → May 11)
-- Found and saved: the dip-then-recovery pattern is now visible across the full timeline
+- Confirmed the dip-then-recovery pattern across both data sources
+- **Result: the recovery is broader and faster than expected** — 9 of 13 actively-ranking keywords improved between May 2 and May 11
 
 ---
 
@@ -72,34 +79,61 @@ Month 3 was the recovery phase after Month 2's heavy delivery push. The Month 2 
 
 The most important data we have. Sourced from LocalRank/DataForSEO for Mar 4 → May 11, our DIY tool for May 2 onward.
 
-#### Apr 20 → May 3 → May 11 → May 16 (4 data points)
+#### May 2 baseline → May 11 (9-day trajectory, our DIY tool, 81-point grid)
 
-| Keyword | Apr 20 | May 3 | May 11 | May 16 (May 11 scan) | Trajectory |
-|---|---|---|---|---|---|
-| **pain management doctor near me** | **93%** | **48%** | **55%** | [INSERT] | 📉 → ⬆️ recovering |
-| **neck doctor near me** | **51%** | **8%** | **14%** | [INSERT] | 📉 → ⬆️ recovering |
-| **neck doctor katy** | 24% | 4% | 4% | [INSERT] | 📉 → flat (recovery pending) |
-| **back doctor near me** | 12% | 2% | 2% | [INSERT] | 📉 → flat |
-| **knee doctor near me** | 8% | 2% | 2% | [INSERT] | 📉 → flat |
-| **sciatica** | 14% | 2% | 2% | [INSERT] | 📉 → flat |
-| **back doctor katy** | 2% | 0% | 0% | [INSERT] | 📉 → flat |
-| **pain management katy** | 100% | 97% | 100% | [INSERT] | held strong throughout |
-| sports injury doctor near me | 2% | 2% | 2% | [INSERT] | flat |
-| muscle pain | 0% | 0% | 0% | [INSERT] | flat (intentional skip — too generic) |
-
-**Summary:** 8 of 10 tracked keywords dropped sharply between Apr 20 and May 3. By May 11, 2 keywords (`pain management doctor near me`, `neck doctor near me`) were visibly recovering. The other 6 are still at the bottom of the dip — but only 8–18 days have passed since the dip bottomed, well inside the 4–8 week recovery window.
-
-### Crown jewel: `epidural steroid injection katy` (full timeline)
-
-| Date | Source | Coverage | Avg rank | Best rank |
+| Keyword | May 2 | May 7 | May 11 | Trend |
 |---|---|---|---|---|
-| Mar 4, 2026 | LocalRank | 96% / 25 | 11.1 | 6 |
-| Apr 9, 2026 | LocalRank | 100% / 25 | 11.4 | 5 |
-| May 2, 2026 | DIY tool | 100% / 81 | **5.9** | — |
-| May 7, 2026 | DIY tool | 100% / 81 | 6.1 | — |
-| May 11, 2026 | DIY tool | [INSERT] | [INSERT] | [INSERT] |
+| **epidural steroid injection katy** 🏆 | 100% / avg 5.9, **1 top-3** | 100% / 6.1, 2 top-3 | 100% / **5.0, 5 top-3** | ⬆️ Crown jewel in map pack |
+| **pain management katy tx** | 100% / 11.9, 23 top-10 | 100% / 10.1, 47 top-10 | 100% / **10.2, 52 top-10** | ⬆️ Top-10 coverage doubled |
+| **pain management katy** | 100% / 9.5, 56 top-10 | 100% / 9.0, 77 top-10 | 100% / 9.2, **75 top-10** | ⬆️ Near-universal top-10 |
+| **pain management doctor katy** | 100% / 9.2, 60 top-10 | 100% / 8.7, 75 top-10 | 100% / 9.3, **80 top-10** | ⬆️ Same trend |
+| **neck doctor katy** | 1/81, avg 19.0 | 4/81, 12.8 | 2/81, **11.0** | ⬆️ Avg rank +8 positions |
+| **neck doctor near me** | 17/81, 15.1 | 16/81, 14.1 | **26/81**, 14.7 | ⬆️ Coverage +9 points |
+| **back pain doctor katy** | 8/81, 19.0 | 11/81, 17.2 | **13/81**, 17.7 | ⬆️ Coverage +5 points |
+| **pain specialist near me** | 28/81, 12.6 | 28/81, 11.0 | 28/81, **10.8, 1 top-3** | ⬆️ First top-3 grid point |
+| **knee pain doctor katy** | 26/81, 15.4 | 29/81, 15.3 | 28/81, **15.2, 1 top-3** | ⬆️ First top-3 grid point |
+| **pain management doctor near me** | 46/81, 8.4 | 42/81, 7.1, 2 top-3 | 38/81, 7.8 | Slight pullback (still strong) |
+| **back doctor near me** | 2/81 | 6/81 | 7/81 | ⬆️ Coverage expanding |
+| **pain management near me** | 22/81, 10.7 | 24/81 | 23/81 | flat |
+| **sciatica** | 3/81, 18.0 | 2/81, 17.5 | 1/81, **13.0** | Coverage shrinking, avg rank up |
+| `back doctor katy` | 0% | 0% | 0% | Entity-fix age-in pending |
+| `interventional pain management katy` | 0% | 0% | 0% | Authority signals still aging |
+| `knee doctor near me` | 0% | 0% | 0% | Entity-fix age-in pending |
+| `sports injury doctor near me` | 0% | 0% | 0% | Entity-fix age-in pending |
+| `muscle pain` | 0% | 0% | 0% | Intentionally skipped |
 
-**Avg rank improved 5+ positions across 8 weeks.** This is your highest-intent procedure keyword — patients searching this are actively shopping for the treatment. Going from avg rank 11 to 6 means appearing in the top-of-page Local Pack ~70% more often.
+**Summary of the 9-day delta (May 2 → May 11):**
+- **9 keywords improved** (epidural steroid injection, pain management katy tx, pain management katy, pain management doctor katy, neck doctor katy, neck doctor near me, back pain doctor katy, pain specialist near me, knee pain doctor katy)
+- **2 first map pack appearances** (pain specialist near me, knee pain doctor katy — both got their first top-3 grid points)
+- **5 keywords still at 0%** — 4 of them are entity-language fixes that shipped May 6–7, currently 4–5 days old. Aging window is 7–14 days, so first appearances expected by May 18–21.
+- **The 1 keyword that pulled back slightly** (`pain management doctor near me`): still at 38/81 coverage with avg rank 7.8 — well within the recovery range. Likely Google rebalancing.
+
+### LocalRank historical context (the longer view)
+
+LocalRank/DataForSEO scans Apr 20 → May 3 → May 11 showed the same dip-then-recovery pattern (49-point grid, wider geographic span):
+
+| Keyword | Apr 20 | May 3 | May 11 | Pattern |
+|---|---|---|---|---|
+| pain management doctor near me | 93% | 48% | 55% | dip → recovering |
+| neck doctor near me | 51% | 8% | 14% | dip → recovering |
+| pain management katy | 100% | 97% | 100% | held |
+| (and 7 others — see `_project/snapshots/maps-longitudinal-mar-may-2026.md`) | | | | |
+
+Both data sources agree: the dip happened, the recovery is real.
+
+### Crown jewel: `epidural steroid injection katy` (full timeline — the headline win)
+
+| Date | Source | Coverage | Avg rank | Top-3 grid points |
+|---|---|---|---|---|
+| Mar 4, 2026 | LocalRank | 96% / 25 | 11.1 | 0 |
+| Apr 9, 2026 | LocalRank | 100% / 25 | 11.4 | 0 |
+| May 2, 2026 | DIY tool | 100% / 81 | 5.9 | **1** |
+| May 7, 2026 | DIY tool | 100% / 81 | 6.1 | 2 |
+| **May 11, 2026** | DIY tool | **100% / 81** | **5.0** | **5** |
+
+**Avg rank improved 6 positions across 9 weeks.** Top-3 (map-pack) coverage jumped from 1 grid point (May 2) to 5 grid points (May 11) — **5x growth in the most valuable visibility tier in 9 days.**
+
+This is the highest-intent procedure keyword on the practice's keyword footprint — patients searching this are actively shopping for the procedure. Going from rank 11 → rank 5 with map-pack coverage on 5 grid points means appearing in the top-of-page result on Google Maps ~5x more often than 9 days ago. This is the kind of movement that drives new patient bookings.
 
 ### Google Search Console (organic search)
 

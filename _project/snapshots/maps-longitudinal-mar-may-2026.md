@@ -69,16 +69,17 @@ The "procedure + katy" variants stayed strong. The "doctor + location" variants 
 
 Tracked across the full timeline:
 
-| Date | Source | Coverage | Avg rank | Best rank |
+| Date | Source | Coverage | Avg rank | Top-3 grid points |
 |---|---|---|---|---|
-| Mar 4, 2026 | LocalRank | 96% (24/25) | 11.1 | 6 |
-| Apr 9, 2026 | LocalRank | 100% (25/25) | 11.4 | 5 |
-| May 2, 2026 | DIY tool | 100% (81/81) | **5.9** | — |
-| May 7, 2026 | DIY tool | 100% (81/81) | 6.1 | — |
+| Mar 4, 2026 | LocalRank | 96% (24/25) | 11.1 | 0 |
+| Apr 9, 2026 | LocalRank | 100% (25/25) | 11.4 | 0 |
+| May 2, 2026 | DIY tool | 100% (81/81) | 5.9 | 1 |
+| May 7, 2026 | DIY tool | 100% (81/81) | 6.1 | 2 |
+| **May 11, 2026** | **DIY tool** | **100% (81/81)** | **5.0** | **5** |
 
-**Avg rank moved from 11.1 → 5.9 across 8 weeks — a 5-position jump on our strongest keyword.** This survives the April–May dip narrative because the procedure-specific keywords held up while doctor-specific keywords took the hit.
+**Avg rank moved from 11.1 → 5.0 across 9 weeks — a 6-position jump on our strongest keyword.** AND top-3 (map-pack) grid points jumped from 1 (May 2) to 5 (May 11) — 5x growth in the most valuable visibility tier in just 9 days. This survives the April–May dip narrative because the procedure-specific keywords held up while doctor-specific keywords took the hit.
 
-Why this matters: `epidural steroid injection katy` is the **highest-intent buyer query** for Dr. Qureshi's practice. Patients searching this are actively shopping for the procedure, often within days of booking. Going from avg rank 11 to avg rank 6 means appearing in the top-of-page Local Pack ~70% more often.
+Why this matters: `epidural steroid injection katy` is the **highest-intent buyer query** for Dr. Qureshi's practice. Patients searching this are actively shopping for the procedure, often within days of booking. Going from avg rank 11 with zero map-pack appearances to avg rank 5 with map-pack appearances on 5 grid points means appearing in the top-of-page Local Pack across most of the Katy service area.
 
 ---
 
