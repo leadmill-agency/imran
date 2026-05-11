@@ -305,7 +305,22 @@ Comprehensive technical SEO audit also run on all 43 pages — 100% clean on tit
 - ~~Q&A seeding on GBP~~ (client opted out)
 - ~~CareDash citation~~ (defunct directory)
 - ~~LocalRank subscription~~ (May 2 — replaced with in-house DIY tool, saving $297/mo)
-- ~~Katy Chamber of Commerce~~ (May 6 — verified $1,000/yr Bronze tier minimum, no free option; client decision pending; my rec: skip)
+- ~~Katy Chamber of Commerce~~ (May 6 — $1,000/yr Bronze tier minimum, no free option; my rec: skip)
+- ~~Doctor.com citation~~ (May 11 — our doctor isn't on Doctor.com at all; the `doctor.com/Imran-Qureshi` URL belongs to a different physician in Phoenix AZ)
+- ~~Sharecare citation~~ (May 11 — paid-only)
+- ~~Wellness.com citation~~ (May 11 — paid-only)
+- ~~Castle Connolly~~ (May 11 — paid premium tier)
+- ~~BBB Accreditation~~ (May 11 — paid)
+
+**Revised citation strategy (May 11):**
+
+We're already at **10 verified high-quality URLs in sameAs** (Healthgrades, Vitals, Doximity, WebMD, Healthline FindCare, Medical News Today Connect, LinkedIn, Zocdoc, Memorial Hermann, CLS Health), which is the right count per the playbook (8–12). **More directories isn't the unlock.** Pivot the remaining citation effort to:
+
+1. **The 2 remaining free directories worth trying:** Yellow Pages (retry — first attempt failed), Angi
+2. **Review velocity** — more Google reviews compounds entity authority faster than another mid-tier directory
+3. **Topical content** — more procedure/condition pages with cite-able external sources
+
+The original "claim 18+ citations" goal is replaced with "10 verified canonical URLs in sameAs + review velocity + content depth." Quality > quantity.
 
 ---
 
@@ -357,17 +372,87 @@ This was the heaviest single-session day after April 23. **Six commits to `main`
 - [x] Week-of-May-5 status doc + GBP Post #4 drafts at `_project/snapshots/week-of-may-5-status.md`
 
 **Open items still on Rameel/client:**
-- [ ] Mark GA4 events as Key Events in GA4 admin (24–48 hrs after first events appear)
+- [ ] Mark GA4 events as Key Events in GA4 admin (urgent — every day without it is a blind spot on website conversions)
 - [ ] Publish GBP Post #4 (drafts ready in week-of-may-5-status.md)
-- [ ] Claim Sharecare, Doctor.com, Wellness.com (free directories, ~15 min each)
-- [ ] Yellow Pages re-attempt
+- [ ] Yellow Pages re-attempt + Angi (last 2 free citation shots, ~15 min each)
 - [ ] Memorial Hermann directory has stale Webster TX address — Dr. Qureshi should request MHMD update
+- [ ] Ask client: did they run any non-SEO marketing (print, radio, referral push) in late April / early May? Would help explain the May 6 call spike.
 
 **Open items for end-of-month (May 30):**
-- [ ] End-of-May full Maps grid scan + comparison vs May 2 baseline (will become Month 3 client report data)
+- [ ] End-of-May full Maps grid scan + comparison vs May 2 baseline (Month 3 client report data)
 - [ ] Month 3 wrap-up report (start drafting May 12)
 - [ ] Verify the 4 zero-coverage keywords have moved off 0% by May 30
 - [ ] Trim remaining 27 meta descriptions over 160 chars (low priority, cosmetic)
+
+---
+
+## ⚠️ May 11 Mid-Month Signal Check
+
+Rameel pulled fresh GBP + GSC + GA4 data on May 11 (day 11 of 31). Plus client ran a LocalRank scan on May 11 to cross-check the DIY tool. Mixed results — need a week more data before we know if there's a real problem.
+
+### Numbers (April final vs May 1–11)
+
+| Metric | April | May 1–11 | May daily pace | vs April pace |
+|---|---|---|---|---|
+| GBP calls | 50 | 13 | 1.18/day | **-29%** ⚠️ |
+| GBP total interactions | 140 | 41 | 3.7/day | **-21%** ⚠️ |
+| GSC clicks (last 7 days May 4–11) | n/a | 18 | 2.6/day | **+30%** ↑ |
+| GSC impressions | n/a | 651 | 93/day | ↑ |
+| GSC avg position | 13.46 | 13.4 | — | flat |
+| GA4 organic clicks | n/a | 6 (7-day) | — | similar pace |
+
+### Pattern in calls daily
+
+- May 1–6: ~12 calls (with a 7-call spike on May 6 — biggest single day of the month)
+- May 7–11: ~1 call across 5 days
+
+### Honest read
+
+**Maps grid coverage is UP, but call volume is DOWN.** That's a disconnect. Possible explanations (in order of likelihood):
+1. **GBP reporting lag** — performance dashboard runs 1–3 day delay; May 9–11 calls likely not fully posted
+2. **Mother's Day weekend (May 10)** — patients defer medical calls around family holidays
+3. **The 4–8 week rule again** — rankings improving May 2 → 7 won't translate to calls until weeks 3–4 (mid-to-late May)
+4. **May 6 spike was driven by something non-SEO** — possibly a referral push, ad, or word-of-mouth event. Need to confirm with client.
+5. **Real algorithm drop** — unlikely; no corroborating signal (Maps coverage went UP between scans)
+
+### What I'd watch by May 15
+
+- Calls May 12–15 → if 2+/day, this was just Mother's Day dip. If still 0–1/day, real problem.
+- Total interactions trajectory.
+- GA4 Key Event data (once Rameel marks them) → tells us if conversions shifted from phone to web booking.
+
+### LocalRank cross-validation (May 11)
+
+Client ran a LocalRank/DataForSEO scan May 11 covering 10 keywords on a 49-point grid (~18-mile span, wider than our 81-point 7-mile-radius grid). Saved to `/Users/rameel/Desktop/LocalRank Scan Report - Imran Qureshi, DO.pdf` for reference.
+
+Cross-checking against our May 7 DIY scan:
+
+| Keyword | Our DIY (81-pt, May 7) | LocalRank (49-pt, May 11) | Verdict |
+|---|---|---|---|
+| pain management doctor near me | 42/81 (52%), avg 7.1 | 27/49 (55%), avg 11.2 | **Match** — both ~55% coverage |
+| neck doctor near me | 16/81 (20%), avg 14.1 | 7/49 (14%), avg 8 | **Match** — similar coverage |
+| neck doctor katy | 4/81 (5%), avg 12.8 | 2/49 (4%), avg 7 | **Match** |
+| back doctor near me | 6/81 (7%) | 1/49 (2%), avg 2 | **Match-ish** (narrow at practice) |
+| sports injury doctor near me | 0/81 | 1/49 (2%) | Trace appearance |
+| muscle pain | 0/81 | 1/49 (2%) | Trace appearance |
+| sciatica | 2/81 (2%) | 1/49 (2%) | Match |
+| **back doctor katy** | **0/81** | **49/49 (100%), avg 13.1** | **⚠️ Major divergence** |
+| LocalRank "Overall avg rank" | (n/a) | **7.2** | — |
+
+**Most keywords agree directionally between our DIY tool and LocalRank.** The one big divergence is `back doctor katy` — our tool said 0/81 on May 7, LocalRank says 49/49 with avg 13.1 on May 11. Either:
+- (a) The entity language fix shipped May 7 aged in fast (4 days), and "back doctor katy" exploded into 100% coverage between scans
+- (b) LocalRank's DataForSEO backend reports a broader rank universe (e.g. counts beyond local 3-pack) than our Google Places API
+- (c) Some combination of both
+
+I'll re-run our DIY scan on May 14 — if our tool now also shows broad `back doctor katy` coverage, it's explanation (a) and our entity fix worked. If still 0%, it's (b) and we're under-counting vs commercial tools.
+
+**Either way, the LocalRank scan validates that our DIY tool's outputs are directionally correct.** Good news for replacing the $297/mo subscription.
+
+### Provisional updated headline metric for Month 3 client report
+
+- April baseline: 50 GBP calls (final), 140 interactions
+- **May target** (revised given the May 11 trajectory): 55–65 calls if recovery happens after Mother's Day; will be lower if the May 7–11 trend continues. Set client expectations carefully in the call.
+- Maps coverage trajectory (the real story to lead with): "pain management katy tx" top-10 coverage went 23 (May 2) → 47 (May 7). Targeting 65+ on May 30 scan.
 
 ---
 
