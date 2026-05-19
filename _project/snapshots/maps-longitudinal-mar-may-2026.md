@@ -65,7 +65,7 @@ The "procedure + katy" variants stayed strong. The "doctor + location" variants 
 
 ---
 
-## The crown jewel: avg-rank improvement on `epidural steroid injection katy`
+## `epidural steroid injection katy` — full timeline (revised May 18: volatile, not stable)
 
 Tracked across the full timeline:
 
@@ -75,11 +75,17 @@ Tracked across the full timeline:
 | Apr 9, 2026 | LocalRank | 100% (25/25) | 11.4 | 0 |
 | May 2, 2026 | DIY tool | 100% (81/81) | 5.9 | 1 |
 | May 7, 2026 | DIY tool | 100% (81/81) | 6.1 | 2 |
-| **May 11, 2026** | **DIY tool** | **100% (81/81)** | **5.0** | **5** |
+| May 11, 2026 | DIY tool | 100% (81/81) | **5.0** | **5** ← mid-month spike |
+| **May 18, 2026** | DIY tool | 77/81 | **11.1** | **0** ← spike reversed |
 
-**Avg rank moved from 11.1 → 5.0 across 9 weeks — a 6-position jump on our strongest keyword.** AND top-3 (map-pack) grid points jumped from 1 (May 2) to 5 (May 11) — 5x growth in the most valuable visibility tier in just 9 days. This survives the April–May dip narrative because the procedure-specific keywords held up while doctor-specific keywords took the hit.
+**Revised read (May 18):** Across 11 weeks (Mar 4 → May 18), avg rank netted to 11.1 → 11.1. **No net change.** The May 2–11 window where this keyword broke into map-pack territory (5 top-3 grid points by May 11) reversed back to baseline by May 18. That window was either:
+- A temporary improvement from Google's mid-cycle re-evaluation
+- A side effect of competitive shuffling that didn't stick
+- The leading edge of real progress that hasn't stabilized yet
 
-Why this matters: `epidural steroid injection katy` is the **highest-intent buyer query** for Dr. Qureshi's practice. Patients searching this are actively shopping for the procedure, often within days of booking. Going from avg rank 11 with zero map-pack appearances to avg rank 5 with map-pack appearances on 5 grid points means appearing in the top-of-page Local Pack across most of the Katy service area.
+We won't know which until the May 30 scan. **Lesson learned:** don't celebrate a single 1-week spike as a confirmed win — wait for 2 consecutive scans to hold the same trajectory.
+
+The keyword is still ranking 77/81 (95% coverage) — visible across most of the Katy service area — just deeper in results than mid-month. This is a "ranks everywhere, just outside the map pack" pattern, which is where it was in March-April. Practice still has strong baseline visibility on its highest-intent procedure query, but the May 11 breakthrough hasn't held.
 
 ---
 

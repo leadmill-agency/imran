@@ -28,24 +28,32 @@
 - 2 trust pages built (`/medical-disclaimer`, `/editorial-policy`)
 - This was the foundation. The recovery cycle is the test.
 
-### 2. May results — the dip-then-recovery story (15 min)
+### 2. May results — the honest mixed picture (15 min)
 
-**Lead with the win that survives the dip:**
-> "Your highest-intent procedure keyword — `epidural steroid injection katy` — improved 5 rank positions across the full timeline. From avg rank 11 in March to avg rank 6 in May. That means appearing in the top-of-page Local Pack about 70% more often for the exact query that brings patients shopping for the procedure."
+**Updated May 18 (the day before the call):** the picture is more mixed than the May 11 mid-month snapshot suggested. A fresh scan May 18 showed about half of the mid-month gains corrected back toward baseline. Lead with the durable wins, not the volatile ones.
 
-**Then frame the dip honestly:**
-> "Between Apr 20 and May 3, Maps coverage dropped sharply across most other keywords. This is the textbook Google re-evaluation cycle after major site work — Google saw the new GBP URL plus the 20-page content overhaul and re-scored everything from scratch. We told you this would happen; we just couldn't see it until we pulled the historical LocalRank data into the project last week."
+**Lead with the most durable win (`pain management doctor near me`):**
+> "Across the May 2 → May 18 window — 16 days — your strongest sustained signal is on `pain management doctor near me`. The average rank improved from 8.4 to 7.6, and for the first time you appeared in the local 3-pack on 2 different grid points across Katy. That's the kind of move that drives new patient inbound."
 
-**Then show the recovery:**
-> "By May 11, two of the eight dropped keywords were already climbing back. `pain management doctor near me` went from 48% coverage on May 3 to 55% on May 11 — and got its first map pack appearances (2 grid points in top 3). `neck doctor near me` doubled its top-3 grid points from 1 to 3. The recovery is on schedule."
+**Then mention the second durable win (`pain specialist near me`):**
+> "`Pain specialist near me` improved 2.5 rank positions over the same window — avg rank 12.6 to 10.1. Top-10 coverage almost doubled, from 8 grid points to 15. Same direction, same story."
+
+**Then the organic search story (this is the strongest data point):**
+> "Outside of Maps, organic search clicks are up about 30% in pace versus April. Three new buyer-intent queries surfaced this month that weren't there in April — `peripheral neuropathy treatment in katy`, `shoulder pain treatment in katy`, and `radiofrequency and ultrasound treatments katy, tx area`. These are exactly the kind of long-tail location-specific searches that drive bookings."
+
+**Then frame the volatility honestly:**
+> "On Maps, the picture this month has been volatile. We saw a real spike May 7 → May 11 where one of your strongest keywords briefly hit the local map pack on 5 grid points. By May 18 that had largely reversed. This kind of swing is typical 4–6 weeks after major site changes (like the April GBP URL switch + content overhaul) — Google is still re-evaluating, and we expect another 2–3 weeks before things settle. The structural work we shipped in April is still there; the algorithm is just still adjusting how it weights it."
 
 **Then explain the call volume:**
-> "May calls are running about 29% below April's daily pace — 13 calls in 11 days vs the ~17 we'd expect at April's pace. This isn't a problem with the SEO — it's the lag effect of rankings dropping in late April. Calls follow rankings with a 1–2 week lag. As rankings continue recovering through mid-to-late May, expect call volume to follow in late May / early June."
+> "May calls are running below April's daily pace — about 13 calls in the first 11 days. We need fresh GBP data to confirm, but assume around -20 to -25% vs April pace. This tracks with the Maps volatility — calls follow rankings with a 1–2 week lag. As rankings settle through late May and June, calls should recover."
+
+**Don't overstate. Don't oversell.** If client asks "are we in trouble?" — answer:
+> "No, but we're in the middle of the response curve. The April work isn't going away. We need another 2–3 weeks to see where things settle, and we'll have that picture by the May 30 final scan."
 
 **Key visuals to show:**
-- Maps coverage trajectory table (Apr 20 → May 3 → May 11 → May 16)
-- Crown-jewel rank-improvement timeline (Mar 4 → May)
-- 1 heatmap from the DIY tool (pick the most visually compelling — probably `pain management doctor near me`)
+- Maps coverage trajectory table — the FULL May 2 → May 7 → May 11 → May 18 view (shows the volatility honestly)
+- The `epidural steroid injection katy` timeline (shows the volatility cleanly with one keyword)
+- 1 heatmap of `pain management doctor near me` (the most durable improvement)
 
 ### 3. Month 4 scope decision (10 min)
 
@@ -92,7 +100,7 @@ These have been pending — flag at the call:
 ## If something comes up — fallback talking points
 
 **If client asks "is SEO working?"**
-> "Yes — and we can prove it with the procedure-specific keyword data. `Epidural steroid injection katy` is now ranking avg 6 across Katy (up from 11). That's the keyword that matters most for actual procedure conversions. The doctor-style keywords are in the middle of the expected recovery curve and will follow."
+> "Two parts of it are clearly working. One: organic search clicks are up 30% pace versus April, with brand-new buyer-intent queries surfacing — peripheral neuropathy, shoulder pain, radiofrequency in Katy. Two: `pain management doctor near me` got its first map-pack appearances. That's a durable sustained win across our 16-day window. The Maps data on procedure-specific keywords is volatile right now, which is normal 4–6 weeks after the kind of major site changes we shipped in April. We need another 2–3 weeks to see where things settle. The structural work is solid."
 
 **If client asks "why are calls down in May?"**
 > "Two reasons. One: Maps rankings dropped briefly after the major April work — Google re-evaluates after big changes, this is expected. Calls lag rankings by 1–2 weeks. Two: there's likely a Mother's Day weekend effect baked into May 9–11 specifically. The recovery in rankings (visible already in our May 11 scan) will translate to call recovery in late May."
