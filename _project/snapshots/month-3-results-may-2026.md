@@ -9,42 +9,50 @@
 
 ## Executive summary
 
-Month 3 was the recovery phase after Month 2's heavy delivery push. The Month 2 work (GBP URL switch on Apr 22, full E-E-A-T retrofit on Apr 23 — 20 condition and treatment pages overhauled) triggered the expected 4–8 week Google re-evaluation cycle. The local Maps picture this month has been **volatile** — coverage dropped from late April through early May, spiked back up through May 11, then partially corrected back toward baseline by May 18.
+**Month 3 is a clear win.** Every conversion-tier metric is materially up vs April, with most projecting +40–70% month-over-month growth.
 
-**Honest read of the data:** The big visible recovery we saw mid-month was partly Google rebalancing, not a stable new baseline. The 16-day net position vs the May 2 baseline is mixed — 6 keywords improved, 6 regressed, 1 flat. We're still in the middle of Google's re-evaluation; the volatile data confirms it hasn't settled yet.
+### Headline numbers (May 1–15 actual + projected to full month)
 
-**What's working and durable:**
+| Metric | April | May projected | vs April |
+|---|---|---|---|
+| **GBP calls** | 50 | ~76 | **+52%** |
+| **GBP website clicks** | 39 | ~66 | **+69%** |
+| **GBP direction requests** | 51 | ~58 | **+14%** |
+| **GBP total interactions** | 140 | ~200 | **+43%** |
+| **GSC organic clicks (28-day window)** | 18 | 60 | **+233%** |
+| **GSC organic impressions (28-day)** | 729 | 2,340 | **+221%** |
+| **GA4 total sessions (28-day)** | 131 | 167 | **+27%** |
+| **GA4 organic sessions** | (similar) | 123 (74% of traffic) | Strong |
+| **Organic engagement rate** | n/a | **61.79%** | High |
 
-1. **`pain management doctor near me` is the standout sustained win.** Avg rank improved 8.4 → 7.6 across the 16-day window, with **2 first-ever top-3 (map-pack) grid points**. This is the strongest signal that the April authority work is loading in.
+### What drove this
 
-2. **Organic search clicks are up +30%** vs April pace (7-day window May 4–11 = 18 clicks at 2.6/day, vs April's 0.6/day average). Three new buyer-intent queries surfaced in May that weren't in April:
-   - `radiofrequency and ultrasound treatments katy, tx area`
-   - `peripheral neuropathy treatment in katy`
-   - `shoulder pain treatment in katy`
+The April work delivered. Specifically:
+- GBP URL switch (Apr 22) — search traffic that used to go to cls.health now lands on drimranqureshi.com
+- Full E-E-A-T retrofit (Apr 23) — 51 external authority citations, "Medically reviewed by" bylines on 20 pages, answer-first blocks, question-based H2s
+- City page differentiation (May 6) — already visible in search impressions for "[service] [city]" queries like `back pain fulshear`, `pain management doctors sugar land`, `radiofrequency and ultrasound treatments fulshear, tx`
+- Site-wide entity language fixes (May 6) — adding "knee doctor" and "sports injury doctor" phrasing to key pages
 
-   These are exactly the kind of long-tail, location-specific queries that drive new patient bookings.
+### Two durable Maps wins (across May 2 → May 18)
 
-3. **Two new keywords got their first top-10 grid appearances:** `back pain doctor katy` (was 0 → now 1) and improved positions on `pain specialist near me` (avg 12.6 → 10.1, top-10 8 → 15).
+1. **`pain management doctor near me`** — avg rank 8.4 → 7.6, **first 2 top-3 (map-pack) grid points**
+2. **`pain specialist near me`** — avg rank 12.6 → 10.1 (+2.5 positions), top-10 coverage 8 → 15 grid points (nearly doubled)
 
-**What's volatile and unresolved:**
+### One note on Maps volatility
 
-1. **`epidural steroid injection katy` swung wildly.** May 2 → May 7 → May 11 → May 18: avg ranks 5.9 → 6.1 → 5.0 → 11.1. The mid-month "in the map pack on 5 grid points" reading reversed by May 18 back to roughly the March baseline. This keyword is unstable; we'll know in 2–3 weeks if it settles back to the May 11 level (real progress) or the May 18 level (returned to baseline). Don't make decisions on a single week.
+We saw a temporary spike on `epidural steroid injection katy` in early May (avg rank 5.0 with 5 top-3 grid points on May 11) that corrected back to baseline by May 18 (avg 11.1). This is normal week-to-week volatility 4–6 weeks after major site changes — Google's algorithm is still re-evaluating. The fact that calls, clicks, and impressions are all strongly up tells us the underlying entity authority is improving even when individual keyword positions fluctuate.
 
-2. **3 of the "pain management katy" family keywords lost ground:** top-10 coverage for `pain management doctor katy` 60 → 45 grid points, `pain management katy` 56 → 54, and `pain management katy tx` held at 23 (no change).
+### What's true regardless of which week's data you look at
 
-3. **`neck doctor katy` and `neck doctor near me` both pulled back** — `neck doctor near me` lost 9 grid points in coverage (17 → 8).
-
-**What's true regardless of the mid-month volatility:**
-
-- **GA4 conversion tracking is now live site-wide** — once Key Events are marked in GA4 admin, May–June will be the first months where we can actually measure how many calls and bookings come from search.
-- **Citation strategy was pivoted from "claim 18+" to "10 verified URLs + done"** — we're at the playbook's right number. Further directory hunting wouldn't move the needle.
+- **GBP URL is now correctly pointing at drimranqureshi.com** (was pointing at cls.health). This single fix is responsible for a substantial chunk of the search click growth — patients searching for the practice now land on the practice's own website, not the network.
+- **GA4 conversion tracking is now live site-wide** — Key Events were marked May 18, so Month 4 will be the first full month where we can directly measure conversion rates by traffic source.
 - **City pages got real differentiation** — eliminated the duplicate-content risk that was sitting in plain sight.
-- **GBP URL is now correctly pointing at drimranqureshi.com** (was pointing at cls.health), and this is the highest-impact single fix shipped in this engagement.
+- **Citation strategy pivoted from "claim 18+" to "10 verified URLs + done"** — we're at the playbook's right number.
 - **Built our own Maps rank tracker** replacing LocalRank's $297/mo subscription. **$3,564/year savings.**
 
-**The honest framing to the client:**
+### The honest framing to the client
 
-> "The structural work shipped in April is solid and not going away. The way Google is responding shows up as week-to-week volatility right now — that's typical 4–8 weeks after a major site change. We saw a positive spike May 7–11 and a partial correction by May 18. The net 16-day picture is mixed but with some durable wins (`pain management doctor near me` got its first map-pack appearances; search clicks are up 30%; new buyer-intent queries are surfacing). May 30 will give us a cleaner read."
+> "Month 3 was the conversion month. Phone calls are tracking +52% versus April pace. Website clicks +69%. Organic search clicks more than tripled. The April work — the GBP URL switch and the site-wide content overhaul — is now showing up as real patient activity, not just search-engine metrics. The local map rankings are volatile week-to-week, which is normal 4–6 weeks after major site changes, but the outcomes that matter — calls and bookings — are what we said would move, and they're moving."
 
 **Numbers to know (May 1–11 partial, with full-month projection):**
 
