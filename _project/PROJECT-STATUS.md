@@ -372,17 +372,54 @@ This was the heaviest single-session day after April 23. **Six commits to `main`
 - [x] Week-of-May-5 status doc + GBP Post #4 drafts at `_project/snapshots/week-of-may-5-status.md`
 
 **Open items still on Rameel/client:**
-- [ ] Mark GA4 events as Key Events in GA4 admin (urgent — every day without it is a blind spot on website conversions)
-- [ ] Publish GBP Post #4 (drafts ready in week-of-may-5-status.md)
+- [x] Mark GA4 events as Key Events in GA4 admin (done May 18)
+- [x] Publish GBP Post #4 (published May 18)
 - [ ] Yellow Pages re-attempt + Angi (last 2 free citation shots, ~15 min each)
-- [ ] Memorial Hermann directory has stale Webster TX address — Dr. Qureshi should request MHMD update
-- [ ] Ask client: did they run any non-SEO marketing (print, radio, referral push) in late April / early May? Would help explain the May 6 call spike.
+- [ ] Memorial Hermann directory has stale Webster TX address — Dr. Qureshi has been chasing them (confirmed May 19); not yet fixed on their side
+- [x] Ask client about non-SEO marketing — answered May 19. See "External attribution" section below.
 
 **Open items for end-of-month (May 30):**
-- [ ] End-of-May full Maps grid scan + comparison vs May 2 baseline (Month 3 client report data)
-- [ ] Month 3 wrap-up report (start drafting May 12)
+- [ ] End-of-May full Maps grid scan + comparison vs May 2 baseline (Month 3 client report data) — running May 27
+- [ ] Month 3 wrap-up report (final version) — sending May 29 async
 - [ ] Verify the 4 zero-coverage keywords have moved off 0% by May 30
-- [ ] Trim remaining 27 meta descriptions over 160 chars (low priority, cosmetic)
+- [ ] Upload 8 new client photos to GBP — files in `_project/reference/Imran Photos May 26/`, received May 26 from Dr. Qureshi
+
+---
+
+## 📣 External attribution note (added May 26) — DO NOT skip when reporting
+
+On May 19, Dr. Qureshi shared in an email that **he personally shared the website link in a neighborhood Facebook/Nextdoor-style group of 300+ members "a few weeks ago"** (estimated late April). His exact wording: *"One thing I remember you asked me, to explain a drastic uptick in profile visits, I shared my website in my neighborhood group of like 300+ members few weeks ago so that defintely helped."*
+
+This is **non-SEO traffic that contributed to May's GBP and call growth.** Specifically:
+
+- **Likely affected:** GBP profile interactions (especially profile views), website clicks from GBP, possibly the May 6 single-day call spike of 7 calls
+- **Probably did NOT affect:** GSC organic search clicks (+233%), GSC impressions (+221%), organic queries surfacing — those are direct Google-search outcomes from the April SEO work
+- **Hard to disentangle:** Total call volume. Some of the +52% pace is likely SEO; some is referrals from the neighborhood group share. We won't be able to tell which is which without a longer baseline.
+
+### What this means for Month 3 reporting (final May report)
+
+Two ways to handle it:
+
+1. **Acknowledge it explicitly in the final May report sent to Dr. Qureshi:** "Some of the May call growth came from the neighborhood group share you mentioned. The organic search growth (+233% clicks, +221% impressions, multiple new buyer-intent queries surfacing) is directly attributable to the April SEO work. The GBP call growth is a mix."
+   - **Pro:** Honest, builds trust, sets up cleaner Month 4 reporting
+   - **Con:** Makes the May "win" sound smaller than the original report implied
+
+2. **Leave the May 19 report numbers as-is, note the attribution caveat internally only:** Most of his perception of May was set by what we sent him on May 18-19. Revisiting now might create confusion.
+   - **Pro:** Keeps narrative consistent
+   - **Con:** Doesn't correct the slight overstatement
+
+**Recommendation: Option 1**, but framed gently. Add 1–2 sentences in the final May report (May 29) noting that "some of the May lift was driven by your own community share — the part attributable to SEO alone is X, Y, Z." This positions Leadmill as honest and analytical, not credit-claiming. Builds trust for Month 4 and beyond.
+
+### What this means for Month 4 reporting
+
+- **Month 4 (June) numbers will be a cleaner SEO-only test** — assuming no more referral spikes from Dr. Qureshi or other non-SEO marketing.
+- **Standing ask:** Tell Dr. Qureshi to flag any non-SEO marketing he runs (referrals, social shares, paid ads, print, radio, community events). This is the only way to attribute properly going forward.
+- **In future monthly reports, add a "External attribution" section** that captures any non-SEO patient acquisition activity for the month. Even a 1-line note ("no non-SEO marketing this month, per client") is useful for clean attribution.
+- **Update baseline framing:** When comparing Month 4 to Month 3, the comparison should mentally adjust for the May referral lift. If June calls are flat or only slightly up vs May, that's actually positive (organic growth absent the referral boost). Don't overreact to flat numbers in June.
+
+### Lesson for the playbook
+
+This is a Field Notes addition for the agency playbook: **Always ask the client at month-end whether they ran any non-SEO marketing.** Don't assume the numbers you're seeing are 100% attributable to your work. A single neighborhood Facebook share can change a month's KPIs by 20%+.
 
 ---
 
