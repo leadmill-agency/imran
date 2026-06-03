@@ -7,6 +7,42 @@
 
 ---
 
+## 📊 PROGRESS SNAPSHOT (as of Jun 3, 2026)
+
+We moved faster than the day-by-day schedule — most of the agency-side build work (AIO baseline, both new procedure pages, all AIO content plays) is already done. What's left is mostly Rameel-side manual tasks (logins, GBP publishing, photo upload) and time-gated items (GA4 conversion data needs ~2 more weeks).
+
+### ✅ DONE (agency-side, shipped to production)
+
+- **Month 3 wrap:** final May scan (Jun 3), final numbers pulled, Month 3 report finalized, client PDF + email created, PROJECT-STATUS wrapped, git tagged `month-3-end`
+- **AIO baseline check** — 15 queries screenshotted + analyzed (`_project/snapshots/aio-baseline-jun/`). Key finding: institutions own generic medical AIO; pivot to 3 winnable Plays
+- **AIO Play 3** — optimized `/blog/when-to-see-a-pain-specialist` (answer-block, FAQ schema, citations)
+- **AIO Play 1** — localized buyer-intent FAQs on 5 condition pages (neuropathy, regenerative, knee, shoulder, hip)
+- **AIO Play 2** — direct-answer FAQs on the 2 no-AIO queries (PRP knee arthritis, cervical ESI what-to-expect)
+- **New procedure page 1** — `/treatments/knee-gel-injection` (built, shipped, schema validated, internally linked)
+- **New procedure page 2** — `/treatments/genicular-nerve-block` (built, shipped, schema validated, internally linked)
+- **Site-wide wiring** — footer + treatments hub + knee-pain page all link the 2 new pages; sitemap updated
+
+### ⏳ PENDING — Rameel manual tasks (need your login / client input)
+
+- Submit the ~8 changed/new URLs for indexing in GSC
+- Convert HEIC photo → JPG + upload all 8 photos to GBP
+- Publish GBP posts (Week 1–4 drafts ready)
+- Bing Webmaster Tools submission (needs your Bing login)
+- Review velocity: QR code + front-desk card (needs client approval)
+
+### ⏳ PENDING — time-gated (do later in June)
+
+- GA4 conversion analysis — needs ~1 month of Key Event data (target ~Jun 17)
+- Testimonial blocks — needs client to provide testimonials
+- PAA audit + PAA-derived FAQs (Jun 11) — still worth doing
+- Homepage CTA test (Jun 23)
+- AIO recheck vs baseline (Jun 24)
+- Final June scan + Month 4 report (Jun 30)
+
+**Note:** the original plan assumed we'd chase AIO citations on the top-impression queries. The Jun 3 baseline showed that's mostly futile for generic medical queries (Cleveland Clinic etc. own them). We pivoted to the 3 Plays above — see `_project/snapshots/aio-baseline-jun/analysis.md`. The "Jun 25 AIO follow-up fixes" step is therefore mostly already done.
+
+---
+
 ## Strategic priorities for Month 4
 
 In priority order:
@@ -44,12 +80,11 @@ In priority order:
   4. Photos should now be 18+ total (up from ~10)
 
 **Afternoon (15 min active, ~12 min scan wait):**
-- [ ] **Run final May DIY scan:**
+- [x] **Run final May DIY scan** ✅ DONE (Jun 3 scan: `imran-2026-06-03-1459.json`). Confirmed Maps settled at a HIGHER baseline than May 2 — pain management family now at near-universal top-10 grid coverage.
   ```
   cd /Users/rameel/Desktop/Manual\ Library/Leadmill/tools/grid-rank-tracker
   python3 -u scan.py imran
   ```
-  Will take ~12 min. Cost: ~$7. This is your end-of-May data point for the final report.
 
 **Time: 60 min total**
 
@@ -57,21 +92,12 @@ In priority order:
 
 ### Wed May 28 — Pull final May numbers
 
-**One sitting (30 min):**
+**One sitting (30 min):** ✅ DONE — final May actuals captured: calls 60 (+20%), website clicks 52 (+33%), interactions 170 (+21%), organic clicks 56 (+211%), organic impressions 2,460 (+237%), GA4 sessions 70% organic.
 
-- [ ] **GBP screenshots** for the full month of May (May 2026 only):
-  - Overview tab
-  - Calls tab
-  - Directions tab
-  - Website clicks tab
-- [ ] **GSC screenshots** — last 30 days (May 1–31 ideally):
-  - Main Performance view (clicks/impressions/CTR/position)
-  - Queries tab (top 30)
-- [ ] **GA4 screenshot** — Last 28 days:
-  - Reports → Acquisition → Traffic acquisition (the same view as last time)
-  - Also: Reports → Engagement → Conversions (now that Key Events are live ~10 days)
-- [ ] **Indexed pages screenshot** from GSC → Indexing → Pages
-- [ ] **Drop all screenshots in chat** — I'll do the comparison + write the final May numbers
+- [x] **GBP screenshots** for the full month of May
+- [x] **GSC screenshots** — last 30 days
+- [x] **GA4 screenshot** — Last 28 days (Traffic acquisition)
+- [x] **Drop all screenshots in chat** — comparison done, final numbers in `month-3-results-may-2026.md`
 
 **Time: 30 min**
 
@@ -79,12 +105,8 @@ In priority order:
 
 ### Thu May 29 — Final Month 3 report sent
 
-- [ ] **Wait for me to regenerate the final Month 3 PDF** with end-of-May actuals + the External Attribution section
-- [ ] **Review the PDF** (10 min)
-- [ ] **Email Dr. Qureshi:**
-  - Subject: `Month 3 final results — May numbers + Month 4 kickoff`
-  - Attach the updated PDF
-  - 3-line note: "Final May numbers in. SEO contribution explained alongside the neighborhood share you mentioned. Starting Month 4 with X/Y/Z focus. Let me know if any thoughts."
+- [x] **Month 3 PDF + email created** ✅ — at `_project/snapshots/client-pdf-may-2026/`. (Client already responded positively to the earlier May report async: "Looks great. Happy with our progress so far." A final-numbers refresh PDF can still be sent if desired.)
+- [ ] **(Optional) Send the refreshed final-May PDF** to Dr. Qureshi — only if you want to update him with the corrected actuals (+20% calls vs the earlier +52% projection). Low priority since he's already happy.
 
 **Time: 20 min**
 
@@ -92,8 +114,8 @@ In priority order:
 
 ### Fri May 30 — Wrap
 
-- [ ] **Update PROJECT-STATUS** with final Month 3 numbers + lessons (I'll do this; just confirm I have the data)
-- [ ] **Tag git commit** so we have a clean "end of Month 3" snapshot to reference later
+- [x] **Update PROJECT-STATUS** with final Month 3 numbers + lessons ✅ DONE (Month 3 Final Wrap section at top of PROJECT-STATUS)
+- [x] **Tag git commit** ✅ DONE — `month-3-end` tag created + pushed
 
 **Time: 5 min (Rameel) — most done by me**
 
@@ -121,6 +143,8 @@ Hard rest. Month 4 begins Monday.
    - If yes: which sentence is it cited for?
    - If no: which sites ARE cited? (Mayo, Cleveland Clinic, Healthline, WebMD, etc.)
 3. **Save screenshots** to `_project/snapshots/aio-baseline-jun-2/`
+
+> ✅ **DONE.** 15 queries captured + analyzed. Saved to `_project/snapshots/aio-baseline-jun/` (screenshots + `analysis.md`). Result: 13/15 trigger AIO, Dr. Q cited on 0 — Cleveland Clinic/Johns Hopkins/Mayo dominate generic medical AIO. Pivoted strategy to 3 winnable Plays (local queries, no-AIO queries, the one beatable generic query).
 
 **Target query list:**
 1. what is an epidural steroid injection
@@ -152,14 +176,11 @@ Hard rest. Month 4 begins Monday.
 
 **Analyze what you found yesterday. Draft response:**
 
-- [ ] **Pick the 5 highest-priority queries to target** (highest combination of: high impressions in GSC + Dr. Q has matching content + AIO is currently citing a generic source)
-- [ ] **For each, identify the structural fix:**
-  - Is our answer-first block in the first 100 words? Direct answer in 1–2 sentences?
-  - Do we have FAQPage schema? Does it include the exact question Google asks?
-  - Are our H2s in question form (matching the way patients/AI Overview phrase the question)?
-- [ ] **Save findings to `_project/snapshots/aio-action-list-jun-3.md`**
-
-This is the playbook for what we'll fix throughout Month 4.
+- [x] **Identified the 3 winnable Plays** (instead of 5 generic-AIO targets — the baseline showed generic AIO is unwinnable). Documented in `_project/snapshots/aio-baseline-jun/analysis.md`.
+- [x] **Structural fixes identified + SHIPPED** for all 3 Plays:
+  - **Play 3:** `/blog/when-to-see-a-pain-specialist` — answer-block, FAQ schema (5 Qs), 3 verified citations
+  - **Play 1:** localized FAQs on 5 condition pages (neuropathy, regenerative, knee, shoulder, hip)
+  - **Play 2:** direct-answer FAQs on PRP-therapy + cervical-epidural-injection (the 2 no-AIO queries)
 
 **Time: 45 min**
 
@@ -175,20 +196,9 @@ The new procedure page sprint begins. Knee Hyaluronic Acid (Gel) Injections is t
 - Typical patient profile?
 - Expected duration of relief?
 
-While waiting for his answer:
-
-- [ ] **Draft page outline using the template at `treatments/joint-injections.html`** as base
-- [ ] **Sections to include** (matches our AI-Overview-eligible template):
-  - Quick answer block (75–125 words)
-  - "What is hyaluronic acid (gel) injection for knee arthritis?"
-  - "Who is a good candidate?"
-  - "How is the procedure done?"
-  - "What's the recovery and outcomes?"
-  - "How does it compare to PRP and cortisone?"
-  - 5 FAQs with FAQPage schema
-  - 3+ external authority citations (NIAMS, Cleveland Clinic, AAOS)
-
-**Time: 60 min (drafting only; ship Friday)**
+> ✅ **DONE & SHIPPED.** `/treatments/knee-gel-injection` built (used `shoulder-injection.html` as template — cleaner May structure than joint-injections). Answer-block, 9 H2 sections, 6 FAQs, MedicalProcedure + Physician + FAQPage schema, 2 verified citations (NIAMS, Cleveland Clinic viscosupplementation). Localized "Where can I get a knee gel injection in Katy, TX?" FAQ first.
+>
+> ⏳ **Still pending from Dr. Q:** confirm which hyaluronic acid products he uses + cash-pay/insurance specifics. Page uses standard protocol language he can correct after reviewing the live page.
 
 ---
 
@@ -196,37 +206,25 @@ While waiting for his answer:
 
 **Apply yesterday's clinical answers (if Dr. Q replied), or use placeholders for cost/protocol that he can correct after publish:**
 
-- [ ] **Finish the page**
-- [ ] **Add schema:** MedicalProcedure, Physician, FAQPage
-- [ ] **Internal linking:**
-  - From `/knee-pain/arthritis` → link to new page (replace generic "joint injections" mention)
-  - From `/treatments/joint-injections` → cross-link to gel injection page
-  - From `/treatments/prp-therapy` → mention as comparison option in PRP vs other treatments section
-  - From homepage → add to "Treatments" list
-  - From `/treatments` hub → add card
-
-**Time: 75 min**
+- [x] **Finish the page** ✅
+- [x] **Add schema** ✅ (MedicalProcedure + Physician + FAQPage + MedicalBusiness — all validated)
+- [x] **Internal linking** ✅ — from `/knee-pain/arthritis` (gel + genicular both linked), `/treatments` hub card, footer site-wide, cross-links to PRP/genicular/RFA
 
 ---
 
 ### Fri Jun 6 — Ship knee gel injection page + GBP post
 
-- [ ] **Final review:**
-  - Run through the post-deploy checklist at `_project/snapshots/post-deploy-checklist-apr-23.md`
-  - Validate JSON-LD at https://search.google.com/test/rich-results
-- [ ] **Deploy** (git commit + push; Vercel auto-deploys)
-- [ ] **Add to sitemap.xml** with lastmod date
-- [ ] **Submit URL to GSC** for indexing
-- [ ] **Publish GBP Post (Week 1):**
+- [x] **Final review + JSON-LD validated** ✅
+- [x] **Deploy** ✅ (committed + pushed; Vercel auto-deployed)
+- [x] **Add to sitemap.xml** ✅
+- [ ] **Submit URL to GSC for indexing** ← RAMEEL: `/treatments/knee-gel-injection`
+- [ ] **Publish GBP Post (Week 1)** ← RAMEEL — draft ready:
   ```
   🦵 Knee pain from arthritis? Hyaluronic acid (gel) injections offer up to 6 months of relief
   for many patients — no surgery, performed in-office under ultrasound guidance.
   Same-week appointments available. (281) 982-2144.
   ```
-  CTA: "Learn more" → link to new knee gel injection page
-  Use one of Dr. Q's recent photos (interior/at-work)
-
-**Time: 45 min**
+  CTA: "Learn more" → /treatments/knee-gel-injection · Use one of Dr. Q's recent photos
 
 ---
 
@@ -242,22 +240,16 @@ The second procedure page. Genicular nerve blocks bridge the gap between RFA and
 
 **Step-by-step (75 min):**
 
-- [ ] **Async ask Dr. Qureshi:** genicular nerve block protocol, typical pricing, patient candidates
-- [ ] **Draft the page** using same template structure as knee gel injection
-- [ ] **Cross-link with `/treatments/radiofrequency-ablation`** (RFA is the long-term version of the nerve block)
-
-**Time: 75 min**
+> ✅ **DONE & SHIPPED.** `/treatments/genicular-nerve-block` built — full procedure page, answer-block, 9 H2s, 6 FAQs, all schema validated. Explains the diagnostic-block → RFA pathway. Cross-linked with `/treatments/radiofrequency-ablation`, `/treatments/knee-gel-injection`, and `/knee-pain/arthritis`. Localized "Where can I get a genicular nerve block in Katy, TX?" FAQ first.
 
 ---
 
 ### Tue Jun 10 — Ship genicular nerve block page
 
-- [ ] **Final review + deploy**
-- [ ] **Add to sitemap**
-- [ ] **Submit URL for indexing in GSC**
-- [ ] **Internal linking** (same pattern as last week)
-
-**Time: 30 min**
+- [x] **Final review + deploy** ✅
+- [x] **Add to sitemap** ✅
+- [ ] **Submit URL for indexing in GSC** ← RAMEEL: `/treatments/genicular-nerve-block`
+- [x] **Internal linking** ✅ (footer site-wide, treatments hub card, knee-pain page, cross-links)
 
 ---
 
