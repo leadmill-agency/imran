@@ -1,5 +1,62 @@
 # Dr. Imran Qureshi — Project Status
 
+---
+
+## 🏁 MONTH 3 FINAL WRAP (June 3, 2026)
+
+**Status: Month 3 complete. A solid, durable, honestly-reported win.**
+
+### Final May actuals (full month, not projections)
+
+| Metric | April | May (actual) | vs April |
+|---|---|---|---|
+| GBP calls | 50 | **60** | **+20%** |
+| GBP website clicks | 39 | **52** | **+33%** |
+| GBP total interactions | 140 | **170** | **+21%** |
+| GSC organic clicks | 18 | **56** | **+211%** |
+| GSC organic impressions | 729 | **2,460** | **+237%** |
+| GA4 organic sessions (28-day) | ~97 | **86 (70% of traffic)** | dominant |
+
+### Maps settled at a HIGHER baseline (the validating win)
+
+The May 18 dip was the trough. The Jun 3 scan confirmed dip → recovery → higher baseline:
+
+| Keyword (top-10 grid coverage) | May 2 | May 18 trough | Jun 3 settled |
+|---|---|---|---|
+| pain management doctor katy | 60/81 | 45 | **81/81** |
+| pain management katy | 56/81 | 54 | **80/81** |
+| pain management katy tx | 23/81 | 23 | **74/81** (3.2x) |
+| epidural steroid injection katy | 79/81 | 33 | **73/81** |
+
+Dr. Q now appears in top-10 Maps results across virtually the entire Katy service area for the core keyword family.
+
+### Honest attribution
+
+Dr. Q shared his website in a 300+ member neighborhood group late April → inflated early-May GBP numbers. **Organic search metrics (+211% clicks) are 100% SEO; GBP calls/clicks are a mix.** The durable SEO-driven call baseline is +20%, not the +52% projected mid-month. (Both lessons #19 + #20 captured in playbook.)
+
+### Key learnings added to agency playbook this month (Field Notes #16–20)
+
+- #16 Pull pre-change baseline before shipping major changes
+- #17 Don't celebrate single-scan ranking spikes — wait for 2 consecutive
+- #18 Verify API pricing tier + free credit (the $120 Places API overrun)
+- #19 Always ask the client about non-SEO marketing
+- #20 Never project month-end from a front-loaded partial month
+
+### Reports/artifacts produced
+
+- `_project/snapshots/month-3-results-may-2026.md` — final report
+- `_project/snapshots/client-pdf-may-2026/` — client PDF + email draft
+- `_project/snapshots/maps-longitudinal-mar-may-2026.md` — full Mar→Jun trajectory
+- `_project/snapshots/may-19-client-call-agenda.md` — (call went async instead)
+
+### Client feedback (May 19 email)
+
+"Looks great. Happy with our progress so far." Implicit Month 4 continuation. Sent 8 new GBP photos (in `_project/reference/Imran Photos May 26/`). Still chasing Memorial Hermann on the stale address.
+
+**→ Now in Month 4. See `_project/month-4-detailed-execution-plan.md`.**
+
+---
+
 ## Client Info
 - **Client:** Dr. Imran Qureshi, D.O.
 - **Practice:** Interventional Spine & Sports Medicine
