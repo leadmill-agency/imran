@@ -2,6 +2,18 @@
 
 Memory anchor for this repo. Read this first on any new session. Last updated: end of Month 3 (June 2026).
 
+## 🚨 ACTIVE: PRACTICE ADDRESS MOVE (as of May 26, 2026)
+
+The practice is **relocating by Aug 1, 2026**:
+- **From:** 23501 Cinco Ranch Blvd, Suite G205, Katy TX 77494 (current — still live)
+- **To:** 1400 Ravello Dr, [Suite TBD], Katy TX 77450 (Energy Corridor / I-10 & TX-99 — a CLS Health facility, ~5–7 mi north)
+
+**Migration is prepped on the `address-migration` git branch — DO NOT merge to `main` until the practice physically moves** (Vercel auto-deploys main; changing the address early sends patients/Google to an empty office and risks GBP suspension). Full runbook: `_project/snapshots/address-move-may-2026/RUNBOOK.md`. Plan: `~/.claude/plans/joyful-noodling-quiche.md`.
+
+**Blocking step:** Dr. Q must confirm exact suite # + ZIP (77450 vs 77449) — email drafted at `_project/snapshots/address-move-may-2026/email-to-dr-q-nap-confirmation.md`.
+
+**Gotchas:** (1) "Cinco Ranch" stays as a service-area city — only the `23501 Cinco Ranch Blvd` street token changes. (2) Phone number does NOT change. (3) MOVE the GBP listing, never recreate (preserves 58 reviews). (4) Expect a re-evaluation ranking dip post-move (4–8 wks, like April).
+
 ## What this is
 
 SEO + AI Overview engagement for **Dr. Imran Qureshi, D.O.** — interventional pain management physician in Katy, TX. Agency: **Leadmill** (operator: Rameel). Static HTML site on Vercel, auto-deploys from GitHub `main`.

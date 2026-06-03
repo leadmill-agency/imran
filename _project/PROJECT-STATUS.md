@@ -2,6 +2,19 @@
 
 ---
 
+## 🚨 ACTIVE: PRACTICE ADDRESS MOVE (notified May 26, 2026)
+
+The practice relocates **by Aug 1, 2026** — from **23501 Cinco Ranch Blvd, Suite G205, Katy TX 77494** to **1400 Ravello Dr, [Suite TBD], Katy TX 77450** (Energy Corridor, CLS Health facility near I-10 & TX-99, ~5–7 mi north). Old location not retained.
+
+This is a full NAP migration (222 address refs across 52 HTML files, schema, geo coords, map embeds, GBP, 10 citations). **Strategy: prep on the `address-migration` branch now, cut over the day the practice physically moves.** Nothing live until then.
+
+- **Runbook + checklist:** `_project/snapshots/address-move-may-2026/RUNBOOK.md`
+- **Plan:** `~/.claude/plans/joyful-noodling-quiche.md`
+- **Blocking:** Dr. Q to confirm exact suite # + ZIP (email drafted in the address-move folder)
+- **Key gotchas:** "Cinco Ranch" stays as a service-area city (only the street token changes); phone unchanged; MOVE the GBP listing (never recreate — preserves 58 reviews); expect a re-evaluation dip post-move.
+
+---
+
 ## 🏁 MONTH 3 FINAL WRAP (June 3, 2026)
 
 **Status: Month 3 complete. A solid, durable, honestly-reported win.**
