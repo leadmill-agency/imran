@@ -7,6 +7,19 @@
 
 ---
 
+## 🚨 OVERRIDING PRIORITY: PRACTICE ADDRESS MOVE (notified May 26)
+
+**The practice relocates by Aug 1, 2026** — 23501 Cinco Ranch Blvd Ste G205, Katy 77494 → **1400 Ravello Dr, [Suite TBD], Katy 77450** (Energy Corridor, CLS Health facility near I-10 & TX-99). This is a full NAP migration and is the single most important thing happening this quarter — a botched address change can erase the ranking gains from Months 1–4.
+
+- **Status:** prepped on the `address-migration` git branch; **DO NOT merge to `main` until the practice physically moves.**
+- **Blocking:** Dr. Q to confirm exact suite # + ZIP (77450 vs 77449) — email drafted, send ASAP.
+- **Full plan + checklist:** `_project/snapshots/address-move-may-2026/RUNBOOK.md` and `~/.claude/plans/joyful-noodling-quiche.md`
+- **Don't forget:** Cinco Ranch stays as a service-area city (only the street token changes); phone unchanged; MOVE the GBP listing (never recreate — preserves 58 reviews); expect a 4–8 wk re-evaluation dip after the move.
+
+The Month 4 SEO work below continues in parallel (it's additive), **but the address migration takes precedence** when the move date firms up.
+
+---
+
 ## 📊 PROGRESS SNAPSHOT (as of Jun 3, 2026)
 
 We moved faster than the day-by-day schedule — most of the agency-side build work (AIO baseline, both new procedure pages, all AIO content plays) is already done. What's left is mostly Rameel-side manual tasks (logins, GBP publishing, photo upload) and time-gated items (GA4 conversion data needs ~2 more weeks).
