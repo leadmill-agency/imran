@@ -81,6 +81,9 @@ Per `_project/month-4-detailed-execution-plan.md`. Priorities: (1) review veloci
 - Static HTML, inline CSS, no build step. Each page self-contained. Header/footer duplicated across all files (update everywhere when changing).
 - Templates: `treatments/nerve-blocks.html` for treatment pages, `blog/what-is-radiofrequency-ablation.html` for blog posts.
 - Schema: JSON-LD in `<head>`. Treatment pages = MedicalProcedure + Physician + FAQPage. Validate at search.google.com/test/rich-results.
+  - `MedicalProcedure.procedureType` must be a `MedicalProcedureType` enum IRI (e.g. `https://schema.org/PercutaneousProcedure`), NOT free text like "Injection" — free text is a schema.org validation error (fixed Jun 2026).
+  - Blog `Article` schema needs `image` + `publisher.logo` (ImageObject) for Google rich-results eligibility. Currently both point at the headshot/favicon-192 as a baseline — swap `image` to per-post hero images when those exist.
+  - Known un-fixed inconsistency: schema `@id`/`url` use non-www `drimranqureshi.com` while the site canonicalizes to `www` (non-www 307s to www). Not a validation error; left for a deliberate pass.
 - Commit messages end with the Co-Authored-By trailer. Branch off `main` only when asked; commit/push only when asked.
 - `_project/` is gitignored from search engines via robots.txt `Disallow: /_project/`.
-- Site-wide changes: write a Python/regex script over all files, don't hand-edit page-by-page (Field Note #8).
+- Site-wide changes: write a Python/regex script over all files, don't hand-edit page-by-page (Field Note #8). AFTER running it, validate the output — parse every `application/ld+json` block and confirm injected code landed in the right tag (a May 2026 GA4-injection script pasted JS inside an `ld+json` tag on blog/index.html, breaking the schema AND silently killing tracking; Field Note #21).
