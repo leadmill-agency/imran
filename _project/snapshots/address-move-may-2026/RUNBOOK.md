@@ -62,6 +62,7 @@ NAP consistency across the web is essential. Update every one:
 | 9 | Zocdoc | zocdoc.com/doctor/imran-qureshi-do-651654 | [ ] |
 | 10 | Memorial Hermann | memorialhermann.org/.../dr-imran-qureshi-do-1467080622 | [ ] (was already stale Webster TX — fix to new address) |
 | 11 | CLS Health | providers.cls.health/provider/imran-qureshi/4850969 | [ ] (employer — likely auto-updates, verify) |
+| 12 | Bing Places (added Jun 2026, growth program) | bingplaces.com | [ ] |
 | (auto) | NPI Registry | NPI 1467080622 | [ ] update practice location |
 
 **Note:** sameAs schema URLs themselves don't change (the profile URLs stay the same) — what changes is the *address shown on each profile*, which Rameel updates in each directory's dashboard. The website schema `PostalAddress` IS updated by the swap script.
