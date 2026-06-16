@@ -1,12 +1,39 @@
 # Growth Program Action Pack — Rameel-Side Tasks (June 2026)
 
-Companion to the agency build sprint shipped Jun 10 (sciatica + spinal-stenosis pages, 2 comparison blogs, cost FAQs, PAA FAQs, llms.txt). These are the tasks only you can do — total ~2.5 hours, ranked by ROI.
+Companion to the agency build sprint shipped Jun 10 (sciatica + spinal-stenosis pages, 2 comparison blogs, cost FAQs, PAA FAQs, llms.txt). These are the tasks only you can do — ranked by ROI.
+
+## ✅ Status (updated Jun 15)
+
+| Task | Status |
+|---|---|
+| 1. Bing Webmaster Tools (site + sitemap) | ✅ Done — Bing URL/sitemap added |
+| 1b. Bing Places listing | ✅ Already claimed (pre-existing) — ⚠️ see URL fix below |
+| 2. GSC index request — 4 new URLs | ✅ Done |
+| 3. GBP Products seeding | ✅ Done — all products added |
+| 4. Featured.com | ⬜ Open |
+| 5. Local press pitches | ⬜ Open |
+| 6. Katy Chamber decision | ⬜ Open (needs Dr. Q) |
+
+**🔴 OPEN ISSUE — Bing Places website is wrong (fix while you're in there):**
+The existing Bing Places listing for Imran Qureshi, DO showed its website as
+`https://cls.health/locations/pain-management-cinco-ranch` — the **old CLS Health URL** we corrected on GBP long ago. The "Synced with Google" badge is misleading (the sync predated our GBP URL fix or doesn't carry the website field). This matters because Bing feeds ChatGPT/Copilot — an AI recommendation would send patients to the CLS page, not our optimized site, and it's a NAP inconsistency (different website Google vs. Bing).
+**Fix:** Bing Places → Imran Qureshi, DO listing → edit → set Website to `https://www.drimranqureshi.com` → save/publish. Set it **manually** (don't trust a re-sync), and confirm it isn't overwritten on the next auto-sync. NAP to verify against:
+
+```
+Dr. Imran Qureshi, D.O.
+23501 Cinco Ranch Blvd, Suite G205
+Katy, TX 77494
+(281) 982-2144
+https://www.drimranqureshi.com
+```
+
+⚠️ **Address-move note:** Bing Places is one more directory on the move checklist — added as #12 on the RUNBOOK citation table; update it same-day at cutover.
 
 ---
 
-## 1. Bing Webmaster Tools + Bing Places (~45 min) — DO FIRST
+## ~~1. Bing Webmaster Tools + Bing Places~~ ✅ DONE (see URL fix above)
 
-Bing's index feeds ChatGPT and Copilot answers. We have zero Bing presence.
+<details><summary>Original instructions (for reference)</summary>
 
 **Bing Webmaster Tools:**
 1. Go to bing.com/webmasters → sign in with any Microsoft account
@@ -18,27 +45,17 @@ Bing's index feeds ChatGPT and Copilot answers. We have zero Bing presence.
    - https://www.drimranqureshi.com/blog/epidural-vs-radiofrequency-ablation
    - https://www.drimranqureshi.com/blog/knee-injection-options-compared
 
-**Bing Places:** bingplaces.com → "Claim or add your business" → choose **"Import from Google Business Profile"** (mirrors the GBP listing — keeps NAP identical, which is what matters). Verify the imported data matches EXACTLY:
-
-```
-Dr. Imran Qureshi, D.O.
-23501 Cinco Ranch Blvd, Suite G205
-Katy, TX 77494
-(281) 982-2144
-https://www.drimranqureshi.com
-```
-
-⚠️ **Address-move note:** Bing Places becomes one more directory on the move checklist. I've added it as #12 on the RUNBOOK citation table — when we move, update it same-day with the others.
+</details>
 
 ---
 
-## 2. GSC: submit the 4 new URLs for indexing (~5 min)
+## ~~2. GSC: submit the 4 new URLs for indexing~~ ✅ DONE
 
 Search Console → URL Inspection → paste each of the 4 URLs above → "Request Indexing."
 
 ---
 
-## 3. GBP Products seeding (~30 min)
+## ~~3. GBP Products seeding~~ ✅ DONE
 
 Google Maps AI summaries pull from GBP Products when people ask "who near me offers X." Profile → Edit products → Add. Use category "Pain Management Services." One per row; descriptions are ready to paste:
 
