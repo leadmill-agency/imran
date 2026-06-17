@@ -55,12 +55,32 @@ Dr. Q shared his website in a 300+ member neighborhood group late April → infl
 - #19 Always ask the client about non-SEO marketing
 - #20 Never project month-end from a front-loaded partial month
 
+---
+
+## 📊 MONTH 4 MID-MONTH READ (June 17, 2026)
+
+Full analysis: `_project/snapshots/ga4-conversion-analysis-jun-17.md` (GA4 Jun 1–17 + Jun 17 grid scan vs Jun 3).
+
+**Three findings:**
+
+1. **First AEO/AI-assistant traffic — a new channel appeared.** GA4 now shows `chatgpt.com`, `gemini.google.com`, and `bing` as traffic sources, plus an "AI Assistant" channel (~6 sessions total, Jun 1–17). Tiny volume, but it's the leading indicator the Bing + llms.txt + AEO-content work was after. **→ Makes the pending Bing `cls.health` URL fix urgent** (AI assistants ground in the Bing index; wrong URL misroutes these referrals).
+
+2. **Conversions concentrate on city + high-intent pages.** 16 key events / 17 days. Homepage (5), `/pain-management-fulshear-tx` (3 from 3 sessions), `/treatments/prp-therapy` (2, 5m01s avg dwell). The May city-page differentiation is converting above its traffic share. 77.8% of sessions organic.
+
+3. **Grid: stable + one win, no dip.** `epidural steroid injection katy` top-10 coverage 73 → **81/81** (avg 7.4). Crown jewels held (3 core katy terms at 81/81). "Near me" terms broadly up. **Still 0 top-3 across all keywords** — the 3-pack is gated by review count (58 vs competitors' 150–200), which is now the clearest ceiling on further local-pack gains.
+
+**Caveats:** small numbers; new pages (sciatica/stenosis/comparisons, shipped Jun 10–15) too fresh to register — their read is **Jun 24**. ESI win needs the next scan (~Jul 1) to confirm (Field Note #17).
+
+---
+
 ### Reports/artifacts produced
 
 - `_project/snapshots/month-3-results-may-2026.md` — final report
 - `_project/snapshots/client-pdf-may-2026/` — client PDF + email draft
 - `_project/snapshots/maps-longitudinal-mar-may-2026.md` — full Mar→Jun trajectory
 - `_project/snapshots/may-19-client-call-agenda.md` — (call went async instead)
+- `_project/snapshots/ga4-conversion-analysis-jun-17.md` — Month 4 mid-month GA4 + scan read
+- `_project/snapshots/growth-program-jun-2026/` — growth sprint + Rameel action pack
 
 ### Client feedback (May 19 email)
 

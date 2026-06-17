@@ -59,7 +59,7 @@ SEO + AI Overview engagement for **Dr. Imran Qureshi, D.O.** — interventional 
 - pain management katy: 80/81
 - pain management katy tx: 74/81 (tripled from 23)
 
-**Scan history (DIY tool):** May 2, May 7, May 11, May 18, Jun 3. Plus 5 LocalRank CSVs (Mar 4–May 11) in `_project/snapshots/localrank-csvs-mar-may-2026/`.
+**Scan history (DIY tool):** May 2, May 7, May 11, May 18, Jun 3, Jun 17. Plus 5 LocalRank CSVs (Mar 4–May 11) in `_project/snapshots/localrank-csvs-mar-may-2026/`. Latest analysis: `_project/snapshots/ga4-conversion-analysis-jun-17.md` (Jun 17 scan + GA4 + the first AEO/AI-assistant traffic signal).
 
 ## What's done / removed from scope
 
