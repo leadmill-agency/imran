@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Your Website — Owner's Guide · Dr. Imran Qureshi, D.O.</title>
+<style>
+  @page { size: letter; margin: 0.6in 0.7in; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    color: #1a1d1c;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    background: #fff;
+  }
+  h1 { font-family: "Playfair Display", Georgia, serif; font-size: 26pt; font-weight: 500; color: #0D3B34; line-height: 1.15; margin-bottom: 4px; }
+  h2 { font-family: "Playfair Display", Georgia, serif; font-size: 16pt; font-weight: 500; color: #176B5D; margin-top: 28px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1.5px solid #E6F2EF; }
+  h3 { font-family: "Playfair Display", Georgia, serif; font-size: 12.5pt; font-weight: 600; color: #0D3B34; margin-top: 18px; margin-bottom: 6px; }
+  p { margin-bottom: 10px; }
+  strong { color: #0D3B34; }
+  .header-block { padding-bottom: 18px; border-bottom: 2px solid #176B5D; margin-bottom: 24px; }
+  .header-meta { font-size: 9.5pt; color: #6B7572; margin-top: 6px; }
+  .header-meta span { margin-right: 14px; }
+
+  .callout {
+    background: #F2F9F7;
+    border-left: 4px solid #176B5D;
+    padding: 14px 18px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .callout-title { font-weight: 600; color: #0D3B34; font-size: 11pt; margin-bottom: 6px; }
+
+  .warn {
+    background: #FEF9EC;
+    border-left: 4px solid #F2C94C;
+    padding: 14px 18px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .warn .callout-title { color: #7a5c00; }
+
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 10pt; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid #E5E8E7; vertical-align: top; }
+  th { background: #F2F9F7; color: #0D3B34; font-weight: 600; font-size: 9.5pt; text-transform: uppercase; letter-spacing: 0.04em; }
+  table tr:last-child td { border-bottom: none; }
+
+  ul, ol { margin-left: 20px; margin-bottom: 12px; }
+  li { margin-bottom: 6px; line-height: 1.55; }
+  ol.steps > li { margin-bottom: 9px; }
+
+  code {
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 9.5pt;
+    background: #F2F9F7;
+    border: 1px solid #E6F2EF;
+    border-radius: 3px;
+    padding: 1px 5px;
+    color: #0D3B34;
+    white-space: nowrap;
+  }
+
+  .footer-note {
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid #E5E8E7;
+    color: #6B7572;
+    font-size: 9pt;
+  }
+  .page-break { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<div class="header-block">
+  <h1>Your Website — Owner's Guide</h1>
+  <div class="header-meta">
+    <span><strong>Prepared for</strong> Dr. Imran Qureshi, D.O.</span>
+    <span><strong>Website</strong> drimranqureshi.com</span>
+    <span><strong>June 2026</strong></span>
+  </div>
+</div>
+
+<p>This guide covers three things: the one-time setup to take ownership (about 30 minutes), how to make changes to your website without knowing how to code, and what (little) it costs to run. Keep this document &mdash; it answers most questions you&rsquo;ll have later.</p>
+
+<h2>What you now own</h2>
+<p>Your web presence is four pieces. After the handoff, every one of them is in accounts you control:</p>
+<table>
+  <tr><th>Piece</th><th>What it does</th><th>Where it lives</th></tr>
+  <tr><td><strong>Your domain</strong><br>drimranqureshi.com</td><td>Your address on the internet</td><td>Your domain registrar (already yours)</td></tr>
+  <tr><td><strong>Your website files</strong></td><td>The pages themselves &mdash; 50+ pages of content</td><td>GitHub (transferring to you)</td></tr>
+  <tr><td><strong>Your hosting</strong></td><td>Puts the pages on the internet, fast</td><td>Vercel (you&rsquo;ll set up below)</td></tr>
+  <tr><td><strong>Your analytics</strong></td><td>Shows visitors, calls, and bookings</td><td>Google Analytics (I&rsquo;ll add you as admin)</td></tr>
+</table>
+<div class="callout">
+  <div class="callout-title">Why your site is built this way</div>
+  <p style="margin-bottom:0">Your website is hand-built for speed. There is no software to update, no plugins to break, and no security patches to install &mdash; one reason it loads fast and ranks well. The trade-off: it&rsquo;s not a drag-and-drop editor. Section 2 covers how changes get made.</p>
+</div>
+
+<h2>1. One-time setup (about 30 minutes)</h2>
+
+<h3>Step 1 &mdash; Create a GitHub account and accept the website transfer</h3>
+<p>GitHub is where your website&rsquo;s files live. Think of it as a Dropbox for websites, with a full history of every change.</p>
+<ol class="steps">
+  <li>Go to <strong>github.com</strong> and click <strong>Sign up</strong>. Use an email you check regularly. It&rsquo;s free.</li>
+  <li>Send me your GitHub username.</li>
+  <li>I&rsquo;ll transfer the website to you. You&rsquo;ll get an email from GitHub &mdash; <strong>click Accept transfer</strong> within 24 hours.</li>
+  <li>Done. The website&rsquo;s files now belong to your account.</li>
+</ol>
+
+<h3>Step 2 &mdash; Create a Vercel account and connect your website</h3>
+<p>Vercel is the hosting service &mdash; it takes the files from GitHub and serves them to the world.</p>
+<ol class="steps">
+  <li>Go to <strong>vercel.com</strong> and click <strong>Sign up</strong>. Choose <strong>&ldquo;Continue with GitHub&rdquo;</strong> and log in with the account from Step 1. This links the two automatically.</li>
+  <li>On your Vercel dashboard, click <strong>Add New &rarr; Project</strong>.</li>
+  <li>You&rsquo;ll see your website repository (the files from Step 1) in the list. Click <strong>Import</strong>.</li>
+  <li>On the settings screen, change nothing &mdash; the site configures itself. Click <strong>Deploy</strong>.</li>
+  <li>In about a minute you&rsquo;ll see your website live at a temporary address ending in <code>.vercel.app</code>. That confirms it works.</li>
+</ol>
+<div class="warn">
+  <div class="callout-title">One honest note on cost</div>
+  <p style="margin-bottom:0">Vercel&rsquo;s free plan is meant for personal projects. For a business website, the right plan is <strong>Vercel Pro at about $20/month</strong> &mdash; that&rsquo;s your entire hosting bill. (For comparison, typical medical-website hosting runs $50&ndash;150/month.)</p>
+</div>
+
+<h3>Step 3 &mdash; Point your domain at your new hosting</h3>
+<p>This is the moment your domain switches from my hosting account to yours. Best done in the evening; any interruption is brief.</p>
+<ol class="steps">
+  <li>In your Vercel project, go to <strong>Settings &rarr; Domains</strong> and add both <code>drimranqureshi.com</code> and <code>www.drimranqureshi.com</code>.</li>
+  <li>Vercel will show you one or two settings (called DNS records) to enter at your domain registrar &mdash; the company where you bought drimranqureshi.com. Log in there, find DNS settings, and enter exactly what Vercel shows.</li>
+  <li>Within an hour (usually minutes), Vercel shows a green checkmark and your website is being served entirely from your own accounts.</li>
+  <li>Tell me when this is done &mdash; I&rsquo;ll shut down my copy and add you as admin on Google Analytics.</li>
+</ol>
+<p>If you&rsquo;d rather do this step together on a 15-minute call, just say so. It&rsquo;s the only step with any real fiddliness.</p>
+
+<div class="page-break"></div>
+
+<h2>2. How to make changes without coding</h2>
+<p>You have three good options, from smallest to biggest change.</p>
+
+<h3>Option A &mdash; Small text changes: do them yourself on GitHub</h3>
+<p>Changing a phone number, correcting a sentence, updating office hours &mdash; you can do this in your browser in five minutes.</p>
+<ol class="steps">
+  <li>Log in at github.com and open your website repository.</li>
+  <li>Click the page you want to edit &mdash; for example, <code>contact.html</code>. (The homepage is <code>index.html</code>; treatment pages are in the <code>treatments</code> folder.)</li>
+  <li>Click the <strong>pencil icon</strong> (top right of the file view).</li>
+  <li>Press <strong>Ctrl+F</strong> (Cmd+F on Mac) and <strong>search for the exact words</strong> as they appear on the website &mdash; this drops you right where you need to be.</li>
+  <li>Change only the words.</li>
+  <li>Click <strong>Commit changes</strong> (the green button), then <strong>Commit changes</strong> again on the pop-up.</li>
+  <li>That&rsquo;s it. Your live website updates itself within about a minute.</li>
+</ol>
+<div class="warn">
+  <div class="callout-title">Two safety rules</div>
+  <ul style="margin-bottom:0">
+    <li>Never change anything inside angle brackets &mdash; everything that looks like <code>&lt;this&gt;</code> is machinery, not content.</li>
+    <li>If the same text appears several times in the file, that may be intentional (some text appears once for Google and once for visitors). Change all matching copies of the sentence you&rsquo;re editing.</li>
+  </ul>
+</div>
+<p><strong>If something looks wrong afterwards:</strong> don&rsquo;t panic &mdash; nothing is ever lost. GitHub keeps every previous version. Any developer (or I) can restore the page in two minutes.</p>
+
+<h3>Option B &mdash; Bigger text changes: use an AI assistant</h3>
+<p>For rewriting a paragraph or adding a new FAQ, tools like ChatGPT or Claude handle the machinery for you:</p>
+<ol class="steps">
+  <li>On GitHub, open the page file, click the pencil, and <strong>copy the entire file</strong>.</li>
+  <li>Paste it into ChatGPT or Claude and say what you want in plain English &mdash; <em>&ldquo;Change the second paragraph to say&hellip; Keep everything else exactly the same, and give me back the complete file.&rdquo;</em></li>
+  <li>Paste the result back over the file&rsquo;s contents and commit, as in Option A.</li>
+  <li>Check the live page a minute later. If anything looks off, restore the previous version.</li>
+</ol>
+
+<h3>Option C &mdash; Anything structural: use a developer</h3>
+<p>New pages, design changes, new photos, layout work &mdash; that&rsquo;s developer work, and this website is deliberately easy for any developer to work on (they will recognize the setup immediately; there&rsquo;s nothing exotic here). Expect small jobs to take an hour or two. I&rsquo;m also happy to remain your on-call option for occasional changes &mdash; just email me.</p>
+
+<h3>If you ever want full self-service</h3>
+<p>If you someday want a drag-and-drop editor (like Squarespace), that&rsquo;s a rebuild &mdash; a one-time project that trades away some of the site&rsquo;s speed. There&rsquo;s no urgency; it&rsquo;s just an option to know about. Ask me or any web professional and they can quote it.</p>
+
+<h2>3. The address change (one open item)</h2>
+<p>Your website still shows the Cinco Ranch address. CLS is handling your Google Business Profile for the move &mdash; but <strong>the address printed on the website itself is separate</strong>, and it appears on every page.</p>
+<p>My offer stands: send me the exact suite number and ZIP for 1400 Ravello (I believe it&rsquo;s 77450 &mdash; worth confirming with CLS), and I&rsquo;ll update the entire website as a final courtesy before we finish the handoff. Otherwise, hand this guide to whoever manages the site next &mdash; it&rsquo;s a routine job for a developer.</p>
+
+<h2>4. Running costs and upkeep</h2>
+<table>
+  <tr><th>Item</th><th>Cost</th><th>When</th></tr>
+  <tr><td>Domain renewal (drimranqureshi.com)</td><td>~$15&ndash;20/year</td><td>Yearly, at your registrar &mdash; <strong>keep this renewed; it&rsquo;s your address</strong></td></tr>
+  <tr><td>Vercel Pro hosting</td><td>~$20/month</td><td>Monthly</td></tr>
+  <tr><td>GitHub</td><td>Free</td><td>&mdash;</td></tr>
+  <tr><td>Google Analytics</td><td>Free</td><td>&mdash;</td></tr>
+  <tr><td>Software updates, security patches</td><td><strong>None needed</strong></td><td>The site has no software to maintain</td></tr>
+</table>
+<p><strong>Total: roughly $20/month plus the yearly domain fee.</strong> Nothing else expires or needs attention.</p>
+
+<h2>5. Keep these safe</h2>
+<ul>
+  <li>GitHub login (website files)</li>
+  <li>Vercel login (hosting)</li>
+  <li>Domain registrar login (your domain &mdash; the most important one)</li>
+  <li>Google account with Analytics access</li>
+</ul>
+<p>If a future marketing person or developer needs access, <strong>add them to your accounts</strong> rather than sharing your passwords &mdash; GitHub, Vercel, and Analytics all support inviting collaborators.</p>
+
+<h2>Questions?</h2>
+<p>Email me any time &mdash; happy to point you or whoever helps you next in the right direction. It&rsquo;s been a genuine pleasure building this with you.</p>
+<p><strong>&mdash; Rameel</strong></p>
+
+<div class="footer-note">
+  Prepared by Leadmill &middot; June 2026 &middot; For Dr. Imran Qureshi, D.O. &middot; drimranqureshi.com
+</div>
+
+</body>
+</html>
