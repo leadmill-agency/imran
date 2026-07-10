@@ -16,8 +16,8 @@ Domain is his and the refund is done, so this is all that's left. Order matters;
 
 **Prereqs (Rameel collects from Dr. Q):** his **GitHub username** (free account; create one if needed), and a **Vercel account** (he should sign up at vercel.com *with his GitHub login* — links them automatically). Pick a low-traffic window for the domain swap (brief downtime possible).
 
-1. **Transfer the GitHub repo** → §1 below. Rameel initiates; Dr. Q accepts the email. Repo ends up at `his-username/imran`.
-2. **Dr. Q stands up his own Vercel project** from the transferred repo → §2 below. It deploys to a temporary `*.vercel.app` URL first — confirm that loads.
+1. **Publish + transfer the CLEAN repo** (never the original — see §1) → Rameel pushes `imran-website-handoff/website` to a new `drimranqureshi-website` repo, then transfers it; Dr. Q accepts the email.
+2. **Dr. Q stands up his own Vercel project** from the transferred repo → §2 below. It deploys to a temporary `*.vercel.app` URL first — confirm that loads. (His fresh Vercel project contains nothing of Leadmill's — no env vars, no history.)
 3. **Move the domain** to his Vercel project: remove `drimranqureshi.com` + `www` from Leadmill's old Vercel project, add them to his new project, then he updates/confirms the DNS records Vercel shows at his registrar. Verify both `www` and non-www load.
 4. **Rameel cleanup:** once his site is live on the domain, delete the old Leadmill Vercel project and grant GA4 admin (§4). Done.
 
@@ -25,13 +25,19 @@ Domain is his and the refund is done, so this is all that's left. Order matters;
 
 ---
 
-## 1. GitHub — the website code
+## 1. GitHub — the website code  🔁 REVISED: transfer the CLEAN repo, never the original
 
-- **What it is:** `github.com/leadmill-agency/imran` — 51 static HTML pages + 10 images + sitemap/robots/llms.txt. No build step.
-- [ ] **Confirm Dr. Q has a GitHub account** (free) — needed to receive the repo. If he won't use GitHub, skip to the zip option.
-- [ ] **Option A (recommended): Transfer the repo.** GitHub → repo → Settings → "Transfer ownership" → his username/org. Preserves history. (Repo transfer does NOT carry your local `.git/config`, so the token isn't transferred — but rotate it anyway per step 0.)
-- [ ] **Option B: Hand off a copy.** If he doesn't want GitHub, send a zip of the working tree (exclude `.git/` and `_project/`). He loses version history but owns the files.
-- [ ] **Exclude `_project/`** from anything handed off — it's internal agency notes (gitignored from search engines but present in the repo). Decide whether to strip it from the transferred repo or leave it (his call; it's harmless but internal).
+- ⚠️ **Do NOT transfer `leadmill-agency/imran`.** Its git history permanently contains `_project/` (all internal reports, the offboarding notes, refund reasoning) and commit messages that narrate the whole engagement. Deleting files now would NOT remove them from history.
+- [x] **Clean handoff repo built (done by Claude, Jun 2026)** at `/Users/rameel/Desktop/Manual Library/Leadmill/imran-website-handoff/website` — 73 site files, ONE anonymous commit ("Dr. Imran Qureshi website — initial version"). Scrubbed: `_project/`, `CLAUDE.md`, `AGENTS.md`, `.claude/`, `.vercel/`, the robots.txt `/_project/` line, and **author-name metadata found inside 6 PNG icons** (all images re-encoded, verified rendering). Full-tree sweep for internal terms: clean, including binaries. Client-friendly `README.md` added.
+- [ ] **Rameel: publish the clean repo (5 min).** On github.com → New repository → name it `drimranqureshi-website` (private, empty — no README). Then:
+  ```
+  cd "/Users/rameel/Desktop/Manual Library/Leadmill/imran-website-handoff/website"
+  git remote add origin https://github.com/YOUR-USERNAME/drimranqureshi-website.git
+  git push -u origin main
+  ```
+- [ ] **Get Dr. Q's GitHub username** (guide walks him through creating the account).
+- [ ] **Transfer the clean repo to him:** repo → Settings → Danger Zone → Transfer ownership → his username. He accepts the email.
+- The original `leadmill-agency/imran` repo stays private under Leadmill as the engagement archive. Do not delete it; do not share it.
 
 ## 2. Vercel — the hosting
 
